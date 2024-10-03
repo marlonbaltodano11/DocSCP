@@ -173,3 +173,8 @@ Thumbs.db
 
 # Environment variables
 .env
+
+# Exclusions
+!backend/logs
+backend/logs/*
+!backend/logs/.gitignore
