@@ -1,0 +1,26 @@
+src/
+│
+├── assets/
+│   └── fonts/              // Carpeta para almacenar fuentes
+│
+├── components/             // Componentes de la aplicación
+│
+├── config/                 // Configuraciones de la aplicación
+│   ├── api/                // Configuraciones de las API
+│   ├── global_context/     // Contexto global de la aplicación
+│
+├── docs/                   // Documentación del proyecto
+│
+├── hooks/                  // Custom hooks de React
+│
+├── json/                   // Archivos JSON utilizados en la aplicación
+│
+├── layouts/                // Estructuras de diseño de la aplicación
+│
+├── pages/                  // Páginas de la aplicación
+│
+├── router/                 // Configuración de las rutas
+│
+├── styles/                 // Estilos de la aplicación
+│
+└── utils/                  // Funciones utilitarias
