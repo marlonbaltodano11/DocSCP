@@ -1,26 +1,27 @@
-src/
+# Aquitectura de carpetas:
+
+`src/
 │
 ├── assets/
-│   └── fonts/              // Carpeta para almacenar fuentes
+│ └── fonts/ // Carpeta para almacenar fuentes
 │
-├── components/             // Componentes de la aplicación
+├── components/ // Componentes de la aplicación
 │
-├── config/                 // Configuraciones de la aplicación
-│   ├── api/                // Configuraciones de las API
-│   ├── global_context/     // Contexto global de la aplicación
+├── config/ // Configuraciones de la aplicación
+│ ├── api/ // Configuraciones de las API
 │
-├── docs/                   // Documentación del proyecto
+├── docs/ // Documentación del proyecto
 │
-├── hooks/                  // Custom hooks de React
+├── hooks/ // Custom hooks de React
 │
-├── json/                   // Archivos JSON utilizados en la aplicación
+├── json/ // Archivos JSON utilizados en la aplicación
 │
-├── layouts/                // Estructuras de diseño de la aplicación
+├── redux/ // contexto de la aplicación
 │
-├── pages/                  // Páginas de la aplicación
+├── pages/ // Páginas de la aplicación
 │
-├── router/                 // Configuración de las rutas
+├── router/ // Configuración de las rutas
 │
-├── styles/                 // Estilos de la aplicación
+├── styles/ // Estilos de la aplicación
 │
-└── utils/                  // Funciones utilitarias
+└── utils/ // Funciones utilitarias`
