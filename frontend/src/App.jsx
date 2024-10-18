@@ -1,12 +1,11 @@
 import "@fonts/font-import.css";
 import "@styles/base-styles.css";
-import InitialLoadingAnimation from "@components/animations/InitialLoadingAnimation.jsx";
-import DataLoadingAnimation from "@components/animations/DataLoadingAnimation";
+import SyllabusRouter from "@router/SyllabusRouter";
 
 function App() {
   return (
     <>
-      <DataLoadingAnimation></DataLoadingAnimation>
+      <SyllabusRouter></SyllabusRouter>
     </>
   );
 }

@@ -1,0 +1,22 @@
+.header-container{
+    display: flex;
+    flex-direction: row;
+    height: clamp(80px, 6.25vw, 120px);
+    width: 100vw;
+    justify-content: space-between;
+    padding-left: 1%;
+    top: 0;
+    z-index: 10;
+    
+
+    .imagotype-header{
+        cursor: pointer;
+        width: min(31vw, 558px);
+    }
+    div{
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}

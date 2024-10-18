@@ -1,6 +1,7 @@
 # Aquitectura de carpetas:
 
-`src/
+```javascript
+src/
 │
 ├── assets/
 │ └── fonts/ // Carpeta para almacenar fuentes
@@ -24,4 +25,5 @@
 │
 ├── styles/ // Estilos de la aplicación
 │
-└── utils/ // Funciones utilitarias`
+└── utils/ // Funciones utilitarias
+```

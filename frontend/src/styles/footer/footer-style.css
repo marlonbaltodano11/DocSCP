@@ -1,0 +1,17 @@
+.container-footer {
+
+    height: clamp(70px, 5.20vw, 100px);
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 10; /* Asegúrate de que el footer esté sobre otros elementos */
+    background-color: #343A40;
+
+    .footer-flower{
+        width: clamp(30px, 2.60vw, 50px);
+        margin-right: 2vw;
+    }
+
+}
+  
+  
