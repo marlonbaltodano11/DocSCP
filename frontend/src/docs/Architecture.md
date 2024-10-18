@@ -4,12 +4,13 @@
 src/
 │
 ├── assets/
+│ ├── components/
 │ └── fonts/ // Carpeta para almacenar fuentes
 │
 ├── components/ // Componentes de la aplicación
 │
 ├── config/ // Configuraciones de la aplicación
-│ ├── api/ // Configuraciones de las API
+│ └── api/ // Configuraciones de las API
 │
 ├── docs/ // Documentación del proyecto
 │

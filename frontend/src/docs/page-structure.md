@@ -1,6 +1,6 @@
-# Componente de `Cualquier vista`
+# Componente de `Cualquier pagina`
 
-En `Cualquier vista` se define la estructura principal utilizando un contenedor que organiza el **header**, **contenido principal** y **footer**.
+En `Cualquier pagina` se define la estructura principal utilizando un contenedor que organiza el **header**, **contenido principal** y **footer**.
 
 ### Estructura
 
@@ -22,3 +22,17 @@ En `Cualquier vista` se define la estructura principal utilizando un contenedor 
 4. **FooterComponent**
    - Posición: Al final.
    - Función: Renderiza el pie de página.
+
+### Ejemplo
+
+```javascript
+return (
+  <div className="main-app-container">
+    <HeaderComponent></HeaderComponent>
+    <MainComponent>
+      <p>Contenido</p>
+    </MainComponent>
+    <FooterComponent></FooterComponent>
+  </div>
+);
+```

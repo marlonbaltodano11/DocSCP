@@ -6,7 +6,9 @@ const InitialDocumentUpload = () => {
   return (
     <div className="main-app-container">
       <HeaderComponent></HeaderComponent>
-      <MainComponent></MainComponent>
+      <MainComponent>
+        <p>Contenido</p>
+      </MainComponent>
       <FooterComponent></FooterComponent>
     </div>
   );
