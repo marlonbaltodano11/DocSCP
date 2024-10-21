@@ -1,0 +1,182 @@
+.logo-syllabus-upload-doc{
+    width: clamp(250px, 22.29vw, 550px);
+}
+
+.content-section-upload-doc{
+    width: 100vw;
+    padding-bottom: 5vw;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+
+    .side-decoration-upload-doc{
+        width: clamp(150px, 8.33vw, 250px);
+    }
+
+    .document-upload-container{
+        width: min(53.17vw, 1021px);
+        height: min(36.19vw, 695px);
+        border-radius: 15px;
+        border: 3px solid #208637;
+        background: #FFF;
+        box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+
+        .text-container-upload-doc{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 90%;
+
+            h3{
+                color: rgba(32, 134, 55, 0.90);
+                font-size: min(2.5vw, 48px);
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            p{
+                color: rgba(68, 68, 68, 0.60);
+                font-size: min(1.35vw, 24px);
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        .zone-drop-document{
+            margin-top: 2vw;
+            display: flex;
+            flex-direction: column;
+            width: min(31.32vw, 602px);
+            height: min(16.71vw, 321px);
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 10px;
+            border: 2px dashed #444;
+            background: #F3F3F3;
+            gap: 20px;
+            /* Transición suave */
+            transition: box-shadow 1.6s ease;
+
+            h3{
+                color: rgba(68, 68, 68, 0.60);
+                text-align: center;
+                font-size: min(1.25vw, 24px);
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            .upload-document-button{
+                cursor: pointer;
+                border: none;
+                height: 50px;
+                border-radius: 10px;
+                background: #FFF;
+                color: #208637;
+                text-align: center;
+                font-size: min(1.25vw, 24px);
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                /* Transición suave para el color */
+                transition: color 1.6s ease;
+            }
+
+            &:hover{
+                box-shadow: 0px 4px 20px 1px rgba(17, 116, 214, 0.60);
+                
+                .upload-document-button{
+                    color: #1174D6; /* Cambio de color en hover */
+                }
+            }
+        }
+
+        .process-document-container{
+            display: flex; 
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            margin-top: 1.5vw;
+            gap: 20px;
+
+            .document-name{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: rgba(68, 68, 68, 0.60);
+                text-align: center;
+                font-size: min(1.25vw, 24px);
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: capitalize;
+
+                img{
+                    width: min(3.125vw, 60px);
+                }
+
+                .json-style-text{
+                    color: #c28d1b;
+                }
+                .docx-style-text{
+                    color: #1174D6;
+                }
+                
+                .pdf-style-text{
+                    color: #d02121;
+                }
+            }
+
+
+            .process-button-container{
+                display: flex;
+                gap: 15px;
+            
+                button{
+                    width: min(7.81vw, 150px);
+                    height: min(2.60vw, 50px);
+                    border-radius: 10px;
+                    font-size: min(1.25vw, 24px);
+                    transition: background-color 0.9s ease, color 0.9s ease, border 0.9s ease, box-shadow 0.9s ease;
+                }
+            
+                .delete-doc-button{
+                    border: 0.5px solid rgba(0, 0, 0, 0.20);
+                    background: #FFF;
+                    
+                    &:hover{
+                        border: 0.5px solid #881A1A;
+                        color: #881A1A;
+                    }
+                }
+                
+                .process-doc-button{
+                    border: none;
+                    background: #208637;
+                    color: #FFF;
+            
+                    &:hover{
+                        background: #2EBE4E;
+                        box-shadow: 0px 4px 4px 0px rgba(46, 190, 78, 0.25);
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .decoration-left{
+        justify-self: flex-start;
+    }
+    .decoration-right{
+        justify-self: flex-end;
+    }
+}

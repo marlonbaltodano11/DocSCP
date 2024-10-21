@@ -5,4 +5,4 @@
 - npm install gantt-task-react
 - npm install react-router-dom
 - npm install animejs
-- npm install redux
+- npm install @reduxjs/toolkit react-redux

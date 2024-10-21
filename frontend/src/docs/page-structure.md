@@ -4,35 +4,32 @@ En `Cualquier pagina` se define la estructura principal utilizando un contenedor
 
 ### Estructura
 
-1. **Div contenedor (`main-app-container`)**
+1. **HeaderComponent**
 
-   - Envolvente de la estructura principal.
-   - Gestiona el diseño con una disposición flex o grid.
+   - **Posición:** Arriba.
+   - **Función:** Renderiza el encabezado de la página.
 
-2. **HeaderComponent**
+2. **Sección de contenido**
 
-   - Posición: Arriba.
-   - Función: Renderiza el encabezado con elementos clave como navegación.
+   - Todo el contenido de dicho componente.
 
-3. **MainComponent**
+3. **FooterComponent**
 
-   - Posición: Entre el header y el footer.
-   - Función: Renderiza el contenido principal.
+   - **Posición:** Al final.
+   - **Función:** Renderiza el pie de página.
 
-4. **FooterComponent**
-   - Posición: Al final.
-   - Función: Renderiza el pie de página.
+4. **MainComponent**
+   - **Posición:** Cubre al header, al contenido y al footer.
+   - **Función:** Componente padre donde mapear todo el contenido.
 
 ### Ejemplo
 
 ```javascript
 return (
-  <div className="main-app-container">
+  <MainComponent>
     <HeaderComponent></HeaderComponent>
-    <MainComponent>
-      <p>Contenido</p>
-    </MainComponent>
+    <section>Contenido</section>
     <FooterComponent></FooterComponent>
-  </div>
+  </MainComponent>
 );
 ```
