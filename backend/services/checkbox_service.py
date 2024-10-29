@@ -2,7 +2,7 @@ from docx.text.paragraph import Paragraph
 from docx.oxml import OxmlElement
 from docx.oxml.xmlchemy import BaseOxmlElement
 from typing import List, Optional
-from ..model_data import Checkbox
+from model_data import Checkbox
 
 class CheckboxService:
     """

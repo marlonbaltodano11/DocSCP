@@ -5,9 +5,9 @@ from docx.oxml.xmlchemy import BaseOxmlElement
 from docx.text.paragraph import Paragraph
 from typing import List
 from typing import Generator
-from ..model_data import Checkbox
-from .checkbox_service import CheckboxService
-from .table_service import TableService
+from model_data import Checkbox
+from services.checkbox_service import CheckboxService
+from model_data.table import Table
 
 class DocumentService:
     """Handle document related tasks
@@ -23,7 +23,7 @@ class DocumentService:
     def _get_paragraph_from_element(self, element: BaseOxmlElement) -> Generator[Paragraph, None, None]:
         """
         Yields paragraphs found within an element. If the element is a table, it delegates
-        to TableService to extract paragraphs from the table.
+        to Table to extract paragraphs from the table.
         
         Args:
             element (OxmlElement): The element to extract paragraphs from.
@@ -34,9 +34,10 @@ class DocumentService:
         if isinstance(element, BaseOxmlElement):
             # Check if the element is a table
             if element.tag.endswith('tbl'):
-                table = element
-                # Assuming TableService.get_paragraphs returns Paragraph objects
-                paragraphs = TableService.get_paragraphs(table=TableObject(tbl=table, parent=self._doc))
+                table = Table(TableObject(tbl=element, parent=self._doc))
+
+                # Assuming Table.get_paragraphs returns Paragraph objects
+                paragraphs = table.get_paragraphs()
                 for paragraph in paragraphs:
                     yield paragraph
 
@@ -58,7 +59,8 @@ class DocumentService:
         # Iterate over all elements in the document body
         for element in self._doc.element.body:
             paragraphs.extend(list(self._get_paragraph_from_element(element)))
-            
+        
+        #[print(p.text) for p in paragraphs]
         return paragraphs
     
     def _get_checkboxes(self) -> List[Checkbox]:

@@ -3,7 +3,6 @@ from docx.oxml.ns import qn
 from lxml import etree
 from typing import Optional
 
-
 class Checkbox:
     """
     Class to represent a checkbox with a label and state.
