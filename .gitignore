@@ -178,3 +178,6 @@ Thumbs.db
 !backend/logs
 backend/logs/*
 !backend/logs/.gitignore
+
+*.docx
+!syllabus_template.docx
