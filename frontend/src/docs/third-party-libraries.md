@@ -6,3 +6,4 @@
 - npm install react-router-dom
 - npm install animejs
 - npm install @reduxjs/toolkit react-redux
+- npm install react-hook-form

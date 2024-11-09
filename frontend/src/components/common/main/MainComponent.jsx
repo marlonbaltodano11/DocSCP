@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const MainComponent = ({ children }) => {
-  return <main className="principal-main">{children}</main>;
+  return <div className="principal-main">{children}</div>;
 };
 
 export default MainComponent;

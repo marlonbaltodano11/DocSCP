@@ -1,0 +1,4 @@
+.section-format-syllabus-container{
+    display: flex;
+    flex-direction: column;
+}

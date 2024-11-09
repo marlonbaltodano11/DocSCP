@@ -1,42 +1,32 @@
-import React, { useState } from "react";
-import IconTest from "../../assets/icon/document.svg";
+import React from "react";
+import PropType from "prop-types";
+import ClockIcon from "@assets/academic_cycle/clock_icon.svg";
+import ClipboardIcon from "@assets/academic_cycle/clipboard_icon.svg";
+import CardIcon from "@assets/academic_cycle/card_icon.svg";
 
-const AcademicWizard = () => {
-  const [currentStep, setCurrentStep] = useState(1);
-  const totalStepsCount = 3;
+const AcademicWizard = ({ currentViewStep }) => {
+  const currentStep = currentViewStep || 1;
 
   const wizardSteps = [
     {
       stepNumber: 1,
       stepTitle: "Ciclo Académico",
       stepSubtitle: "Define tu carga docente",
-      stepIcon: IconTest,
+      stepIcon: ClockIcon,
     },
     {
       stepNumber: 2,
-      stepTitle: "Plan Analítico",
+      stepTitle: "Plan analítico",
       stepSubtitle: "Define los contenidos",
-      stepIcon: IconTest,
+      stepIcon: ClipboardIcon,
     },
     {
       stepNumber: 3,
       stepTitle: "Plan Temático",
       stepSubtitle: "Define la carga académica",
-      stepIcon: IconTest,
+      stepIcon: CardIcon,
     },
   ];
-
-  const handleNextStep = () => {
-    if (currentStep < totalStepsCount) {
-      setCurrentStep(currentStep + 1);
-    }
-  };
-
-  const handlePreviousStep = () => {
-    if (currentStep > 1) {
-      setCurrentStep(currentStep - 1);
-    }
-  };
 
   const getStepLineBackground = (numberStep) => {
     if (currentStep > numberStep + 1) {
@@ -66,18 +56,28 @@ const AcademicWizard = () => {
     if (currentStep > numberStep) {
       return "#28A745";
     }
+    return "#444";
   };
 
   return (
     <section
       style={{
         width: "100%",
-        maxWidth: "90%",
         margin: "0 auto",
         padding: "20px",
       }}
     >
-      <h2 style={{ marginLeft: "5%", fontSize: "24px", marginBottom: "20px" }}>
+      <h2
+        style={{
+          marginLeft: "2%",
+          color: "#444",
+          fontSize: "min(2.25vw, 40px)",
+          fontStyle: "normal",
+          fontWeight: "400",
+          marginBottom: "20px",
+          textDecorationLine: "underline",
+        }}
+      >
         Pasos a seguir
       </h2>
 
@@ -117,8 +117,8 @@ const AcademicWizard = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   margin: "0 auto",
-                  fontSize: "25px",
-                  fontWeight: "bold",
+                  fontSize: "min(1.30vw 25px)",
+                  fontWeight: "400",
                   position: "relative",
                   zIndex: 2,
                   top: "0px",
@@ -138,14 +138,14 @@ const AcademicWizard = () => {
               <div style={{ top: "10px", position: "relative", width: "100%" }}>
                 <div
                   style={{
-                    fontSize: "22px",
+                    fontSize: "min(1.04vw 20px)",
                     color: getTitleColor(step.stepNumber),
-                    fontWeight: "bold",
+                    fontWeight: "400",
                   }}
                 >
                   {step.stepTitle}
                 </div>
-                <div style={{ fontSize: "18px", color: "#777" }}>
+                <div style={{ fontSize: "min(1.04vw 20px)", color: "#777" }}>
                   {step.stepSubtitle}
                 </div>
               </div>
@@ -160,53 +160,20 @@ const AcademicWizard = () => {
                   height: "4px",
                   boxShadow: "0 4px 6px rgba(0, 0, 0, 0.3)",
                   background: getStepLineBackground(step.stepNumber),
-                  marginLeft: "-125px",
-                  marginRight: "-125px",
+                  marginLeft: "-145px",
+                  marginRight: "-145px",
                 }}
               />
             )}
           </React.Fragment>
         ))}
       </div>
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginTop: "200px",
-        }}
-      >
-        <button
-          onClick={handlePreviousStep}
-          disabled={currentStep === 1}
-          style={{
-            padding: "10px 20px",
-            backgroundColor: "#ccc",
-            color: "#333",
-            border: "none",
-            borderRadius: "5px",
-            cursor: currentStep === 1 ? "not-allowed" : "pointer",
-          }}
-        >
-          Anterior
-        </button>
-        <button
-          onClick={handleNextStep}
-          disabled={currentStep === totalStepsCount}
-          style={{
-            padding: "10px 20px",
-            backgroundColor: "#28A745",
-            color: "#fff",
-            border: "none",
-            borderRadius: "5px",
-            cursor: currentStep === totalStepsCount ? "not-allowed" : "pointer",
-          }}
-        >
-          Siguiente
-        </button>
-      </div>
     </section>
   );
 };
 
 export default AcademicWizard;
+
+AcademicWizard.propTypes = {
+  currentViewStep: PropType.number,
+};

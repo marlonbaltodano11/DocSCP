@@ -12,6 +12,7 @@ En `Cualquier pagina` se define la estructura principal utilizando un contenedor
 2. **Sección de contenido**
 
    - Todo el contenido de dicho componente.
+   - Debe sí o sí estar envuelto en una etiqueta `<main>`.
 
 3. **FooterComponent**
 
@@ -28,7 +29,9 @@ En `Cualquier pagina` se define la estructura principal utilizando un contenedor
 return (
   <MainComponent>
     <HeaderComponent></HeaderComponent>
-    <section>Contenido</section>
+    <main>
+      <section>contenido</section>
+    </main>
     <FooterComponent></FooterComponent>
   </MainComponent>
 );

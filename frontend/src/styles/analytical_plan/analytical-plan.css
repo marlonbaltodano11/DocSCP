@@ -1,0 +1,194 @@
+
+
+.units-analytical-plan-container{
+    width: 100%;
+
+    /*
+    height: min(20.83vw, 400px);
+    overflow: hidden;
+    overflow-y: auto;*/
+    
+
+    .card-units-content-container{
+        width: 100%;
+        height: min(20.83vw, 400px);
+        border: 1px solid #C3C4C6;
+        position: relative;
+        padding: min(2.60vw, 50px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        .unit-input-container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            margin-bottom: 5px;
+            gap: 20px;
+
+            h3{
+                color: #0F4E7B;
+                font-size: min(1.66vw, 32px);
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            input{
+                width: min(67.70vw, 1300px);
+                height: min(3.65vw, 70px);
+                padding: 10px 30px;
+                color: #18662A;
+                font-weight: 400;
+                font-size: min(1.66vw, 32px);
+                border-radius: 10px;
+                border: 1px solid rgba(32, 134, 55, 0.10);
+                background: #FFF;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            textarea{
+                width: min(70.40vw, 1390px);
+                resize: none;
+                border-radius: 5px;
+                border: 2px solid rgba(32, 134, 55, 0.10);
+                background: #FFF;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                height: min(11.04vw, 212px);
+
+                padding: 30px  min(2.6vw, 50px) 30px min(1.04vw, 20px);
+                color: #343A40;
+                font-size: min(1.25vw, 24px);
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        .with-textarea{
+            align-items: flex-start;
+            
+            textarea{
+              line-height: 1.5em;
+            }
+        }
+
+        .delete-unit-button {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: min(2.34vw, 45px);
+            height: min(2.86vw, 55px);
+            position: absolute;
+            border: none;
+            background: transparent;
+            top: 0;
+            right: 5px;
+            margin: 0;
+            padding: 0;
+            
+            
+            .icon-delete-button{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('@assets/analytical_plan/add_unit_button_icon.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                transition: background-image 0.4s ease-out;
+    
+                &:hover {
+                    background-image: url('@assets/analytical_plan/delete_unit_button_icon.svg');
+                }
+            }
+
+        }
+        
+
+
+    }
+
+    .card-units-content-container:nth-child(odd) {
+        background: #FFF;
+    }
+
+    .card-units-content-container:nth-child(even) {
+        background: #E1E2E3;
+    }
+}
+
+.add-new-unit-button-analytical-plan{
+    border-radius:  0px 0px 20px 20px;
+    background: rgba(52, 58, 64, 0.90);
+    display: flex;
+    width: 100%;
+    height: min(4.16vw, 80px);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+
+    color: #FFF;
+    font-family: Aldrich;
+    font-size: min(1.875vw, 36px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+
+    align-self: flex-end;
+    img{
+        width: min(2.083vw, 40px);
+    }
+
+    &:hover{
+       
+        transition: background 0.3s ease;
+        background: rgba(52, 58, 64, 1);
+    }
+}
+
+
+/* Esto por si se requiere del otro
+.units-analytical-plan-container{
+
+
+  scrollbar-width: thin;
+  scrollbar-color:  #343A40 #cfcfcf;
+
+
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 3px ; 
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 1px;
+    background-color: #a6a6a6;
+  }
+  
+  ::-webkit-scrollbar-track:hover {
+    background-color: #9BA1A3;
+  }
+  
+  ::-webkit-scrollbar-track:active {
+    background-color: #d5d8d8;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #245612;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #548B40;
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #62A34B;
+  }
+  
+}
+*/

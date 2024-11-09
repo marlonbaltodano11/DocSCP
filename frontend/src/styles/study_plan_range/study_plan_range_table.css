@@ -1,0 +1,146 @@
+.title-table-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px auto;
+
+    h2{
+        color: #1174D6;
+        font-family: Aldrich;
+        font-size: min(2.1vw, 40px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+
+
+    .title-table-content{
+        display: flex;
+        align-items: center;
+        gap: min(2.60vw, 50px);
+        margin-bottom: 20px;
+
+        .amount-weeks{
+            display: flex;
+            gap: 15px;
+            font-size: min(1.66vw, 32px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            .title{
+                color: #0F4E7B;
+            }
+        }
+        
+        .tip-text{
+            color: rgba(33, 54, 38, 0.70);
+            font-family: Aldrich;
+            font-size: min(1.51vw, 29px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+    }
+
+
+}
+
+.study-plan-range-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    border-radius: 0 0 10px 10px;
+    font-family: Aldrich;
+
+    thead {
+      th {
+        background-color: #0b4460;
+        color: #fff;
+        padding: 0 40px;
+        text-align: left;
+        font-weight: bold;
+        font-size: min(1.875vw, 36px);
+
+        &:nth-child(5){
+            background: #FFF;
+            color: #444;
+            border-top: 1px solid #C3C4C6;
+            border-right: 1px solid #C3C4C6;
+            border-bottom: 1px solid #C3C4C6;
+
+          }
+      }
+  
+      th {
+        text-align: center;
+      }
+    }
+  
+    tbody {
+      td {
+        padding: 10px;
+        text-align: left;
+        font-size: 13px;
+        border: 1px solid #ddd;
+       
+        .input-date-table{
+            .date-picker-container{
+                justify-content: center;
+            }
+
+        }
+        
+        input{
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          border: none;
+          background: transparent;
+          font-size: min(1.45vw, 28px);
+          color: #444;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        &:nth-child(1), &:nth-child(2) {
+            color: #0F4E7B;
+            font-family: Aldrich;
+            font-size: min(1.66vw, 32px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: capitalize;
+          }
+        
+          &:nth-child(1){
+            text-align: center;
+          }
+
+          &:nth-child(3), &:nth-child(3){
+            width: clamp(200px, 17.7vw, 340px);
+          }
+
+          &:nth-child(1){
+            text-align: center;
+          }
+
+
+  
+      }
+      tr:last-child{
+        border-bottom: none;
+        border-radius: 10px;
+
+        td:first-child{
+            border-left: none;
+        }
+
+        td:last-child{
+            border-right: none;
+        }
+    }
+    }
+  }
+  

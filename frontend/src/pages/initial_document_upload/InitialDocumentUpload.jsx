@@ -12,24 +12,25 @@ const InitialDocumentUpload = () => {
   return (
     <MainComponent>
       <HeaderComponent></HeaderComponent>
-      <img className="logo-syllabus-upload-doc" src={LogoSyllabus}></img>
-      <section className="content-section-upload-doc">
-        <img
-          className="side-decoration-upload-doc decoration-left"
-          src={LeftDecoration}
-          alt=""
-        />
-        <div className="document-upload-container">
-          <InformativeText></InformativeText>
-          <UploadDocument></UploadDocument>
-        </div>
-        <img
-          className="side-decoration-upload-doc decoration-right"
-          src={RighDecoration}
-          alt=""
-        />
-      </section>
-
+      <main>
+        <img className="logo-syllabus-upload-doc" src={LogoSyllabus}></img>
+        <section className="content-section-upload-doc">
+          <img
+            className="side-decoration-upload-doc decoration-left"
+            src={LeftDecoration}
+            alt=""
+          />
+          <div className="document-upload-container">
+            <InformativeText></InformativeText>
+            <UploadDocument></UploadDocument>
+          </div>
+          <img
+            className="side-decoration-upload-doc decoration-right"
+            src={RighDecoration}
+            alt=""
+          />
+        </section>
+      </main>
       <FooterComponent></FooterComponent>
     </MainComponent>
   );

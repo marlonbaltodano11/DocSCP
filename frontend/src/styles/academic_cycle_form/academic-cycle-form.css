@@ -1,0 +1,117 @@
+.academic-cycle-form-container {
+    h3 {
+      color: #1174d6;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      font-size: min(1.666vw, 32px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration-line: underline;
+    }
+    
+    fieldset{
+        border: none;
+    }
+
+    .form-container {
+      display: flex;
+      flex-direction: row;
+      gap: min(2.60vw, 50px);
+      align-items: center;
+      margin-top: 10px;
+      justify-content: center;
+        
+    .label-radio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        .radio-title {
+            color: #0F4E7B;
+            font-size: min(1.145vw, 22px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    
+          .input-radio-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+            row-gap: 5px;
+      
+            .radio-option {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              font-size: min(1.04vw, 20px);
+      
+              input {
+                margin-right: 5px;
+              }
+            }
+          }
+
+    }      
+    }
+
+    .schedule-form-container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .schedule-row{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .row-title{
+                width: 14%;
+            }
+
+            div{
+                display: flex;
+                justify-content: start;
+                gap: 5px;
+                font-size: min(1.04vw, 20px);
+                width: 14%;
+            }
+
+            input[type="text"], input[type="number"]{
+                border-radius: 7px;
+                border: 1px solid #343A40;
+                background: #FFF;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                display: flex;
+                width: min(10.41vw, 200px);
+                height: min(2.08vw, 40px);
+                padding: 10px;
+                gap: 10px;
+                font-family: Aldrich;
+                font-size: min(1.04vw, 20px);
+            }
+
+            input:disabled {
+                background-color: #f0f0f0; /* Cambiar color de fondo */
+                color: #999; /* Cambiar el color del texto */
+                border: 1px solid #ccc; /* Cambiar el color del borde */
+                cursor: not-allowed; /* Cambiar el cursor a no permitido */
+              }
+        }
+    }
+
+    .periods-span{
+      position: absolute;
+      right: 40%;
+      top: 20%;
+      font-size: min(1.04vw, 20px);
+    }
+
+    .disable-perdion{
+      color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+  

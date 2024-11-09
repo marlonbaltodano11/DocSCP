@@ -17,8 +17,19 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: space-between;
       width: 100vw;
+      min-height: 100vh;
+
+      main{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+      }
     }
+
   .shadow{
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
   }
@@ -26,4 +37,25 @@
   
   button{
     cursor: pointer;         
+  }
+
+
+  .rmdp-calendar-container-mobile .rmdp-mobile.rmdp-wrapper{
+    transform: translate(-50%, 50%) !important;
+  }
+
+  .rmdp-input{
+    
+    padding-right: 30px !important;
+    
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) !important;
+    cursor:  pointer !important;
+  }
+
+  input,textarea,select{
+    font-family: Aldrich;
+  }
+
+  input:focus, textarea:focus{
+    outline: none;
   }

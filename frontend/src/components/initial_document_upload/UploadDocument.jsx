@@ -1,8 +1,10 @@
 import { useRef, useState } from "react";
 import DocumentIcon from "@assets/initial_document_upload/document_icon.svg";
 import DocumentExist from "@assets/initial_document_upload/document_exist.svg";
+import { useNavigate } from "react-router-dom";
 
 const UploadDocument = () => {
+  const navigate = useNavigate();
   const inputUploadDocument = useRef(null);
   const [file, setFile] = useState(null); // Para almacenar el archivo
   const [fileName, setFileName] = useState("Esperando documento....."); // Para almacenar el nombre del archivo
@@ -50,6 +52,10 @@ const UploadDocument = () => {
   // Función para abrir el input de archivo cuando se hace clic en el botón
   const triggerUpload = () => {
     inputUploadDocument.current.click();
+  };
+
+  const handleUploadFile = () => {
+    navigate("/academic-cycle");
   };
 
   return (
@@ -105,6 +111,10 @@ const UploadDocument = () => {
               Borrar
             </button>
             <button
+              onClick={() => {
+                handleUploadFile();
+              }}
+              type="button"
               className="process-doc-button shadow"
               disabled={!file} // Deshabilita el botón si no hay archivo
             >

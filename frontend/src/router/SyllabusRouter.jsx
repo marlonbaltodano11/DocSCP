@@ -5,6 +5,12 @@ import {
   Navigate,
 } from "react-router-dom";
 import InitialDocumentUpload from "@pages/initial_document_upload/InitialDocumentUpload";
+import DataLoadingAnimation from "../components/animations/DataLoadingAnimation";
+import InitialLoadingAnimation from "../components/animations/InitialLoadingAnimation";
+import AcademicCycle from "@pages/academic_cycle/AcademicCycle";
+import AnalyticalPlan from "@pages/analytical_plan/AnalyticalPlan";
+import { ThematicPlan } from "@pages/thematic_plan/ThematicPlan";
+import FormatSyllabusStepOne from "@pages/format_syllabus_step_one/FormatSyllabusStepOne";
 
 const SyllabusRouter = () => {
   return (
@@ -12,6 +18,22 @@ const SyllabusRouter = () => {
       <Routes>
         <Route path="/" element={<Navigate to="/upload-document" />}></Route>
         <Route path="/upload-document" element={<InitialDocumentUpload />} />
+        <Route path="/academic-cycle" element={<AcademicCycle />} />
+        <Route path="/analytical-plan" element={<AnalyticalPlan />} />
+        <Route path="/thematic-plan" element={<ThematicPlan />} />
+        <Route
+          path="/format-syllabus/step_1"
+          element={<FormatSyllabusStepOne />}
+        />
+
+        <Route
+          path="/anim"
+          element={<DataLoadingAnimation></DataLoadingAnimation>}
+        ></Route>
+        <Route
+          path="/anim2"
+          element={<InitialLoadingAnimation></InitialLoadingAnimation>}
+        ></Route>
       </Routes>
     </Router>
   );
