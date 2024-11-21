@@ -18,7 +18,7 @@ src/
 │
 ├── json/ // Archivos JSON utilizados en la aplicación
 │
-├── redux/ // contexto de la aplicación
+├── global_context/ // contexto de la aplicación
 │
 ├── pages/ // Páginas de la aplicación
 │
