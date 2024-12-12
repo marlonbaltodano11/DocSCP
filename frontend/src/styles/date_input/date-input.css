@@ -4,6 +4,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 5px;
+   
 
     .label-date-input{
         color: #0F4E7B;
@@ -25,15 +26,16 @@
         display: flex;
         align-items: center;
         border: 2px solid #d1d1d1;
-        width: min(20.8vw, 400px) !important;
+        width: min(14.58vw, 280px) !important;
         max-height: 60px !important;
+        gap: 5px;
         justify-content: space-between;
         cursor: pointer;
        
       }
       
       .input-wrapper span {
-        font-size: min(0.9375vw, 18px);
+        font-size: min(0.72vw, 14px);
         max-width: 35%; /* Ajuste para que el texto no se desborde */
         color: #0F4E7B;
         white-space: nowrap; /* Impide que el texto se rompa en varias líneas */
@@ -53,7 +55,7 @@
       }
       p{
         color: #343A40;
-        font-size: min(0.83vw, 16px);
+        font-size: min(0.72vw, 14px);
         font-style: normal;
         font-weight: 400;
         line-height: normal;

@@ -8,76 +8,52 @@ import NavigationButtons from "@components/common/navigation_buttons/NavigationB
 import "@styles/analytical_plan/analytical-plan.css";
 import CardsUnitsAndContents from "@components/analytical_plan/CardsUnitsAndContents";
 import AddNewUnitIcon from "@assets/analytical_plan/add_new_unit_icon.svg";
-import { useState, useCallback, useMemo } from "react";
+
+import {
+  useGlobalDispatch,
+  useGlobalState,
+} from "@global_context/GlobalProvider";
 
 const AnalyticalPlan = () => {
-  const TitleHead = "Plan Analítico";
-  const NumberView = 2;
-  const NextPage = "/thematic-plan";
-  const PreviousPage = "/academic-cycle";
-  const NewClass = "without-padding";
+  const state = useGlobalState();
+  const dispatch = useGlobalDispatch();
 
-  const initialUnitsData = [
-    {
-      unitName: "Introducción a la Programación",
-      topics: [
-        "Historia de la programación",
-        "Tipos de lenguajes de programación",
-        "Estructura básica de un programa",
-      ],
-    },
-    {
-      unitName: "Estructuras de Control",
-      topics: ["Condicionales", "Bucles", "Funciones"],
-    },
-  ];
-
-  const [units, setUnits] = useState(initialUnitsData);
+  const units = state.AcademicCalendarObject.coursePlan;
 
   const AddNewUnit = () => {
-    const newUnit = {
-      unitName: "",
-      topics: [""],
-    };
-    setUnits([...units, newUnit]);
+    dispatch({ type: "ADD_UNIT" });
   };
 
-  const deleteUnit = useCallback(
-    (index) => {
-      setUnits((prevUnits) => prevUnits.filter((_, i) => i !== index));
-    },
-    [setUnits]
-  );
+  const deleteUnit = (index) => {
+    if (units.length === 1) {
+      return;
+    }
+    dispatch({ type: "DELETE_UNIT", payload: index });
+  };
 
-  const handleEditUnit = useCallback(
-    (index, field, value) => {
-      setUnits((prevUnits) =>
-        prevUnits.map((unit, i) =>
-          i === index ? { ...unit, [field]: value } : unit
-        )
-      );
-    },
-    [setUnits]
-  );
-
-  const memoizedUnits = useMemo(() => units, [units]);
+  const handleEditUnit = (index, field, value) => {
+    dispatch({
+      type: "EDIT_UNIT",
+      payload: { index, field, value },
+    });
+  };
 
   return (
     <MainComponent>
       <HeaderComponent />
       <main>
-        <AcademicWizard currentViewStep={NumberView} />
+        <AcademicWizard currentViewStep={2} />
         <AcademicPreparationContainer
           IconHead={ClipboardWhiteIcon}
-          NumberView={NumberView}
-          TitleHead={TitleHead}
-          NextPage={NextPage}
-          PreviousPage={PreviousPage}
-          NewClass={NewClass}
+          NumberView={2}
+          TitleHead="Plan Analítico"
+          NextPage="/thematic-plan"
+          PreviousPage="/academic-cycle"
+          NewClass="without-padding"
         >
           <div className="units-analytical-plan-container">
             <CardsUnitsAndContents
-              UnitsData={memoizedUnits}
+              UnitsData={units}
               onDeleteUnit={deleteUnit}
               onEditUnit={handleEditUnit}
             />
@@ -91,7 +67,10 @@ const AnalyticalPlan = () => {
             Agregar Otra unidad
           </button>
         </AcademicPreparationContainer>
-        <NavigationButtons NextPage={NextPage} PreviousPage={PreviousPage} />
+        <NavigationButtons
+          NextPage="/thematic-plan"
+          PreviousPage="/academic-cycle"
+        />
       </main>
       <FooterComponent />
     </MainComponent>

@@ -1,8 +1,9 @@
 import DateInput from "@components/common/date_input/DateInput";
 import PropTypes from "prop-types";
 import "@styles/study_plan_range/study_plan_range_table.css";
+import { romanNumber } from "../../json/RomansNumbers";
 
-const StudyPlanRangeTable = ({ tasks, onTaskChange }) => {
+const StudyPlanRangeTable = ({ tasks = [], onTaskChange, today }) => {
   return (
     <table className="study-plan-range-table">
       <thead>
@@ -15,62 +16,66 @@ const StudyPlanRangeTable = ({ tasks, onTaskChange }) => {
         </tr>
       </thead>
       <tbody>
-        {tasks.map((task, index) => (
-          <tr key={index}>
-            <td>{task.unidad}</td>
-            <td>{task.name}</td>
-            <td className="input-date-table">
-              <DateInput
-                IsTable={true}
-                InputLabel="Inicio"
-                Multiple={false}
-                value={new Date(task.start).toISOString().slice(0, 10)}
-                onChange={(date) => {
-                  const newStart = new Date(date).toISOString().slice(0, 10);
-                  if (
-                    newStart !== task.start &&
-                    (newStart <= task.end || !task.end)
-                  ) {
-                    onTaskChange({ start: newStart }, index);
-                  }
-                }}
-              />
-            </td>
-            <td className="input-date-table">
-              <DateInput
-                IsTable={true}
-                InputLabel="Fin"
-                Multiple={false}
-                value={new Date(task.end).toISOString().slice(0, 10)}
-                onChange={(date) => {
-                  const newEnd = new Date(date).toISOString().slice(0, 10);
-                  if (
-                    newEnd !== task.end &&
-                    (newEnd >= task.start || !task.start)
-                  ) {
-                    onTaskChange({ end: newEnd }, index);
-                  }
-                }}
-              />
-            </td>
-            <td>
-              {" "}
-              <input
-                type="number"
-                min="0"
-                placeholder=". . ."
-                max="10"
-                value={task.encuentros}
-                onChange={(e) => {
-                  const newEncuentros = parseInt(e.target.value, 10);
+        {tasks.map((task, index) => {
+          const startDate = task?.start || today;
+          const endDate = task?.end || today;
 
-                  onTaskChange({ encuentros: newEncuentros }, index);
-                }}
-                style={{ width: "100%" }}
-              />
-            </td>
-          </tr>
-        ))}
+          return (
+            <tr key={index}>
+              <td>{romanNumber[index]}</td>
+              <td>{task?.unitNameLocal}</td>
+              <td className="input-date-table">
+                <DateInput
+                  IsTable={true}
+                  InputLabel="Inicio"
+                  Multiple={false}
+                  value={new Date(startDate).toISOString().slice(0, 10)}
+                  onChange={(date) => {
+                    const newStart = new Date(date).toISOString().slice(0, 10);
+                    if (
+                      newStart !== startDate &&
+                      (newStart <= endDate || !endDate)
+                    ) {
+                      onTaskChange({ start: newStart }, index);
+                    }
+                  }}
+                />
+              </td>
+              <td className="input-date-table">
+                <DateInput
+                  IsTable={true}
+                  InputLabel="Fin"
+                  Multiple={false}
+                  value={new Date(endDate).toISOString().slice(0, 10)}
+                  onChange={(date) => {
+                    const newEnd = new Date(date).toISOString().slice(0, 10);
+                    if (
+                      newEnd !== endDate &&
+                      (newEnd >= startDate || !startDate)
+                    ) {
+                      onTaskChange({ end: newEnd }, index);
+                    }
+                  }}
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  disabled
+                  min="0"
+                  placeholder="En Proceso. . ."
+                  max="10"
+                  value={task?.encuentros ?? ""}
+                  onChange={(e) => {
+                    const newEncuentros = parseInt(e.target.value, 10) || 0;
+                    onTaskChange({ encuentros: newEncuentros }, index);
+                  }}
+                  style={{ width: "100%" }}
+                />
+              </td>
+            </tr>
+          );
+        })}
       </tbody>
     </table>
   );
@@ -81,4 +86,5 @@ export default StudyPlanRangeTable;
 StudyPlanRangeTable.propTypes = {
   tasks: PropTypes.arrayOf(PropTypes.object).isRequired,
   onTaskChange: PropTypes.func.isRequired,
+  today: PropTypes.string.isRequired,
 };

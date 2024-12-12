@@ -1,0 +1,187 @@
+.small-modal-button{
+        width: min(1.56vw, 30px);
+        height: min(1.56vw, 30px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0px 0px 0px 5px;
+        border: 1px solid #0F4E7B;
+        border-top: none;
+        border-right: none;
+        background: #FFF;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        img{
+           
+            width: min(1.06vw, 20px);
+            height: min(1.06vw, 20px);
+        }
+}
+
+.small-global-button-modal{
+    position: relative;
+}
+
+.format-syllabus-modal{
+
+    width: min(47.13vw, 905px); 
+    height: min(34.94vw, 671px);
+    padding: 20px;
+    border: none;
+    border-radius: 8px; 
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    overflow-y: auto;
+
+    .modal-header{
+        width: 100%;
+        margin: auto;
+        h2{
+        
+            text-align: left;
+            font-size: min(1.56vw, 30px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: capitalize;
+            span{
+                color: #0F4E7B;
+            }
+        }
+    }
+
+
+    .add-new-element-section-modal{
+        display: flex;
+        margin-top: 20px;
+        gap: 20px;
+        input{
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.50);
+            width: min(35.93vw, 690px);
+            height: 50px;
+            padding: 10px;
+
+        }
+        button{
+            width: min(6.14vw, 118px);
+            border-radius: 10px;
+            background: #343A40;
+            color: #FFF;
+        }
+    }
+
+    .elements-section-modal{
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: auto;
+        margin-top: 20px;
+        gap: 10px;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #3e3e392e #DFE9EB;
+        justify-items: left;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+          
+
+            label{
+                display: block;
+                max-width: 120px;
+                word-wrap: break-word; 
+                white-space: normal; 
+                font-size: min(0.83vw, 16px);
+            }
+
+            input[type="checkbox"] {
+                width: 20px;
+                height: 20px;
+                border-radius: 4px; 
+                cursor: pointer;
+                transition: all 0.3s ease;
+              }
+              button{
+                border: none;
+                color: darkred;
+                background: #FFF;
+                font-size: min(1.78vw, 20px) ;
+              }
+        }     
+
+
+    }
+
+    .previsualization-element-modal{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h2{
+            text-align: left;
+            font-size: min(1.56vw, 30px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        p{
+            margin: auto;
+            text-align: left;
+            padding: 5px;
+            height: 58px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.50);
+            background: #FFF;
+            width: min(42.70vw, 820px);
+            font-size: min(0.78vw, 15px) ;
+        }
+    }
+
+    .modal-footer{
+       margin: auto;
+       margin-top: 10px;
+        
+       button{
+        width: min(42.70vw, 820px);
+        border-radius: 10px;
+        height: 48px;
+        background: #343A40;
+        color: #FFF;
+        font-size: min(1.56vw, 30px);
+       }
+    
+    
+    }
+
+    .modal-cancel-btn{
+        position: absolute;
+        top: 1%;
+        right: 3%;
+        width: 40px;
+        height: 40px;
+        background: #FFF;
+        border: none;
+        font-size: 30px;
+        color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+
+        &:hover{
+            color: darkred;
+        }
+    }
+}

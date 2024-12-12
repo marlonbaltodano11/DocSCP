@@ -42,8 +42,10 @@ const UploadDocument = () => {
   //Funcion para comprobar el archivo en el Drop
 
   const validateFile = (extension) => {
-    if (extension != "json" && extension != "pdf" && extension != "docx") {
-      alert("Solo se permiten archivos de tipo JSON, PDF o DOCX");
+    if (extension != "json" && extension != "docx") {
+      alert(
+        "Solo se permiten archivos de tipo JSON (archivo de guardado) o DOCX"
+      );
       setFile(null);
       setFileName("Esperando documento.....");
     }

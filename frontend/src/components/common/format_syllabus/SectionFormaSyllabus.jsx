@@ -1,43 +1,64 @@
 import PropTypes from "prop-types";
 import "@styles/format_syllabus/section-format-syllabus.css";
+import NavigateSectionArrow from "@assets/format_syllabus/navigate_section_arrow.svg";
 
 const SectionFormaSyllabus = ({
   children,
   IconDecoration,
   Title,
-  NextSection,
-  PreviousSection,
-  idSection,
+  IdNextSection,
+  IdPreviousSection,
+  IdSection,
 }) => {
   const navigateTo = (section) => {
-    if (section) window.location.href = section;
+    if (section) {
+      const element = document.getElementById(section);
+      if (element) {
+        const offset = 120; // Ajusta el espacio deseado en píxeles
+        const elementPosition =
+          element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }
   };
 
   return (
-    <section id={idSection} className="section-format-syllabus-container">
+    <section id={IdSection} className="section-format-syllabus-container">
       <nav className="section-nav-container">
         <div className="section-nav-title">
-          {IconDecoration && <IconDecoration />}
+          <img src={IconDecoration} alt="" />
           <h2>{Title}</h2>
         </div>
-        <div className="section-nav-buttons">
-          {PreviousSection && (
+        {IdNextSection || IdPreviousSection ? (
+          <div className="section-nav-buttons">
             <button
-              onClick={() => navigateTo(PreviousSection)}
+              className={!IdPreviousSection ? "btn-disabled" : ""}
+              onClick={() => navigateTo(IdPreviousSection)}
               aria-label="Sección anterior"
+              disabled={!IdPreviousSection}
             >
-              <img src="" alt="Ir a la sección anterior" />
+              <img src={NavigateSectionArrow} alt="Ir a la sección anterior" />
             </button>
-          )}
-          {NextSection && (
+
             <button
-              onClick={() => navigateTo(NextSection)}
+              className={!IdNextSection ? "btn-disabled" : ""}
+              onClick={() => navigateTo(IdNextSection)}
               aria-label="Siguiente sección"
+              disabled={!IdNextSection}
             >
-              <img src="" alt="Ir a la siguiente sección" />
+              <img
+                src={NavigateSectionArrow}
+                className="invert-direction"
+                alt="Ir a la siguiente sección"
+              />
             </button>
-          )}
-        </div>
+          </div>
+        ) : null}
       </nav>
       <div className="section-content-container">{children}</div>
     </section>
@@ -48,14 +69,14 @@ SectionFormaSyllabus.propTypes = {
   children: PropTypes.node.isRequired,
   IconDecoration: PropTypes.elementType,
   Title: PropTypes.string.isRequired,
-  NextSection: PropTypes.string,
-  PreviousSection: PropTypes.string,
-  idSection: PropTypes.string.isRequired,
+  IdNextSection: PropTypes.string,
+  IdPreviousSection: PropTypes.string,
+  IdSection: PropTypes.string.isRequired,
 };
 
 SectionFormaSyllabus.defaultProps = {
-  NextSection: null,
-  PreviousSection: null,
+  IdNextSection: null,
+  IdPreviousSection: null,
 };
 
 export default SectionFormaSyllabus;

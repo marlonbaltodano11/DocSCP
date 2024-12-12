@@ -14,7 +14,6 @@ Utiliza el alias `@components` para importar elementos desde `src/components`, o
 - @components
 - @hooks
 - @pages
-- @redux
 - @router
 - @utils
 - @assets

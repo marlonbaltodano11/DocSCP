@@ -1,0 +1,39 @@
+.header-format-syllabus{
+    border-radius: 20px 20px 0 0;
+    height: min(5.2vw, 100px);
+    width: min(81.25vw, 1560px); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: -30px;
+
+    div{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        gap: 15px;
+        img{
+            width: min(2.60vw, 50px);
+        }
+        p{
+            font-size: min(2.08vw, 40px) ;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: #343A40;
+        }
+    }
+
+    .navigation-arrow-container{
+
+        img{
+            cursor: pointer;
+        }
+
+        .invert-arrow{
+            transform: scaleX(-1); 
+        }
+    }
+
+}

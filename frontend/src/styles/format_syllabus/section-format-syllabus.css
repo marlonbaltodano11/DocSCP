@@ -1,4 +1,71 @@
 .section-format-syllabus-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .section-nav-container{
+        border-radius: 10px;
+        background: #343A40;
+        width: min(86.61vw, 1663px);
+        height: min(5.20vw, 100px);
+        display: flex;
+        padding: 0 min(2.60vw, 50px);
+        justify-content: space-between;
+        
+        .section-nav-title{
+            align-items: center;
+            display: flex; 
+            gap: min(1.56vw, 30px);
+
+            img{
+                width: min(3.125vw, 60px);
+            }
+
+            h2{
+                color: #FFF;
+                font-size: min(2.08vw, 40px);
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        .section-nav-buttons{
+            display: flex;
+            align-items: center;
+
+            button{
+                border: none;
+                background: transparent;
+
+
+                .invert-direction{
+                    transform: rotate(180deg);
+                }
+            }
+
+            .btn-disabled{
+                cursor: not-allowed;
+                opacity: 20%;
+            }
+        }
+
+    }
+
+    .section-content-container{
+        width: min(86.19vw, 1655px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        textarea{
+            resize: none;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.50);
+            padding: 20px;
+            height: min(13.02vw, 250px);
+        }
+    }
 }

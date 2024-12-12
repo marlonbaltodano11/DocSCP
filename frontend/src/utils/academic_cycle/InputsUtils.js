@@ -2,11 +2,11 @@ export const formatDuration = (value, classModality) => {
     let durationPerPeriod;
 
     // Determinar la duración por período según la modalidad
-    if (classModality === "cuatrimestral" || classModality === "semestral") {
+    if (classModality === "quarter" || classModality === "semester") {
       durationPerPeriod = 50;
     }
     
-    if (classModality === "trimestral") {
+    if (classModality === "trimester") {
       durationPerPeriod = 35;
     }
 

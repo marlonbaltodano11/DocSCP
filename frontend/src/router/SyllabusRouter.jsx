@@ -11,6 +11,8 @@ import AcademicCycle from "@pages/academic_cycle/AcademicCycle";
 import AnalyticalPlan from "@pages/analytical_plan/AnalyticalPlan";
 import { ThematicPlan } from "@pages/thematic_plan/ThematicPlan";
 import FormatSyllabusStepOne from "@pages/format_syllabus_step_one/FormatSyllabusStepOne";
+import FormatSyllabusStepTwo from "@pages/format_syllabus_step_two/FormatSyllabusStepTwo";
+import FormatSyllabusStepThree from "@pages/format_syllabus_step_three/FormatSyllabusStepThree";
 
 const SyllabusRouter = () => {
   return (
@@ -25,7 +27,14 @@ const SyllabusRouter = () => {
           path="/format-syllabus/step_1"
           element={<FormatSyllabusStepOne />}
         />
-
+        <Route
+          path="/format-syllabus/step_2"
+          element={<FormatSyllabusStepTwo />}
+        />
+        <Route
+          path="/format-syllabus/step_3"
+          element={<FormatSyllabusStepThree />}
+        />
         <Route
           path="/anim"
           element={<DataLoadingAnimation></DataLoadingAnimation>}

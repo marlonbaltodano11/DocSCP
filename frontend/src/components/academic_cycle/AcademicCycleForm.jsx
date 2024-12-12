@@ -1,6 +1,5 @@
 import DateInput from "@components/common/date_input/DateInput";
 import "@styles/academic_cycle_form/academic-cycle-form.css";
-import { useState, useEffect } from "react";
 import {
   ClassModality,
   DateInputs,
@@ -12,56 +11,82 @@ import {
   isValidNumber,
 } from "@utils/academic_cycle/InputsUtils";
 
-const AcademicCycleForm = () => {
-  //Objetos de interes
-  const [selectedDays, setSelectedDays] = useState({});
-  const [periods, setPeriods] = useState(defaultDayPeriod);
-  const [classModality, setClassModality] = useState("cuatrimestral"); // Valor por defecto
+import {
+  useGlobalDispatch,
+  useGlobalState,
+} from "@global_context/GlobalProvider";
+import DataLoadingAnimation from "../animations/DataLoadingAnimation";
 
-  //Objeto visual
-  const [disabledDays, setDisabledDays] = useState({}); // Estado para deshabilitar días
+const AcademicCycleForm = () => {
+  // Llamado al contexto global
+  const state = useGlobalState();
+  const dispatch = useGlobalDispatch();
+
+  const { academicCalendar, timetable } = state.AcademicCalendarObject;
+
+  // Estado visual para deshabilitar días según modalidad
+  const disabledDays =
+    ClassModality.dayConfig[academicCalendar.modality]?.disabledDays || {};
 
   // Manejar cambio en los checkboxes de días de la semana
   const handleDayChange = (e) => {
     const { id, checked } = e.target;
-    setSelectedDays((prev) => ({ ...prev, [id]: checked }));
+    dispatch({
+      type: "SET_ACADEMIC_CALENDAR_TIMETABLE",
+      payload: {
+        day: id,
+        value: { classDay: checked, periods: timetable[id]?.periods || 0 },
+      },
+    });
   };
 
   // Manejar cambio en el número de períodos
   const handlePeriodChange = (e, day) => {
     const { value } = e.target;
-    let ValueLength = value.length;
-    setPeriods((prev) => ({
-      ...prev,
-      [day]:
-        !isValidNumber(parseInt(value)) || ValueLength == 0
-          ? 0
-          : parseInt(value),
-    }));
+    dispatch({
+      type: "SET_ACADEMIC_CALENDAR_TIMETABLE",
+      payload: {
+        day,
+        value: {
+          classDay: timetable[day]?.classDay || false,
+          periods: isValidNumber(parseInt(value)) ? parseInt(value) : 0,
+        },
+      },
+    });
   };
 
   // Manejar cambio en la modalidad de clase
   const handleClassModalityChange = (e) => {
     const { value } = e.target;
-    setClassModality(value);
+
+    const defaultConfig = ClassModality.dayConfig[value];
+    if (!defaultConfig) return;
+
+    const updatedTimetable = Object.keys(defaultConfig.selectedDays).reduce(
+      (acc, day) => {
+        acc[day] = {
+          classDay: defaultConfig.selectedDays[day],
+          periods: defaultDayPeriod[day] || 0,
+        };
+        return acc;
+      },
+      {}
+    );
+
+    dispatch({ type: "SET_ACADEMIC_CALENDAR_MODALITY", payload: value });
+    dispatch({
+      type: "SET_ACADEMIC_CALENDAR_TIMETABLE",
+      payload: updatedTimetable,
+    });
   };
 
-  // Efecto para seleccionar/desmarcar días y deshabilitarlos según la modalidad
-  useEffect(() => {
-    const config = ClassModality.dayConfig[classModality];
-    if (config) {
-      setSelectedDays(config.selectedDays);
-      setDisabledDays(config.disabledDays);
-      setPeriods(defaultDayPeriod);
-    }
-  }, [classModality]);
-
-  return (
+  return state.AcademicCalendarObject ? (
     <section className="academic-cycle-form-container">
       <form>
         <fieldset>
           <h3>Calendario Académico</h3>
           <section className="form-container">
+            {/* Modalidad de clase */}
             <div className="label-radio">
               <p className="radio-title">Modalidad de Clase</p>
               <div className="input-radio-container">
@@ -72,7 +97,7 @@ const AcademicCycleForm = () => {
                       type="radio"
                       name="classModality"
                       value={option.value}
-                      checked={classModality === option.value}
+                      checked={academicCalendar.modality === option.value}
                       onChange={handleClassModalityChange}
                     />
                     <label htmlFor={option.value}>{option.label}</label>
@@ -81,11 +106,24 @@ const AcademicCycleForm = () => {
               </div>
             </div>
 
+            {/* Inputs de fecha */}
             {DateInputs.map((dateInput, index) => (
               <DateInput
-                InputLabel={dateInput.label}
-                Multiple={dateInput.Multiple}
                 key={index}
+                InputLabel={dateInput.label}
+                Multiple={dateInput.multiple}
+                onChange={(value) => {
+                  const formattedValue = Array.isArray(value)
+                    ? value.map(
+                        (date) => new Date(date).toISOString().split("T")[0]
+                      )
+                    : new Date(value).toISOString().split("T")[0];
+                  dispatch({
+                    type: "SET_ACADEMIC_CALENDAR_DATE",
+                    payload: { id: dateInput.id, value: formattedValue },
+                  });
+                }}
+                value={academicCalendar[dateInput.id]} // Sincronizado con el estado global
               />
             ))}
           </section>
@@ -94,7 +132,7 @@ const AcademicCycleForm = () => {
         <fieldset>
           <h3>Horario Semanal</h3>
           <section className="schedule-form-container">
-            {/* Fila de checkboxes */}
+            {/* Checkboxes de días de la semana */}
             <div className="schedule-row week-days">
               <span className="row-title">Frecuencia Semanal</span>
               {daysOfWeek.map((day) => (
@@ -102,16 +140,16 @@ const AcademicCycleForm = () => {
                   <input
                     type="checkbox"
                     id={day.id}
-                    checked={selectedDays[day.id] || false}
+                    checked={timetable[day.id]?.classDay || false}
                     onChange={handleDayChange}
-                    disabled={disabledDays[day.id]} // Días deshabilitados
+                    disabled={disabledDays[day.id]} // Días deshabilitados según modalidad
                   />
                   <label htmlFor={day.id}>{day.label}</label>
                 </div>
               ))}
             </div>
 
-            {/* Fila de inputs de número de períodos */}
+            {/* Inputs de períodos */}
             <div className="schedule-row inputs">
               <span className="row-title">Períodos en el Día</span>
               {daysOfWeek.map((day) => (
@@ -119,17 +157,18 @@ const AcademicCycleForm = () => {
                   <input
                     type="number"
                     placeholder="0"
-                    value={periods[day.id] || ""}
+                    value={timetable[day.id]?.periods || ""}
                     onChange={(e) => handlePeriodChange(e, day.id)}
-                    disabled={!selectedDays[day.id] || disabledDays[day.id]} // Deshabilitar según selección
+                    disabled={
+                      !timetable[day.id]?.classDay || disabledDays[day.id]
+                    } // Control según selección
                     min="0"
                     max="6"
                   />
                   <span
-                    key={day.id}
                     className={
-                      !selectedDays[day.id] || disabledDays[day.id]
-                        ? "periods-span disable-perdion"
+                      !timetable[day.id]?.classDay || disabledDays[day.id]
+                        ? "periods-span disable-period"
                         : "periods-span"
                     }
                   >
@@ -139,7 +178,7 @@ const AcademicCycleForm = () => {
               ))}
             </div>
 
-            {/* Fila de inputs de duración */}
+            {/* Duración del período */}
             <div className="schedule-row">
               <span className="row-title">Duración del Período</span>
               {daysOfWeek.map((day) => (
@@ -148,12 +187,17 @@ const AcademicCycleForm = () => {
                     type="text"
                     placeholder="Esperando Períodos..."
                     value={
-                      !periods[day.id]
+                      !timetable[day.id]?.periods
                         ? "0h 0m"
-                        : formatDuration(periods[day.id], classModality)
+                        : formatDuration(
+                            timetable[day.id]?.periods,
+                            academicCalendar.modality
+                          )
                     }
-                    disabled={!selectedDays[day.id] || disabledDays[day.id]}
-                    readOnly // Deshabilitar según selección
+                    disabled={
+                      !timetable[day.id]?.classDay || disabledDays[day.id]
+                    }
+                    readOnly
                   />
                 </div>
               ))}
@@ -162,6 +206,8 @@ const AcademicCycleForm = () => {
         </fieldset>
       </form>
     </section>
+  ) : (
+    <DataLoadingAnimation />
   );
 };
 

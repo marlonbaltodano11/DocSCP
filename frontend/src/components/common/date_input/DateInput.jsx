@@ -16,9 +16,8 @@ const DateInput = ({ value, onChange, Multiple, IsTable, InputLabel }) => {
         value={value}
         onChange={(date) => onChange(date)} // Llama a la función onChange pasada como prop
         sort
-        dateSeparator=", "
+        dateSeparator=","
         multiple={Multiple}
-        range={Multiple}
         locale={gregorian_es_lowercase}
         className="rmdp-mobile"
         monthYearSeparator="|"

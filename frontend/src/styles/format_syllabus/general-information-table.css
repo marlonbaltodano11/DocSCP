@@ -1,0 +1,76 @@
+.general-information-table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 -1px 1px rgba(7, 23, 102, 0.4), 0 1px 1px rgba(7, 23, 102, 0.4);
+
+
+    tbody {
+  
+      tr {
+
+
+
+        td {
+            height: min(4.42vw, 85px);
+            border: 1px solid #0F4E7B;
+
+
+            &.table-label {
+                padding: 8px;
+                background: #E1E2E3;
+                width: min(18.22vw, 350px);
+                padding-left: min(1.56vw, 30px);
+                color: #0C4975;
+                font-size: min(1.35vw, 26px);
+            }
+    
+            .input-field {
+                padding-left: min(1.56vw, 30px);
+                padding-right: 10px;
+                width: 100%;
+                height: 100%;
+                border: none;
+                font-size: min(1.25vw, 24px);
+            }
+        }
+
+  
+        .radio-group {
+          padding: 8px;
+            
+
+          .radio-label {
+            margin-right: 16px;
+            font-size: min(1.25vw, 24px);
+
+            input[type="radio"] {
+              margin-right: 5px;
+            }
+
+            & :nth-child(1){
+                margin-left: 23%;
+            }
+          }
+        }
+
+        
+        &:nth-child(1) {
+            td{
+              border-top: none;
+            }
+          }
+
+          
+        &:last-child {
+            td{
+                border-bottom: none;
+            }
+          }
+      }
+
+
+    }
+  }
+  

@@ -1,0 +1,154 @@
+.schedule-table{
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 -1px 1px rgba(7, 23, 102, 0.4), 0 1px 1px rgba(7, 23, 102, 0.4);
+
+    th{
+        height: min(4.42vw, 85px);
+        border: 1px solid #0F4E7B;
+        border-left: 1px solid #FFF;
+        border-right: 1px solid #FFF;
+        background: #0C4975;
+        color: #FFF;
+        font-weight: 400;
+        font-size: min(1.04vw, 20px);
+        text-align: center;
+        padding: 8px;
+
+
+
+        &:first-child {
+            border-left: 1px solid #0F4E7B;
+        }
+        &:last-child {
+            
+          border-radius: 0px 10px 0px 0px;
+          background: #58636D;
+          height: min(2.86vw, 55px) !important;
+        }
+    }
+
+    tbody {
+  
+        tr {
+  
+          td {
+                height: min(4.16vw, 80px);
+                border: 1px solid #0F4E7B;
+                position: relative;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding-top: min(1.30vw, 25px);
+
+              .schedule-textarea, .schedule-input {
+                 padding: min(0.52vw, 5px);
+                  width: 100%;
+                  height: 100%;
+                  border: none;
+                  font-size: min(0.83vw, 16px);
+                  border-radius: 0;
+                  background-color: transparent;
+                  resize: none
+              }
+
+              .select-input-container{
+                display: flex;
+                justify-content: center;
+                select{
+                  height: 40px;
+                  width: min(11.45vw, 220px);
+                  border-radius: 5px;
+                  border: 1px solid #0F4E7B;
+                  background: #FFF;
+                  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                  font-size: min(0.83vw, 16px);
+                }
+              }
+            
+              .table-wrapper{
+                
+                .calendar-icon{
+                  
+                  width: min(1.56vw, 30px);
+                  height: min(1.56vw, 30px);
+                }
+                p{
+                  font-size: min(0.93vw, 18px);
+                }
+              }
+              
+              
+              &:first-child, &:nth-child(2), &:nth-child(5){
+                padding: 5px;
+              }
+
+          }
+
+  
+          
+          &:nth-child(1) {
+              td{
+                border-top: none;
+              }
+            }
+  
+            
+          &:last-child {
+              td{
+                  border-bottom: none;
+              }
+            }
+
+
+            .action-button-td{
+              div{
+                display: flex;
+                justify-content: space-around;
+              }
+              .action-button{
+                padding: 0;
+                border-radius: 5px;
+                border: 1px solid #0F4E7B;
+                opacity: 0.7;
+                background: #FFF;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                width: min(1.56vw, 30px);
+                height: min(1.56vw, 30px);
+
+                img{
+                  width: min(1.30vw, 25px);
+                  height: min(1.30vw, 25px);
+                }
+              }
+            }
+        }
+
+          
+        .number-partial-tr{
+          background: #EAEBEC;
+          
+          td{
+            padding: 5px;
+            text-align: center;
+          }
+        }
+        
+        .punctuation-tr{
+          td{
+            padding: 5px;
+            text-align: center;
+
+            span{
+              padding: 2px;
+              border-radius: 10px;
+              border: 1px solid #0F4E7B;
+              background: #FFF;
+              box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+          }
+        }
+  
+      }
+}
