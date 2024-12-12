@@ -33,7 +33,7 @@ class SyllabusTemplateService(DocumentTemplateService):
     SCHEDULE_TABLE_KEY = "schedule_table"
     
     def __init__(self, data: Dict[str, any]):
-        template_path = r'backend\apps\syllabus_generator\templates\syllabus_template.docx'
+        template_path = r'apps\syllabus_generator\templates\syllabus_template.docx'
         super().__init__(template_path, data)
 
     def _fill_tables(self):
@@ -78,8 +78,8 @@ class SyllabusTemplateService(DocumentTemplateService):
         checkbox_data: Dict[str, str] = self._data.get('checkboxes')
         
         # Format some of the dict values
-        checkbox_data['{{credits}}'] = checkbox_data['{{credits}}'] + '_1' 
-        checkbox_data['{{weekly_frequency}}'] = checkbox_data['{{weekly_frequency}}'] + '_2' 
+        checkbox_data['{{credits}}'] = str(checkbox_data['{{credits}}']) + '_1' 
+        checkbox_data['{{weekly_frequency}}'] = str(checkbox_data['{{weekly_frequency}}']) + '_2' 
         
         super().fill_document_template(self.CHECKBOX_LABELS)
         

@@ -1,7 +1,7 @@
 from docx.table import Table as TableObject
 from docx.table import _Row, _Cell
 from docx.text.paragraph import Paragraph
-from typing import Iterator, List, Tuple, Optional
+from typing import Iterator, List, Tuple, Optional, Set
 from docx.document import Document
 from docx.oxml import OxmlElement
 from services.paragraph_service import ParagraphService
@@ -10,9 +10,9 @@ from docx.oxml.ns import qn
 class Table:
     """Table data model."""
     
-    def __init__(self, table: TableObject, document: Optional[Document] = None):
-        self._table = table
+    def __init__(self, table: TableObject, document: Optional[Document] = None, locked = False):
         self._doc = document
+        self._table = table
     
     def _iter_row_cell(self, row: _Row) -> Iterator[Optional[_Cell]]:
         for _ in range(row.grid_cols_before):
@@ -28,7 +28,23 @@ class Table:
 
     def __str__(self) -> str:
         """Convert a table into a list of tuples containing cell texts."""
-        return str([tuple(self._iter_row_cell_texts(row)) for row in self._table.rows])
+        
+        str_representation = """("""
+         
+        for row in self._table.rows:
+            str_representation += f"{str(tuple(self._iter_row_cell_texts(row)))},\n"
+        
+        str_representation = list(str_representation)
+        str_representation[-2] = ')'
+        return ''.join(str_representation)
+    
+    def __repr__(self):
+        """Convert a table into a list of tuples containing cell texts."""
+        return str(tuple(tuple(self._iter_row_cell_texts(row)) for row in self._table.rows))
+    
+    def __iter__(self):
+        """Convert a table object into a pythonic iterable"""
+        return (tuple(self._iter_row_cell_texts(row)) for row in self._table.rows)
     
     def _set_cell_background_color(self, cell, color_hex: str):
         """
@@ -50,13 +66,21 @@ class Table:
         fill_element.set(qn('w:fill'), color_hex)  # Set the fill color
         cell_properties.append(fill_element)
     
+    def to_plain_text(self) -> str:
+        return '\n'.join(sum(self.__iter__(), ()))
+    
     def get_paragraphs(self) -> List[Paragraph]:
         """Extract paragraphs from the given table."""
         paragraphs: List[Paragraph] = []
-
+        processed_cells: Set[_Cell] = set()
+        
         for row in self._table.rows:
             for cell in self._iter_row_cell(row):
+                if cell in processed_cells:
+                    continue
+                
                 if cell:  # Si la celda no es None
+                    processed_cells.add(cell)
                     paragraphs.extend(cell.paragraphs)
 
         return paragraphs
