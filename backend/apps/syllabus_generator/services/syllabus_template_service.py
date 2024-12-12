@@ -1,6 +1,7 @@
 from services.document_template_service import DocumentTemplateService
 from typing import Dict
 from model_data.table import Table
+from pathlib import Path
 
 class SyllabusTemplateService(DocumentTemplateService):
     """
@@ -33,7 +34,7 @@ class SyllabusTemplateService(DocumentTemplateService):
     SCHEDULE_TABLE_KEY = "schedule_table"
     
     def __init__(self, data: Dict[str, any]):
-        template_path = r'apps\syllabus_generator\templates\syllabus_template.docx'
+        template_path = Path('apps') / 'syllabus_generator' / 'templates' / 'syllabus_template.docx'
         super().__init__(template_path, data)
 
     def _fill_tables(self):
