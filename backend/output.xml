@@ -1,0 +1,4082 @@
+<w:tbl xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:sl="http://schemas.openxmlformats.org/schemaLibrary/2006/main" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart" xmlns:lc="http://schemas.openxmlformats.org/drawingml/2006/lockedCanvas" xmlns:dgm="http://schemas.openxmlformats.org/drawingml/2006/diagram" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml">
+  <w:tblPr>
+    <w:tblStyle w:val="Table4"/>
+    <w:tblW w:w="8850.0" w:type="dxa"/>
+    <w:jc w:val="left"/>
+    <w:tblBorders>
+      <w:top w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:left w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:bottom w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:right w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:insideH w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:insideV w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+    </w:tblBorders>
+    <w:tblLayout w:type="fixed"/>
+    <w:tblLook w:val="0600"/>
+  </w:tblPr>
+  <w:tblGrid>
+    <w:gridCol w:w="855"/>
+    <w:gridCol w:w="3210"/>
+    <w:gridCol w:w="960"/>
+    <w:gridCol w:w="960"/>
+    <w:gridCol w:w="960"/>
+    <w:gridCol w:w="960"/>
+    <w:gridCol w:w="945"/>
+    <w:tblGridChange w:id="0">
+      <w:tblGrid>
+        <w:gridCol w:w="855"/>
+        <w:gridCol w:w="3210"/>
+        <w:gridCol w:w="960"/>
+        <w:gridCol w:w="960"/>
+        <w:gridCol w:w="960"/>
+        <w:gridCol w:w="960"/>
+        <w:gridCol w:w="945"/>
+      </w:tblGrid>
+    </w:tblGridChange>
+  </w:tblGrid>
+  <w:tr>
+    <w:trPr>
+      <w:cantSplit w:val="0"/>
+      <w:trHeight w:val="285" w:hRule="atLeast"/>
+      <w:tblHeader w:val="0"/>
+    </w:trPr>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_0"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:left w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000004B">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">No</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_1"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000004C">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Unidad</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_2"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000004D">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">HT</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_3"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000004E">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">HP</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_4"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000004F">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">HI</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_5"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000050">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">TH</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_6"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000051">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Crédito</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+  </w:tr>
+  <w:tr>
+    <w:trPr>
+      <w:cantSplit w:val="0"/>
+      <w:trHeight w:val="555" w:hRule="atLeast"/>
+      <w:tblHeader w:val="0"/>
+    </w:trPr>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_7"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000052">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">I</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_8"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000053">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Introducción a la Inteligencia Artificial (IA)</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_9"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000054">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">2</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_10"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000055">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">2</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_11"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000056">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">5</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_12"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000057">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">9</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_13"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:vMerge w:val="restart"/>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000058">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+  </w:tr>
+  <w:tr>
+    <w:trPr>
+      <w:cantSplit w:val="0"/>
+      <w:trHeight w:val="300" w:hRule="atLeast"/>
+      <w:tblHeader w:val="0"/>
+    </w:trPr>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_14"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000059">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">II</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_15"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000005A">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Fundamentos de Búsqueda</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_16"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000005B">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">4</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_17"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000005C">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">6</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_18"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000005D">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">11</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_19"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000005E">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">21</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_20"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:vMerge w:val="continue"/>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000005F">
+            <w:pPr>
+              <w:keepNext w:val="0"/>
+              <w:keepLines w:val="0"/>
+              <w:pageBreakBefore w:val="0"/>
+              <w:widowControl w:val="0"/>
+              <w:pBdr>
+                <w:top w:space="0" w:sz="0" w:val="nil"/>
+                <w:left w:space="0" w:sz="0" w:val="nil"/>
+                <w:bottom w:space="0" w:sz="0" w:val="nil"/>
+                <w:right w:space="0" w:sz="0" w:val="nil"/>
+                <w:between w:space="0" w:sz="0" w:val="nil"/>
+              </w:pBdr>
+              <w:shd w:fill="auto" w:val="clear"/>
+              <w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/>
+              <w:ind w:left="0" w:right="0" w:firstLine="0"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+  </w:tr>
+  <w:tr>
+    <w:trPr>
+      <w:cantSplit w:val="0"/>
+      <w:trHeight w:val="300" w:hRule="atLeast"/>
+      <w:tblHeader w:val="0"/>
+    </w:trPr>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_21"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000060">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">III</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_22"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000061">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Planificación automática</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_23"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000062">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">8</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_24"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000063">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">6</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_25"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000064">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">19</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_26"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000065">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">33</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_27"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:vMerge w:val="continue"/>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000066">
+            <w:pPr>
+              <w:keepNext w:val="0"/>
+              <w:keepLines w:val="0"/>
+              <w:pageBreakBefore w:val="0"/>
+              <w:widowControl w:val="0"/>
+              <w:pBdr>
+                <w:top w:space="0" w:sz="0" w:val="nil"/>
+                <w:left w:space="0" w:sz="0" w:val="nil"/>
+                <w:bottom w:space="0" w:sz="0" w:val="nil"/>
+                <w:right w:space="0" w:sz="0" w:val="nil"/>
+                <w:between w:space="0" w:sz="0" w:val="nil"/>
+              </w:pBdr>
+              <w:shd w:fill="auto" w:val="clear"/>
+              <w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/>
+              <w:ind w:left="0" w:right="0" w:firstLine="0"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+  </w:tr>
+  <w:tr>
+    <w:trPr>
+      <w:cantSplit w:val="0"/>
+      <w:trHeight w:val="555" w:hRule="atLeast"/>
+      <w:tblHeader w:val="0"/>
+    </w:trPr>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_28"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000067">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">IV</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_29"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000068">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Razonamiento basado en conocimiento</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_30"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000069">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">8</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_31"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000006A">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">8</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_32"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000006B">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">20</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_33"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000006C">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">36</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_34"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:vMerge w:val="continue"/>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000006D">
+            <w:pPr>
+              <w:keepNext w:val="0"/>
+              <w:keepLines w:val="0"/>
+              <w:pageBreakBefore w:val="0"/>
+              <w:widowControl w:val="0"/>
+              <w:pBdr>
+                <w:top w:space="0" w:sz="0" w:val="nil"/>
+                <w:left w:space="0" w:sz="0" w:val="nil"/>
+                <w:bottom w:space="0" w:sz="0" w:val="nil"/>
+                <w:right w:space="0" w:sz="0" w:val="nil"/>
+                <w:between w:space="0" w:sz="0" w:val="nil"/>
+              </w:pBdr>
+              <w:shd w:fill="auto" w:val="clear"/>
+              <w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/>
+              <w:ind w:left="0" w:right="0" w:firstLine="0"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+  </w:tr>
+  <w:tr>
+    <w:trPr>
+      <w:cantSplit w:val="0"/>
+      <w:trHeight w:val="555" w:hRule="atLeast"/>
+      <w:tblHeader w:val="0"/>
+    </w:trPr>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_35"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000006E">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">V</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_36"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000006F">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Fundamentos de Lógica Difusa</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_37"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000070">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">8</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_38"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000071">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">8</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_39"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000072">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">20</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_40"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000073">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">36</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_41"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:vMerge w:val="continue"/>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000074">
+            <w:pPr>
+              <w:keepNext w:val="0"/>
+              <w:keepLines w:val="0"/>
+              <w:pageBreakBefore w:val="0"/>
+              <w:widowControl w:val="0"/>
+              <w:pBdr>
+                <w:top w:space="0" w:sz="0" w:val="nil"/>
+                <w:left w:space="0" w:sz="0" w:val="nil"/>
+                <w:bottom w:space="0" w:sz="0" w:val="nil"/>
+                <w:right w:space="0" w:sz="0" w:val="nil"/>
+                <w:between w:space="0" w:sz="0" w:val="nil"/>
+              </w:pBdr>
+              <w:shd w:fill="auto" w:val="clear"/>
+              <w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/>
+              <w:ind w:left="0" w:right="0" w:firstLine="0"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+  </w:tr>
+  <w:tr>
+    <w:trPr>
+      <w:cantSplit w:val="0"/>
+      <w:trHeight w:val="285" w:hRule="atLeast"/>
+      <w:tblHeader w:val="0"/>
+    </w:trPr>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_42"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000075">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="right"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Total</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_44"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000077">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">30</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_45"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000078">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">30</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_46"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000079">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">75</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_47"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000007A">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">135</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_48"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000007B">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">3</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+  </w:tr>
+</w:tbl>
+
+<w:tbl xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:sl="http://schemas.openxmlformats.org/schemaLibrary/2006/main" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart" xmlns:lc="http://schemas.openxmlformats.org/drawingml/2006/lockedCanvas" xmlns:dgm="http://schemas.openxmlformats.org/drawingml/2006/diagram" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml">
+  <w:tblPr>
+    <w:tblStyle w:val="Table5"/>
+    <w:tblW w:w="8880.0" w:type="dxa"/>
+    <w:jc w:val="left"/>
+    <w:tblBorders>
+      <w:top w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:left w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:bottom w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:right w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:insideH w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:insideV w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+    </w:tblBorders>
+    <w:tblLayout w:type="fixed"/>
+    <w:tblLook w:val="0600"/>
+  </w:tblPr>
+  <w:tblGrid>
+    <w:gridCol w:w="2160"/>
+    <w:gridCol w:w="2295"/>
+    <w:gridCol w:w="1980"/>
+    <w:gridCol w:w="1200"/>
+    <w:gridCol w:w="1245"/>
+    <w:tblGridChange w:id="0">
+      <w:tblGrid>
+        <w:gridCol w:w="2160"/>
+        <w:gridCol w:w="2295"/>
+        <w:gridCol w:w="1980"/>
+        <w:gridCol w:w="1200"/>
+        <w:gridCol w:w="1245"/>
+      </w:tblGrid>
+    </w:tblGridChange>
+  </w:tblGrid>
+  <w:tr>
+    <w:trPr>
+      <w:cantSplit w:val="0"/>
+      <w:trHeight w:val="795" w:hRule="atLeast"/>
+      <w:tblHeader w:val="0"/>
+    </w:trPr>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_50"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:left w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000007E">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_51"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000007F">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Actividad</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_52"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000080">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Horas</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_53"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000081">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Total de Horas</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_54"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="ffffff" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000082">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">(%)</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+  </w:tr>
+  <w:tr>
+    <w:trPr>
+      <w:cantSplit w:val="0"/>
+      <w:trHeight w:val="300" w:hRule="atLeast"/>
+      <w:tblHeader w:val="0"/>
+    </w:trPr>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_55"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:vMerge w:val="restart"/>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000083">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Actividades presenciales</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_56"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000084">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Clase Teórica (HT)</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_57"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000085">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">30</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_58"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:vMerge w:val="restart"/>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000086">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">60</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_59"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:vMerge w:val="restart"/>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000087">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">44,44%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+  </w:tr>
+  <w:tr>
+    <w:trPr>
+      <w:cantSplit w:val="0"/>
+      <w:trHeight w:val="300" w:hRule="atLeast"/>
+      <w:tblHeader w:val="0"/>
+    </w:trPr>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_60"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:vMerge w:val="continue"/>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000088">
+            <w:pPr>
+              <w:keepNext w:val="0"/>
+              <w:keepLines w:val="0"/>
+              <w:pageBreakBefore w:val="0"/>
+              <w:widowControl w:val="0"/>
+              <w:pBdr>
+                <w:top w:space="0" w:sz="0" w:val="nil"/>
+                <w:left w:space="0" w:sz="0" w:val="nil"/>
+                <w:bottom w:space="0" w:sz="0" w:val="nil"/>
+                <w:right w:space="0" w:sz="0" w:val="nil"/>
+                <w:between w:space="0" w:sz="0" w:val="nil"/>
+              </w:pBdr>
+              <w:shd w:fill="auto" w:val="clear"/>
+              <w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/>
+              <w:ind w:left="0" w:right="0" w:firstLine="0"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_61"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000089">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Clase Práctica (HP)</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_62"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000008A">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">30</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_63"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:vMerge w:val="continue"/>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000008B">
+            <w:pPr>
+              <w:keepNext w:val="0"/>
+              <w:keepLines w:val="0"/>
+              <w:pageBreakBefore w:val="0"/>
+              <w:widowControl w:val="0"/>
+              <w:pBdr>
+                <w:top w:space="0" w:sz="0" w:val="nil"/>
+                <w:left w:space="0" w:sz="0" w:val="nil"/>
+                <w:bottom w:space="0" w:sz="0" w:val="nil"/>
+                <w:right w:space="0" w:sz="0" w:val="nil"/>
+                <w:between w:space="0" w:sz="0" w:val="nil"/>
+              </w:pBdr>
+              <w:shd w:fill="auto" w:val="clear"/>
+              <w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/>
+              <w:ind w:left="0" w:right="0" w:firstLine="0"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_64"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:vMerge w:val="continue"/>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000008C">
+            <w:pPr>
+              <w:keepNext w:val="0"/>
+              <w:keepLines w:val="0"/>
+              <w:pageBreakBefore w:val="0"/>
+              <w:widowControl w:val="0"/>
+              <w:pBdr>
+                <w:top w:space="0" w:sz="0" w:val="nil"/>
+                <w:left w:space="0" w:sz="0" w:val="nil"/>
+                <w:bottom w:space="0" w:sz="0" w:val="nil"/>
+                <w:right w:space="0" w:sz="0" w:val="nil"/>
+                <w:between w:space="0" w:sz="0" w:val="nil"/>
+              </w:pBdr>
+              <w:shd w:fill="auto" w:val="clear"/>
+              <w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/>
+              <w:ind w:left="0" w:right="0" w:firstLine="0"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+  </w:tr>
+  <w:tr>
+    <w:trPr>
+      <w:cantSplit w:val="0"/>
+      <w:trHeight w:val="855" w:hRule="atLeast"/>
+      <w:tblHeader w:val="0"/>
+    </w:trPr>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_65"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000008D">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Actividades no presenciales</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_66"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000008E">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Estudio Independiente (EI)</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_67"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000008F">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">75</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_68"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000090">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">75</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_69"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000091">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">55,56%</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+  </w:tr>
+  <w:tr>
+    <w:trPr>
+      <w:cantSplit w:val="0"/>
+      <w:trHeight w:val="300" w:hRule="atLeast"/>
+      <w:tblHeader w:val="0"/>
+    </w:trPr>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_70"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000092">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="right"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:b w:val="1"/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Total</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_72"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000094">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">135</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_73"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000095">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">135</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+    <w:sdt>
+      <w:sdtPr>
+        <w:lock w:val="contentLocked"/>
+        <w:tag w:val="goog_rdk_74"/>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:left w:color="cccccc" w:space="0" w:sz="5" w:val="single"/>
+              <w:bottom w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+              <w:right w:color="000000" w:space="0" w:sz="10" w:val="single"/>
+            </w:tcBorders>
+            <w:shd w:fill="auto" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:w="0.0" w:type="dxa"/>
+              <w:left w:w="40.0" w:type="dxa"/>
+              <w:bottom w:w="0.0" w:type="dxa"/>
+              <w:right w:w="40.0" w:type="dxa"/>
+            </w:tcMar>
+            <w:vAlign w:val="bottom"/>
+          </w:tcPr>
+          <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="00000096">
+            <w:pPr>
+              <w:widowControl w:val="0"/>
+              <w:spacing w:line="276" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+              <w:t xml:space="preserve">100,00%</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+              <w:rPr>
+                <w:rtl w:val="0"/>
+              </w:rPr>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:sdtContent>
+    </w:sdt>
+  </w:tr>
+</w:tbl>
+
+<w:tbl xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:sl="http://schemas.openxmlformats.org/schemaLibrary/2006/main" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart" xmlns:lc="http://schemas.openxmlformats.org/drawingml/2006/lockedCanvas" xmlns:dgm="http://schemas.openxmlformats.org/drawingml/2006/diagram" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml">
+  <w:tblPr>
+    <w:tblStyle w:val="Table9"/>
+    <w:tblW w:w="8838.0" w:type="dxa"/>
+    <w:jc w:val="left"/>
+    <w:tblBorders>
+      <w:top w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:left w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:bottom w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:right w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:insideH w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+      <w:insideV w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+    </w:tblBorders>
+    <w:tblLayout w:type="fixed"/>
+    <w:tblLook w:val="0600"/>
+  </w:tblPr>
+  <w:tblGrid>
+    <w:gridCol w:w="3485"/>
+    <w:gridCol w:w="2437"/>
+    <w:gridCol w:w="2916"/>
+    <w:tblGridChange w:id="0">
+      <w:tblGrid>
+        <w:gridCol w:w="3485"/>
+        <w:gridCol w:w="2437"/>
+        <w:gridCol w:w="2916"/>
+      </w:tblGrid>
+    </w:tblGridChange>
+  </w:tblGrid>
+  <w:tr>
+    <w:trPr>
+      <w:cantSplit w:val="0"/>
+      <w:trHeight w:val="375" w:hRule="atLeast"/>
+      <w:tblHeader w:val="0"/>
+    </w:trPr>
+    <w:tc>
+      <w:tcPr>
+        <w:tcBorders>
+          <w:top w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+          <w:left w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+          <w:bottom w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+          <w:right w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+        </w:tcBorders>
+        <w:tcMar>
+          <w:top w:w="0.0" w:type="dxa"/>
+          <w:left w:w="100.0" w:type="dxa"/>
+          <w:bottom w:w="0.0" w:type="dxa"/>
+          <w:right w:w="100.0" w:type="dxa"/>
+        </w:tcMar>
+      </w:tcPr>
+      <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="000000F0">
+        <w:pPr>
+          <w:spacing w:after="240" w:before="240" w:lineRule="auto"/>
+          <w:jc w:val="center"/>
+          <w:rPr>
+            <w:b w:val="1"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+          </w:rPr>
+        </w:pPr>
+        <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+          <w:rPr>
+            <w:b w:val="1"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:rtl w:val="0"/>
+          </w:rPr>
+          <w:t xml:space="preserve">Nombre y Apellidos</w:t>
+        </w:r>
+      </w:p>
+    </w:tc>
+    <w:tc>
+      <w:tcPr>
+        <w:tcBorders>
+          <w:top w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+          <w:left w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+          <w:bottom w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+          <w:right w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+        </w:tcBorders>
+        <w:tcMar>
+          <w:top w:w="0.0" w:type="dxa"/>
+          <w:left w:w="100.0" w:type="dxa"/>
+          <w:bottom w:w="0.0" w:type="dxa"/>
+          <w:right w:w="100.0" w:type="dxa"/>
+        </w:tcMar>
+      </w:tcPr>
+      <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="000000F1">
+        <w:pPr>
+          <w:spacing w:after="240" w:before="240" w:lineRule="auto"/>
+          <w:jc w:val="center"/>
+          <w:rPr>
+            <w:b w:val="1"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+          </w:rPr>
+        </w:pPr>
+        <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+          <w:rPr>
+            <w:b w:val="1"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:rtl w:val="0"/>
+          </w:rPr>
+          <w:t xml:space="preserve">Titulación</w:t>
+        </w:r>
+      </w:p>
+    </w:tc>
+    <w:tc>
+      <w:tcPr>
+        <w:tcBorders>
+          <w:top w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+          <w:left w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+          <w:bottom w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+          <w:right w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+        </w:tcBorders>
+        <w:tcMar>
+          <w:top w:w="0.0" w:type="dxa"/>
+          <w:left w:w="100.0" w:type="dxa"/>
+          <w:bottom w:w="0.0" w:type="dxa"/>
+          <w:right w:w="100.0" w:type="dxa"/>
+        </w:tcMar>
+      </w:tcPr>
+      <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="000000F2">
+        <w:pPr>
+          <w:spacing w:after="240" w:before="240" w:lineRule="auto"/>
+          <w:jc w:val="center"/>
+          <w:rPr>
+            <w:b w:val="1"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+          </w:rPr>
+        </w:pPr>
+        <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+          <w:rPr>
+            <w:b w:val="1"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:rtl w:val="0"/>
+          </w:rPr>
+          <w:t xml:space="preserve">Firma</w:t>
+        </w:r>
+      </w:p>
+    </w:tc>
+  </w:tr>
+  <w:tr>
+    <w:trPr>
+      <w:cantSplit w:val="0"/>
+      <w:trHeight w:val="1485" w:hRule="atLeast"/>
+      <w:tblHeader w:val="0"/>
+    </w:trPr>
+    <w:tc>
+      <w:tcPr>
+        <w:tcBorders>
+          <w:top w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+          <w:left w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+          <w:bottom w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+          <w:right w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+        </w:tcBorders>
+        <w:tcMar>
+          <w:top w:w="0.0" w:type="dxa"/>
+          <w:left w:w="100.0" w:type="dxa"/>
+          <w:bottom w:w="0.0" w:type="dxa"/>
+          <w:right w:w="100.0" w:type="dxa"/>
+        </w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="000000F3">
+        <w:pPr>
+          <w:spacing w:after="240" w:before="240" w:lineRule="auto"/>
+          <w:rPr>
+            <w:color w:val="1f1f1f"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+          </w:rPr>
+        </w:pPr>
+        <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+          <w:rPr>
+            <w:color w:val="1f1f1f"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:rtl w:val="0"/>
+          </w:rPr>
+          <w:t xml:space="preserve">Skarleth Massiel Fletes Latino</w:t>
+        </w:r>
+      </w:p>
+    </w:tc>
+    <w:tc>
+      <w:tcPr>
+        <w:tcBorders>
+          <w:top w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+          <w:left w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+          <w:bottom w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+          <w:right w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+        </w:tcBorders>
+        <w:tcMar>
+          <w:top w:w="0.0" w:type="dxa"/>
+          <w:left w:w="100.0" w:type="dxa"/>
+          <w:bottom w:w="0.0" w:type="dxa"/>
+          <w:right w:w="100.0" w:type="dxa"/>
+        </w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="000000F4">
+        <w:pPr>
+          <w:spacing w:after="240" w:before="240" w:lineRule="auto"/>
+          <w:jc w:val="center"/>
+          <w:rPr>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+          </w:rPr>
+        </w:pPr>
+        <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+          <w:rPr>
+            <w:color w:val="1f1f1f"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:rtl w:val="0"/>
+          </w:rPr>
+          <w:t xml:space="preserve">Ingeniera</w:t>
+        </w:r>
+        <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+          <w:rPr>
+            <w:rtl w:val="0"/>
+          </w:rPr>
+        </w:r>
+      </w:p>
+    </w:tc>
+    <w:tc>
+      <w:tcPr>
+        <w:tcBorders>
+          <w:top w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+          <w:left w:color="000000" w:space="0" w:sz="0" w:val="nil"/>
+          <w:bottom w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+          <w:right w:color="000000" w:space="0" w:sz="5" w:val="single"/>
+        </w:tcBorders>
+        <w:tcMar>
+          <w:top w:w="0.0" w:type="dxa"/>
+          <w:left w:w="100.0" w:type="dxa"/>
+          <w:bottom w:w="0.0" w:type="dxa"/>
+          <w:right w:w="100.0" w:type="dxa"/>
+        </w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="000000F5">
+        <w:pPr>
+          <w:spacing w:after="240" w:before="240" w:lineRule="auto"/>
+          <w:jc w:val="center"/>
+          <w:rPr>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+          </w:rPr>
+        </w:pPr>
+        <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+          <w:rPr>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+          </w:rPr>
+          <w:drawing>
+            <wp:inline distB="114300" distT="114300" distL="114300" distR="114300">
+              <wp:extent cx="1714500" cy="546100"/>
+              <wp:effectExtent b="0" l="0" r="0" t="0"/>
+              <wp:docPr id="6120" name="image1.png"/>
+              <a:graphic>
+                <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:pic>
+                    <pic:nvPicPr>
+                      <pic:cNvPr id="0" name="image1.png"/>
+                      <pic:cNvPicPr preferRelativeResize="0"/>
+                    </pic:nvPicPr>
+                    <pic:blipFill>
+                      <a:blip r:embed="rId7"/>
+                      <a:srcRect b="0" l="0" r="0" t="0"/>
+                      <a:stretch>
+                        <a:fillRect/>
+                      </a:stretch>
+                    </pic:blipFill>
+                    <pic:spPr>
+                      <a:xfrm>
+                        <a:off x="0" y="0"/>
+                        <a:ext cx="1714500" cy="546100"/>
+                      </a:xfrm>
+                      <a:prstGeom prst="rect"/>
+                      <a:ln/>
+                    </pic:spPr>
+                  </pic:pic>
+                </a:graphicData>
+              </a:graphic>
+            </wp:inline>
+          </w:drawing>
+        </w:r>
+        <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+          <w:rPr>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:rtl w:val="0"/>
+          </w:rPr>
+          <w:t xml:space="preserve"> </w:t>
+        </w:r>
+      </w:p>
+    </w:tc>
+  </w:tr>
+</w:tbl>
+

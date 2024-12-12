@@ -178,6 +178,9 @@ Thumbs.db
 !backend/logs
 backend/logs/*
 !backend/logs/.gitignore
+!backend/ai_models
+backend/ai_models/*
+!backend/ai_models/.gitignore
 
 *.docx
 !syllabus_template.docx

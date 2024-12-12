@@ -14,9 +14,18 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
 from django.urls import path
+from apps.plan_extractor.views import ParseLessonPlanView
+from apps.data_formatter.views import ProcessLessonPlanView
+from apps.syllabus_generator.views import ExportSyllabusView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # Parse lesson plan
+    path('api/v1/lesson-plans/parse', ParseLessonPlanView.as_view(), name='parse_lesson_plan'),
+
+    # Process lesson plan
+    path('api/v1/lesson-plans/process', ProcessLessonPlanView.as_view(), name='process_lesson_plan'),
+
+    # Export syllabus
+    path('api/v1/syllabus/export', ExportSyllabusView.as_view(), name='export_syllabus'),
 ]

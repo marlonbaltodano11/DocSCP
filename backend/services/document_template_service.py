@@ -24,7 +24,7 @@ class DocumentTemplateService(DocumentService):
             RunService.replace_runs_text(paragraph, labels)
     
     def _fill_checkboxes(self, checkbox_data: Dict[str, str], labels: Dict[str, str] = None):
-        checkboxes = self._get_checkboxes()
+        checkboxes = self.get_checkboxes()
         values = ["{{"+item[1]+"}}" for item in checkbox_data.items()]
 
         for checkbox in checkboxes:

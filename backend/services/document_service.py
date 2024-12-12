@@ -1,10 +1,8 @@
 from docx.document import Document as DocumentObject
 from docx.table import Table as TableObject
-from docx.oxml import OxmlElement
 from docx.oxml.xmlchemy import BaseOxmlElement
 from docx.text.paragraph import Paragraph
-from typing import List
-from typing import Generator
+from typing import List, Generator, Iterable
 from model_data import Checkbox
 from services.checkbox_service import CheckboxService
 from model_data.table import Table
@@ -13,11 +11,13 @@ class DocumentService:
     """Handle document related tasks
     """
     
+    NAMESPACES = {'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
+    
     def __init__(self, doc: DocumentObject):
         self._doc = doc
-        self._paragraphs = self._get_all_paragraphs()
+        self._paragraphs = self.get_all_paragraphs()
         
-    def _get_tables(self) -> List[TableObject]:
+    def get_tables(self) -> List[TableObject]:
         return self._doc.tables
     
     def _get_paragraph_from_element(self, element: BaseOxmlElement) -> Generator[Paragraph, None, None]:
@@ -47,7 +47,7 @@ class DocumentService:
                 paragraph = Paragraph(element, self._doc)
                 yield paragraph
     
-    def _get_all_paragraphs(self) -> List[Paragraph]:
+    def get_all_paragraphs(self) -> List[Paragraph]:
         """
         Get all paragraphs from the document in order.
 
@@ -63,7 +63,27 @@ class DocumentService:
         #[print(p.text) for p in paragraphs]
         return paragraphs
     
-    def _get_checkboxes(self) -> List[Checkbox]:
+    def get_all_elements(self) -> List[Paragraph | Table]:
+        """
+        Get all elements from the document in order.
+
+        Returns:
+            List[Paragraph|Table]: A list of Paragraph and Table objects extracted from the document.
+        """
+        
+        elements = []
+        
+        oxml_elements: Iterable[BaseOxmlElement] = self._doc.element.body
+        
+        for oxml_element in oxml_elements:
+            if oxml_element.tag.endswith('p'):
+                elements.append(Paragraph(oxml_element, self._doc))
+            elif oxml_element.tag.endswith('tbl'):
+                elements.append(Table(TableObject(tbl=oxml_element, parent=self._doc)))
+
+        return elements
+    
+    def get_checkboxes(self) -> List[Checkbox]:
         checkboxes: List[Checkbox] = []
           
         for paragraph in self._paragraphs:

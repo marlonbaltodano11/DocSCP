@@ -1,0 +1,844 @@
+Conceptos fundamentales.
+La información dentro de una empresa.
+El activo de información.
+La importancia de la buena información.
+Los sistemas de información.
+Concepto de tecnología de información (IT).
+
+Teoría del cambio.
+La paradoja de la tecnología de información.
+Liderazgo.
+Trabajo de equipo.
+Teoría de la calidad.
+Relación cliente – proveedor.
+Administración de un proyecto tecnológico.
+
+Visión a futuro.
+Planeación estratégica.
+Roles y responsabilidades del área de sistemas de información.
+Administración de recursos humanos.
+Métodos de trabajo y sus beneficios.
+Importancia de la participación activa: directivo–cliente
+
+Antecedentes y administración del proyecto.
+Estudio de mercado.
+Estudio técnico.
+Estudio económico.
+Elementos y aplicaciones de la evaluación económica.
+
+Conceptos sobre seguridad informática.
+Políticas, normas y estándares de seguridad.
+Seguridad física.
+Seguridad de aplicaciones.
+Planes de contingencia: planes de recuperación en casos de desastres; business impact análisis; diagnóstico y evaluación de riesgos.
+Cómo evitar o minimizar desastres en cómputo.
+Auditoría técnica.
+
+Características generales.
+Localización en la organización.
+Centralización contra descentralización.
+Modelos de organización
+
+Historia de la cibernética.
+Áreas de la cibernética.
+Aplicaciones en la industria.
+
+Conceptos básicos: comportamiento autoorganizado; propiedades emergentes.
+Caos y fractales.
+Teoría de catástrofes.
+Morfogénesis. Autómatas celulares.
+Vida artificial.
+
+Concepto de imagen: historia; definición; adquisición.
+Preprocesamiento: calibración; filtrado; ecualización; morfología matemática.
+Procesamiento: segmentación; reconocimiento de patrones.
+Aplicaciones: biomedicina; visión artificial; robótica.
+
+
+1. EJEMPLO DE PROGRAMACION DE UN SISTEMA INDUSTRIAL
+CARACTERISITICAS BASICAS DE LOS LENGUAJES RAPID Y V+
+
+1. DISEÑO Y CONTROL DE UNA CELULA ROBOTIZADA
+2. CARACTERISITICAS A CONSIDERAR EN  UN ROBOT
+3. SEGURIDAD EN LAS INSTLACIONES ROBOTIZADAS
+4. JUSTIFICACION ECONOMICA
+5. MERCADO DE ROBOTS
+
+Definición de sistema operativo.
+Servicios.
+Evolución.
+Estructura.
+Tipos.
+
+Definición de proceso.
+Tarea, trabajo, sesión.
+Atributos de un proceso.
+Estado y transiciones de un proceso.
+Operaciones sobre los procesos.
+Bloque de control de procesos.
+Cambio de contexto.
+Interrupciones.
+Hilos.
+
+Multiprogramación. Importancia de la optimización del uso del procesador.
+Planificación de procesos. Criterios y objetivos.
+Concepto de apropiatividad.
+Niveles y tipos de planificación.
+Algoritmos de planificación de procesos. No apropiativos y apropiativos
+
+Concepto de concurrencia y procesos concurrentes.
+Sección crítica: concepto y problemática; primitivas de exclusión mutua; algoritmo de Decker;  exclusión mutua de ‘N’ procesos.
+Problemas clásicos de sincronización de procesos.
+Comunicación entre procesos.
+Herramientas de hardware para la coordinación de procesos.
+Regiones críticas.
+Semáforos.
+Mensajes.
+Monitores: definición; sincronización de procesos;  comunicación de procesos
+
+Asignación de recursos a procesos: tipos de recursos; políticas de asignación; postergación indefinida.
+Definición, causas y efectos del interbloqueo.
+Características y elementos del interbloqueo.
+Resolución del problema de interbloqueo: prevención; detección; recuperación.
+
+Antecedentes sobre la administración de memoria: jerarquía de memoria; requerimientos de almacenamiento de un proceso;  compiladores, ensambladores y cargadores.
+Espacio de direcciones lógico y físico: conceptos, correspondencia y unidad de administración de la memoria (MMU).
+Administración del almacenamiento primario: obtención o carga (demanda y anticipación); asignación o colocación;  compartición y reemplazo (intercambio y sobreposición).
+Modelos de administración de memoria: usuario único; particiones (estática y dinámica); paginación; segmentación;  segmentación paginada
+
+Características: concepto; elementos; objetos.
+Tabla de correspondencia: directo; indirecto; mixto.
+Paginación por demanda.
+Estrategia de reemplazo.
+Asignación de marcos, compartición y protección.
+Administración: principio de localidad; conjuntos de trabajo; hiperpaginación (concepto y control); tamaño de página; consideraciones de desempeño; estructuración de programas; interbloqueo de E/S; otras consideraciones
+
+Concepto de seguridad informática.
+La importancia de la seguridad informática.
+Los principales componentes de la seguridad informática.
+Definición de la auditoría informática.
+Necesidades de la auditoría informática.
+
+Activos informáticos.
+Los atributos de la información.
+Modelo de riesgo informático.
+Modelo de seguridad informática integral.
+Clasificación de activos.
+Protección de activos.
+Roles y responsabilidades.
+Controles.
+
+Definición.
+Evolución del análisis de riesgos.
+Enfoque cuantitativo.
+Enfoque cualitativo.
+Ventajas y desventajas de cada enfoque.
+Herramientas de diagnóstico.
+
+Generalidades.
+Análisis de impacto al negocio.
+Identificación de recursos y procesos críticos.
+Plan de emergencia.
+Plan de respaldo.
+Plan de recuperación.
+Plan de pruebas.
+Selección de la estrategia
+
+Políticas, capacitación y concientización.
+Autorizaciones, acuerdos y contratos.
+Seguridad física.
+Seguridad en las redes de comunicación.
+Seguridad en sistemas distribuidos.
+Identificación y autentificación de usuarios.
+Bitácoras de seguridad y monitoreo.
+Protección contra software nocivo.
+Administración y configuración de software.
+Desarrollo y adquisición de sistemas.
+Operaciones.
+12. Seguridad de sistemas de voz y de trabajo
+
+Aspectos generales.
+Tipos.
+Características.
+Normas.
+Técnica de auditoría.
+Colección y evaluación.
+Metodología de la auditoría.
+Monitoreo.
+
+Auditoría tradicional contra auditoría en informática actual.
+Auditoría alrededor de la computadora.
+Auditoría a través de la computadora.
+El auditor multifuncional.
+
+Centros y redes de cómputo.
+Sistemas en operación y de producción.
+Sistemas en desarrollo.
+Telecomunicaciones.
+Introducción
+Descripción del curso
+Requisitos del curso
+Compaginar sesiones
+Mapa del curso
+Navegación y recursos del curso
+El medio digital
+Internet
+Introducción
+Acceso a la información: La WWW
+Las Páginas WWW
+Hipermedia y Multimedia
+Consideraciones previas al abordar un proyecto Web
+Ejercicio
+
+Centros y redes de cómputo.
+Sistemas en operación y de producción.
+Sistemas en desarrollo.
+Telecomunicaciones.
+
+Descripción del curso
+Requisitos del curso
+Compaginar sesiones
+Mapa del curso
+Navegación y recursos del curso
+
+Internet
+Introducción
+Acceso a la información: La WWW
+Las Páginas WWW
+Hipermedia y Multimedia
+Consideraciones previas al abordar un proyecto Web
+Ejercicio
+
+1.  HTML
+Introducción
+El lenguaje HTML
+Etiquetas de HTML
+Hojas de estilo CSS
+Ejercicio final del capítulo
+2.  Frontpage
+Creación de un sitio Web
+Trabajar con texto
+Insertar imágenes
+Utilizar tablas
+Usar páginas de marcos
+Aspectos avanzados
+Ejercicio final del capítulo
+
+Edición y retoque de imágenes
+Introducción
+La imagen digital
+Software de tratamiento de imágenes
+Photoshop: área de imágenes
+Herramientas básicas de Photoshop
+Retoques sencillos y útiles con Photoshop
+Multimedia
+Recursos multimedia
+El entorno Flash3.
+Herramientas básicas de Flash
+12. Crear una película en Flash
+
+Programar en la Web
+Introducción
+Iniciación a la programación Web
+JavaScript
+Integración de JavaScript en un documento HTML
+Ejercicio final del capítulo
+
+1  Publicación de una página Web
+Introducción
+Gestión de dominios y alojamiento Web
+Programas FTP
+Ejercicio final del capítulo
+2 Promoción de una página Web
+Alta en buscadores
+Definición de etiquetas META
+Contadores de visitas
+Ejercicio final del capítulo
+
+1. La lógica como un paradigma en la solución de problemas
+2. Hechos
+3. Reglas
+4. Preguntas (objetivos)
+5. Diferencia entre lenguajes declarativos y lenguajes imperativos
+6. Características del lenguaje PROLOG
+7. El principio de resolución
+
+1. Estructura de programas en PROLOG
+2. Predicados y cláusulas
+3. Uso de objetos compuestos
+4. Recuperación estructurada de una base de datos
+5. Aplicaciones aritméticas
+6. Significado declarativo y procedural de programas
+7. Orden de cláusulas y objetivos
+
+1. Realización de tareas repetitivas
+2. Generación de múltiples soluciones
+3. El operador de corte
+4. Repetición definida por el usuario
+5. Métodos de recursividad
+
+1. Uso de listas
+2. Uso de listas en programas
+3. Método de "cabeza-cola"
+4. Manipulación de listas
+5. Optimización por "recursividad en la cola"
+
+1. Uso de cadenas (strings)
+2. La base de datos interna
+
+1. Programación no determinística
+2. Estructuras de datos incompletas
+3. Programación de segundo orden
+4. Técnicas de búsqueda
+5. Meta intérpretes
+
+1. Procesamiento de lenguaje natural
+2. Juegos
+3. Resolución de problemas
+4. Plantación
+5. Aplicación diversas
+
+Fundamentos de la IA.
+Historia de la IA.
+Técnicas para resolver problemas de IA: simbólica, analógica, bayesiana, evolutiva, conexionista.
+Ética en la IA.
+
+Algoritmos de búsqueda no informada.
+Algoritmos de búsqueda informada.
+Búsqueda por satisfacción de restricciones.
+
+Perspectiva clásica.
+Representación clásica: STRIPS, lenguaje PDDL.
+Heurísticas para la Planificación.
+Planificación y actuación en dominios no deterministas.
+
+Agentes basados en conocimiento.
+Lógica Proposicional.
+Introducción a los sistemas expertos.
+Componentes de un sistema experto.
+Construcción de la base de hechos y base de conocimiento.
+Sistemas expertos en la empresa.
+Campos de aplicación de los sistemas expertos.
+
+Lógica difusa, definición.
+Referencias históricas.
+Conjuntos clásicos y difusos.
+Funciones de membresía, características, tipos.
+Relaciones difusas.
+Operaciones con relaciones difusas.
+Razonamiento aproximado.
+Variable lingüística, regla si-entonces.
+Modus ponens difuso.
+Sistemas de control difuso: interfase de fuzzificación, base de conocimientos, interfase de defusificación.
+Controlador difuso.
+Modelos de Mamdani, Sugeno, Tsukamoto.
+
+Productos notables
+Factorización
+Resolución de ecuación lineal, cuadrática y sus aplicaciones.
+Números complejos y sus operaciones.
+Sistemas de ecuaciones lineales y sus aplicaciones: clasificación; métodos de solución.
+
+Definición de matriz.
+Igualdad de matrices.
+Operaciones básicas de matrices.
+Matriz identidad.
+Clasificación de matrices en atención a sus propiedades: transpuesta; simétrica; antisimétrica; conjugada; ortogonal.
+Cálculo de la matriz inversa por transformaciones elementales.
+Ecuaciones con matrices: representación matricial de un sistema de ecuaciones lineales; diferencias entre álgebra de números y álgebra matricial.
+Partición de matrices: submatriz e hipermatriz; operaciones con matrices por partición.
+
+Definición y propiedades.
+Cálculo de los determinantes: regla de Sarrus; desarrollo de un determinante por cofactores (condensación pivotal).
+Aplicaciones: cálculo de la inversa por medio de la matriz adjunta; resolución de sistemas de ecuaciones lineales por medio de la regla de Cramer.
+
+Funciones y relaciones.
+Límites y continuidad, definiciones y propiedades.
+La derivada: definición y notación; reglas de derivación.
+Aplicaciones de la derivada:
+Máximos y mínimos de una función; funciones crecientes y decrecientes;
+Formas indeterminadas y regla de L’Hôpital;
+Concavidad y puntos de inflexión (prueba de la segunda derivada para valores extremos relativos);
+Rapidez de cambio (variación de funciones, desplazamiento, velocidad y aceleración);
+Derivadas de orden superior;
+Curvatura.
+Diferenciales: concepto; la diferencial como aproximación del incremento; errores pequeños; diferenciales de orden superior.
+
+Evolución histórica.
+Relación entre la probabilidad y la estadística.
+Etapas de una investigación estadística.
+Aplicaciones en la ingeniería.
+
+Conceptos generales: población y muestra.
+Clasificación y organización de los datos de una muestra: diagramas de tallos y hojas; tabla de distribución de frecuencias.
+Representaciones gráficas: histograma; polígono de frecuencia acumulada y fractiles.
+Parámetros descriptivos de una distribución de frecuencias: medidas de tendencia central; medidas de dispersión; medidas de asimetría o sesgo; medidas de aplanamiento o apuntamiento.
+
+Factorial de un número.
+Principio fundamental del conteo.
+Diagramas de árbol.
+Análisis combinatorio
+Propiedades de los números combinatorios.
+Teorema del binomio
+
+Tipos de experimentos: experimento aleatorio; espacio muestral o de eventos; evento elemental.
+Operaciones entre eventos: unión; intersección; diferencia y complemento (eventos mutuamente excluyentes).
+Definiciones de probabilidad: probabilidad clásica; probabilidad frecuentista; probabilidad axiomática.
+Axiomas de probabilidad.
+Ley de adición de probabilidades.
+Probabilidad condicional: independencia de eventos; probabilidad total y teorema de Bayes.
+
+
+Concepto de variable aleatoria: discretas y  continuas.
+Distribuciones de probabilidad para variables aleatorias discretas o función masa de probabilidad.
+Distribuciones de probabilidad para variables aleatorias continuas o función densidad de probabilidad: distribuciones de probabilidad acumulada discreta o continua.
+Esperanza matemática: concepto para el caso discreto y para el caso continuo; momentos de orden “n” con respecto al origen; momentos de orden “n”  con respecto a la media (varianza y desviación estándar; coeficiente de sesgo; curtosis; propiedades de la media y la varianza;  teorema de Chebishev).
+Función generatriz de momentos.
+
+Distribuciones discretas: ensayo de Bernoulli; distribución binomial; hipergeométrica;  geométrica; binomial negativa de Pascal; de Poisson; aproximación de la distribución de Poisson a la binomial; distribución multinomial; hipergeométrica multivariada.
+Distribuciones continuas: distribución uniforme o rectangular; tabla de números aleatorios; distribución normal;  distribución exponencial.
+
+Funciones de probabilidad conjunta.
+Función masa de probabilidad conjunta.
+Función densidad de probabilidad conjunta.
+Esperanza de funciones conjuntas.
+
+Bases teóricas del muestreo.
+Tipos de muestreo: aleatorio simple; sistemático; estratificado;  por conglomerados.
+Poblaciones y muestras.
+Distribución muestral de la media.
+Distribución muestral de la proporción.
+Distribución muestral de la varianza.
+Teorema del límite central aplicado a medias y proporciones.
+
+Concepto de estimador. Estimación puntual.
+Propiedades de los estimadores: insesgado; eficiente;  consistente; método de máxima verosimilitud.
+Estimación por intervalos. Nivel de confianza: sobre la media con varianza poblacional conocida (intervalo de confianza); sobre la media con varianza estándar poblacional desconocida (distribución “t” de Student); sobre la diferencia de medias con varianzas poblacionales conocidas; sobre la diferencia de medias con varianzas desconocidas; sobre la diferencia de medias para observaciones en pares; sobre la proporción; sobre la diferencia de dos proporciones; sobre la varianza o la desviación estándar (distribución ji cuadrada); sobre la razón de varianzas (distribución “f” de Fisher).
+Prueba estadística de hipótesis: errores de tipo “I” y tipo ”II”; pruebas unilaterales y bilaterales; prueba de hipótesis sobre la media con varianza poblacional conocida; prueba de hipótesis sobre la media con varianza poblacional desconocida; prueba de hipótesis sobre la diferencia de medias con varianza  poblacional conocida; prueba de hipótesis sobre la diferencia de medias con varianza poblacional desconocida; prueba de hipótesis sobre la diferencia de medias para observaciones en pares; prueba de hipótesis sobre la proporción; prueba de hipótesis sobre la diferencia de dos proporciones; prueba de hipótesis sobre la varianza;  prueba de hipótesis sobre la razón de varianzas.
+Prueba de bondad de ajuste empleando la ji cuadrada.
+
+Diagrama de dispersión.
+Regresión lineal simple. Método de mínimos cuadrados.
+Correlación muestral: error estándar de la estimación; coeficiente de correlación;  coeficiente de determinación.
+Inferencias en el análisis de regresión: estimación y prueba de hipótesis acerca de la pendiente de regresión; estimación y prueba de hipótesis acerca de la ordenada al origen; estimación acerca de la media;  bandas de confianza.
+Regresión no lineal: exponencial o semilogarítmica y potencial o doble logarítmica.
+
+1.1   Tratamiento de textos con Microsoft Word
+1.2   Creación y edición básica de documentos.
+1.3   Impresión de documentos.
+1.4   Formatos de letra y párrafo.
+1.5   Ejercitación Práctica.
+1.6   Sangrías y Tabulación
+1.7   Listas y Viñetas.
+1.8   Encabezados y Pie de Página.
+1.9   Tablas
+Bordes y sombreados.
+Índices y tablas de contenidos.
+
+2.1   Creación y edición básica de hojas de cálculo.
+2.2   Operaciones con las celdas.
+2.3   Formatos de celda.
+2.4   Operaciones entre celdas.
+2.5   Ejercitación práctica
+2.6   Funciones.
+2.7   Formato condicional.
+2.8   Impresión.
+2.9   Filtros.
+Gráficos.
+Ejercitación práctica
+
+3.1   Presentaciones y diapositivas básicas.
+3.2   Objetos gráficos.
+3.3   Operaciones con objetos gráficos.
+3.4   Ejercitación práctica.
+3.5   Inserción de tablas.
+3.6   Imágenes e ilustraciones.
+3.7   Fondos.
+3.8   Efectos de transición
+
+Introducción
+Navegadores y Buscadores
+Correo electrónico
+Mensajería instantánea
+
+Simulación típica.
+Algoritmo de simulación: entradas probabilísticas; entradas controladas; salidas o reportes.
+Toma de decisiones.
+Simulación manejada a través del tiempo: incrementos de tiempo fijo; incrementos de tiempo variable.
+
+Generación de números aleatorios.
+Dependencia entre variables.
+Generador de procesos continuos: procesos uniformes; exponencial negativa; normal.
+Generador de procesos discretos: generador de procesos binomiales; generador de procesos de Poisson
+
+Pruebas de bondad de ajuste.
+Representación de datos empíricos por medio de una distribución teórica.
+Aplicaciones.
+
+Algoritmo de líneas de espera: con un canal de servicio; con más de un canal de servicio.
+Algoritmo de inventarios.
+Algoritmos de problemas económicos.
+Implementación en la computadora
+
+Estimación del tamaño de una muestra: media de la población; desviación típica de la población.
+Validación.
+Cálculo y condiciones del número de iteraciones.
+Condición de estado estacionario.
+Eliminación de los efectos transitorios
+
+Interpretación de los resultados.
+Comparación de los resultados teóricos con respecto a los obtenidos en la simulación.
+Problemas que son susceptibles de simular.
+
+Conceptos de la capa de ENALCE.
+Conceptos de la capa de DATOS.
+Conceptos de la capa de RED
+
+EIA RS – 232
+EIA RS – 449
+CCITT V. 24 / V. 28
+CCITT X. 21
+CCITT ISDN 1.430 Y 1.431
+T1 / E1
+V. 35
+HSSI.
+HIPPI.
+ESCON.
+IEEE 302.X
+X3T9.5 ANSI
+
+BSC / BISYNC.
+DDCMP.
+SDLC.
+HDLC.
+ISDN y LAP.
+
+Subcapa LLC.
+Subcapa Mac.
+802.3 CSMA / CD.
+802.4
+802.5
+
+Protocolos de puentes: 802.1 y ARP.
+Protocolos de ruteo: de vector de distancia; de ruta de enlace de estado; de punto a punto; PPP;  propietarios.
+Protocolos de carga: TCP / IP; IPX; XNS; APPLE TALK;  NETBEUI
+
+Multiplexión.
+Conmutación por paquetes.
+Conmutación por celdas.
+Conmutación por frames
+
+Práctica Sobre Localización de Fallas.
+Revisión de la zona primaria del la fuente de poder.
+
+Especificaciones generales del Monitor
+Localización de Fallas en el Monitor
+
+Impresora Matricial.
+Impresora Burbuja.
+Impresora Láser.
+
+Arme y desarme del teclado
+Arme y desarme del mouse
+
+Arme y desarme de la unidad de sistema
+Comprobación de estado de fuente poder
+Comprobación de unidades de almacenamiento de datos
+Comprobación de memorias
+Comprobación de tarjeta madre
+
+Definiciones formales: tipo de dato abstracto; objeto; clase.
+Objetos, características y operaciones: características esenciales de un objeto; propiedades; métodos; mensajes;  constructores y destructores.
+Implantación de objetos: clases e instancias; tipos de objetos y objetos puros; metaclases;  representación en memoria de clases y objetos.
+Lenguajes y ambientes orientados a objetos: historia de la orientación a objetos (O – O); principales exponentes de la O – O; características de un ambiente orientado a objetos.
+Análisis y diseño orientado a objetos: diferencias con el paradigma estructurado; lenguaje unificado de modelado (UML); relación cliente / proveedor;  enfoque modelo-vista-controlador (MVC).
+
+Modularidad: criterios; reglas;  principios.
+Encapsulamiento: funciones y métodos; control de visibilidad y alcance;  agregación y asociación.
+Reutilización: criterios, reglas y principios; sobrecarga y generalidad;  clases, objetos y reutilización.
+Programación por contrato: fiabilidad del software; aserciones; precondiciones y poscondiciones; invariantes y variantes; manejo de excepciones;  manejo de errores.
+Otras características: polimorfismo; herencia y delegación;  persistencia.
+
+Selección y construcción de clases.
+Construcción y destrucción de objetos.
+Referencias.
+Gestión de la memoria.
+Estructuras de objetos, arreglos y relaciones.
+Documentación de clases y objetos.
+Bibliotecas de clases y objetos.
+
+1.   Definición de herencia.
+2.   Jerarquía de clases y tipos.
+3.   Reutilización de clases existentes.
+Reglas para uso de herencia.
+Encapsulamiento y herencia.
+Redefinición de métodos.
+Clases abstractas.
+Delegación, una alternativa a la herencia.
+Herencia múltiple
+
+1.   Polimorfismo.
+2.   Usos del polimorfismo.
+3.   Generalidad.
+Ligado dinámico.
+Diseño orientado a interfaces.
+Herencia múltiple con interfaces.
+Patrones de diseño.
+
+Definición de persistencia.
+Ciclo de vida de un objeto persistente.
+Archivos como objetos persistentes
+
+1.   Definición de eventos.
+Propiedades de un evento.
+Procesamiento asíncrono.
+Programación orientada a eventos
+
+Interfaces visuales de usuario.
+Bibliotecas de objetos para construcción de interfaces visuales.
+Marcos de trabajo (frameworks).
+Componentes de software.
+Interfaces para construcción de software.
+Aplicación a módulos gráficos y a componentes de software.
+
+Funciones y procedimientos.
+Funciones de retorno.
+Visibilidad y ámbito de las variables.
+Paso de parámetros: por valor y por referencia.
+Funciones recursivas.
+Recursión vs. Iteración.
+
+Conceptos básicos: Declaración y uso, Operadores de dirección e indirección.
+Aritmética de punteros.
+Punteros como argumento de funciones.
+Punteros a funciones
+Punteros y arreglos.
+Asignación dinámica de memoria: gestión dinámica de memoria, malloc, calloc, realloc, free.
+
+Conceptos básicos: Declaración y uso.
+Sinónimo de un tipo de datos: typedef.
+Arreglo de estructuras.
+Uso de estructuras con funciones.
+
+Estructura dinámica con funciones.
+Estructura dinámica con punteros.
+Estructuras dinámicas anidadas.
+
+Conceptos básicos.
+Flujos.
+Operaciones con archivos: abrir, cerrar, leer y escribir.
+
+Programas y lenguajes de programación.
+Necesidad de la programación modular.
+Ciclo de vida de los programas.
+Conceptos básicos.
+Tipos de errores (Detección y corrección).
+
+Concepto de algoritmo.
+Noción de proceso.
+Variables y estado de un programa.
+Diagramas de Flujo para representación de algoritmos.
+Pseudocódigo.
+
+Tipos primitivos.
+Variables y constantes.
+Operadores y expresiones.
+Composición secuencial de instrucciones: Lectura y escritura.
+
+La instrucción alternativa simple.
+La instrucción alternativa múltiple.
+Diseño iterativo. Instrucción de bucle.
+Bucles anidados.
+Recursión.
+
+Uso de arrays.
+Recorrido de un array.
+Búsqueda de un elemento en un array.
+Arrays multidimensionales.
+Tablas de tamaño variable de datos compuestos: Arreglos y Cadenas.
+
+Implementación de funciones.
+Llamada a funciones.
+Paso de parámetros a una función: Por valor y por referencia.
+Bibliotecas de funciones intrínsecas.
+Diferencia entre funciones y procedimientos.
+
+1. Conceptos de información.
+2. Sistema.
+3. Sistemas de información: programas; módulos; sistemas.
+4. Tipos de MIS. Clasificación.
+
+1. Las organizaciones.
+2. Tipos de organizaciones.
+Impacto de los MIS en la sociedad
+
+1. Concepto del ciclo de vida.
+2. Fases y etapas del ciclo de vida.
+3. Modelos de ciclo de vida
+
+1. Definición de requerimientos.
+2. Objetivo de la especificación de requerimientos.
+3. Técnicas para la especificación de requerimientos: recopilación de información; estimación de recursos y tiempo; análisis de riesgos.
+4. Selección del ciclo de vida.
+5. Documentación.
+
+1. Análisis: definición y objetivo; técnicas para el análisis de aplicaciones; técnicas de modelado (procesos, datos, flujos, tiempo); diccionario de datos y documentación.
+2. Diseño: definición y objetivo; niveles en el diseño de aplicaciones (conceptual, lógico y físico); técnicas de especificación del diseño (entradas y salidas, almacenamiento, procesos, módulos, programas, bibliotecas de funciones y clases); documentación.
+3. Construcción y pruebas: definición y objetivo; definición de estándares para el desarrollo (nomenclatura, programación, interfaz gráfica y calidad); organización funcional (grupos de trabajo, líder de proyecto, comunicación, control del proyecto); pruebas a la aplicación (estructurales, funcionales y desempeño, aleatorias, de volumen, planeación y ejecución de pruebas); documentación
+
+1. Liberación.
+2. Capacitación.
+3. Mantenimiento.
+4. Monitoreo y control.
+5. Documentación
+
+1. Evaluación del desempeño.
+2. Análisis de nuevas tecnologías y requerimientos.
+3. Redefinición de la nueva estructura.
+4. Planeación de la migración o cambio a la nueva aplicación.
+5. Documentación.
+
+1. Estructurada.
+2. Orientada a objetos.
+3. Prototipos.
+4. Tendencias
+
+Introducción a la ingeniería de software
+Ingeniería de Sistemas basada en Computadora.
+Gestión del Proyecto.
+
+Ingeniería de Requerimientos.
+Análisis de Requerimientos.
+Modelos de Sistema.
+Definición de Requerimientos y Especificación.
+Prototipado de Software.
+
+Diseño de Software.
+Arquitectura del  Diseño
+Diseño orientado a objetos.
+Diseño orientado a Funciones.
+Diseño de  del Usuario.
+
+Reutilización del Software.
+Verificación y Validación
+Verificación y Validación
+Prueba de Defectos.
+
+Computer-aided Software Engineering
+Mantenimiento del Software
+Calidad del software
+Mejora de Procesos
+
+Tratamiento de textos con Microsoft Word
+Creación y edición básica de documentos.
+Impresión de documentos.
+Formatos de letra y párrafo.
+Ejercitación Práctica.
+Sangrías y Tabulación
+Listas y Viñetas.
+Encabezados y Pie de Página.
+Tablas
+Bordes y sombreados.
+Índices y tablas de contenidos.
+
+Creación y edición básica de hojas de cálculo.
+Operaciones con las celdas.
+Formatos de celda.
+Operaciones entre celdas.
+Ejercitación práctica
+Funciones.
+Formato condicional.
+Impresión.
+Filtros.
+Gráficos.
+Ejercitación práctica
+
+Presentaciones y diapositivas básicas.
+Objetos gráficos.
+Operaciones con objetos gráficos.
+Ejercitación práctica.
+Inserción de tablas.
+Imágenes e ilustraciones.
+Fondos.
+Efectos de transición
+
+Introducción al Internet
+Navegadores y Buscadores
+Correo electrónico
+Plataforma de aplicaciones de Google Chrome
+
+Las cantidades físicas, los patrones y las unidades
+El sistema internacional de medidas
+El patrón de longitud
+El patrón de masa
+El patrón de tiempo
+
+Vectores y escalares
+Adición de vectores, método geométrico
+Descomposición y adición de vectores, método geométrico
+Multiplicación de vectores
+Los vectores y las leyes de la física
+
+Mecánica
+Cinemática de una partícula
+Velocidad promedio
+Velocidad instantánea
+Movimiento en una dimensión con velocidad variable
+La aceleración
+Movimiento en una dimensión con aceleración variable
+Movimiento en una dimensión con aceleración constante
+Concordancia de las unidades y las dimensiones
+La caída libre de los cuerpos
+Las ecuaciones del movimiento en caída libre
+
+Desplazamiento, velocidad y aceleración en un plano con aceleración constante
+Movimiento de proyectiles
+Movimiento Circular Uniforme
+La aceleración en el movimiento circular
+Velocidad y aceleración relativa
+
+El movimiento rotacional
+Las variables en la cinemática rotacional
+Rotación con aceleración angular constante
+Las cantidades rotacionales como vectores
+Rotación entre al cinemática lineal y la angular para una partícula en movimiento circular uniforme. Forma escalar y Forma vectorial
+
+Variables rotacionales
+Momento de una fuerza o Momento estático
+La energía cinética de la rotación y la inercia rotacional
+Dinámica rotacional de un cuerpo rígido
+El movimiento combinado de traslación y rotación de un cuerpo rígido
+
+Movimiento armónico
+El oscilador armónico simple
+El movimiento armónico simple
+Estudio de la energía en el movimiento armónico simple
+Relación entre el movimiento armónico simple y el movimiento circular uniforme
+Combinaciones de oscilaciones armónicos simples
+Movimiento armónico amortiguado
+Oscilaciones Forzadas y Resonancia
+
+Ley de Gravitación Universal
+La constante G de
+Masa Inercial y Masa Gravitacional
+Las variaciones de la aceleración de la gravedad
+El campo Gravitacional
+Energía Potencial Gravitacional
+
+Lenguajes y niveles.
+Máquina y lenguaje: máquina real; máquina virtual; máquina multinivel.
+Organización de computadoras. Estructura y evolución: máquinas multinivel actuales; organización, evolución y generaciones de computadoras.
+Clasificación de computadoras y arquitecturas computacionales
+
+Organización del procesador.  Componentes y funcionamiento general.
+Ejecución de instrucciones: ciclo de carga y ejecución; tipos de instrucciones.
+Optimización del flujo de instrucciones a ejecutar: entubamiento (PIPELINING);  uso extensivo de registros y paralelismo.
+Arquitecturas RISC y CISC.
+Principios de diseño actuales.
+
+Organización de la memoria: componentes; funcionamiento general; ordenamiento de bytes; corrección de errores y jerarquía de memoria.
+Tipos de memoria: caché RAM (estática y dinámica); ROM (ROM, EPROM, etc.); circuitos (SIMM, DIMM,etc.).
+
+Almacenamiento: discos magnéticos; almacenamiento digital; cintas; otros.
+Entrada/salida: buses; terminales;  monitores; dispositivos de señalación; impresoras;  otros (MODEM, tarjetas, etc.).
+Comunicación con : interrupciones y acceso directo a memoria..
