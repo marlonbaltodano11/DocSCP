@@ -133,3 +133,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')  # Ruta física en el sistema de archivos
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 104857600  # 100 MB
