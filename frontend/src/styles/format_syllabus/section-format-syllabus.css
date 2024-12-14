@@ -65,7 +65,11 @@
             border-radius: 10px;
             border: 1px solid rgba(0, 0, 0, 0.50);
             padding: 20px;
-            height: min(13.02vw, 250px);
+           
+            overflow: hidden;
+            min-height: 50px;
+            line-height: 1.5;
         }
+
     }
 }

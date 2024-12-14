@@ -13,8 +13,13 @@ import CardTextIcon from "@assets/format_syllabus/card_text_icon.svg";
 import "@styles/format_syllabus/microplanning-table.css";
 import FormatSyllabusModal from "@components/common/format_syllabus/FormatSyllabusModal";
 import BtnSingleModal from "@assets/format_syllabus/btn_single_modal.svg";
-import BtnGlobalModal from "@assets/format_syllabus/btn_global_modal.svg";
+
 import { useEffect } from "react";
+
+const adjustTextareaHeight = (textarea) => {
+  textarea.style.height = "auto"; // Restablecer altura para recalcular
+  textarea.style.height = `${textarea.scrollHeight}px`; // Ajustar según el contenido
+};
 
 const FormatSyllabusStepTwo = () => {
   // Acceso al estado global
@@ -35,6 +40,11 @@ const FormatSyllabusStepTwo = () => {
       payload: { key: "microplanningTable", value: updatedTable },
     });
   };
+
+  useEffect(() => {
+    const textareas = document.querySelectorAll(".microplanning-textarea");
+    textareas.forEach((textarea) => adjustTextareaHeight(textarea));
+  }, [microplanningTable]);
 
   const ColumnCheckboxListKeys = [
     "contents",
@@ -116,9 +126,19 @@ const FormatSyllabusStepTwo = () => {
                           className="microplanning-textarea"
                           value={microplanningTable[rowIndex][colIndex] || ""}
                           readOnly={colIndex > 2 || colIndex === row.length - 3}
-                          onChange={(e) =>
-                            handleCellChange(rowIndex, colIndex, e.target.value)
+                          placeholder={
+                            isLastFourColumns && row.length > 6
+                              ? "Click en el boton de esquina superior derecha para agregar elementos deseados"
+                              : "Click para escribir"
                           }
+                          onChange={(e) => {
+                            handleCellChange(
+                              rowIndex,
+                              colIndex,
+                              e.target.value
+                            ),
+                              adjustTextareaHeight(e.target);
+                          }}
                         />
                         {isLastFourColumns && row.length > 6 ? ( // Ajustamos la condición para verificar las últimas columnas visibles
                           <FormatSyllabusModal

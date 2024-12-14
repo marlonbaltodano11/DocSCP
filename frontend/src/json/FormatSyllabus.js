@@ -30,38 +30,117 @@ export const InputsTableStepOne = [
       ],
     },
     {
-      /*Necesario el objeto vacio para el correcto funcionamiento */
-    },
-    {
       id: "{{academicRegime}}",
       label: "Ciclo Académico",
-      placeholder: "Escriba aquí...",
-      type: "text",
+      radios: [
+        {
+          id: "{{academicRegime}}-quarter",
+          label: "Cuatrimestre",
+          value: "quarter",
+          name: "{{academicRegime}}",
+        },
+        {
+          id: "{{academicRegime}}-semester",
+          label: "Semestre",
+          value: "semester",
+          name: "{{academicRegime}}",
+        },
+        {
+          id: "{{academicRegime}}-trimester",
+          label: "Trimestre",
+          value: "trimester",
+          name: "{{academicRegime}}",
+        },
+      ],
+    },    
+    {
+      id: "{{credits}}",
+      label: "Créditos",
+      radios: [
+        {
+          id: "{{credits}}-2",
+          label: "2",
+          value: "2",
+          name: "{{credits}}",
+        },
+        {
+          id: "{{credits}}-3",
+          label: "3",
+          value: "3",
+          name: "{{credits}}",
+        },
+        {
+          id: "{{credits}}-4",
+          label: "4",
+          value: "4",
+          name: "{{credits}}",
+        },
+        {
+          id: "{{credits}}-5",
+          label: "5",
+          value: "5",
+          name: "{{credits}}",
+        },
+        {
+          id: "{{credits}}-6",
+          label: "6",
+          value: "6",
+          name: "{{credits}}",
+        },
+      ],
     },
+    {},
+    {
+      id: "{{weeklyFrequency}}",
+      label: "Frecuencia Semanal",
+      radios: [
+        {
+          id: "{{weeklyFrequency}}-2",
+          label: "2",
+          value: "2",
+          name: "{{weeklyFrequency}}",
+        },
+        {
+          id: "{{weeklyFrequency}}-3",
+          label: "3",
+          value: "3",
+          name: "{{weeklyFrequency}}",
+        },
+        {
+          id: "{{weeklyFrequency}}-4",
+          label: "4",
+          value: "4",
+          name: "{{weeklyFrequency}}",
+        },
+        {
+          id: "{{weeklyFrequency}}-5",
+          label: "5",
+          value: "5",
+          name: "{{weeklyFrequency}}",
+        },
+        {
+          id: "{{weeklyFrequency}}-6",
+          label: "6",
+          value: "6",
+          name: "{{weeklyFrequency}}",
+        },
+      ],
+    },
+    {},
     {
       id: "{{careerYear}}",
       label: "Año",
       placeholder: "Escriba aquí...",
       type: "text",
     },
-    {
-      id: "{{credits}}",
-      label: "Créditos",
-      placeholder: "Escriba aquí...",
-      type: "text",
-    },
+
     {
       id: "{{totalHours}}",
       label: "Total de Horas",
       placeholder: "Escriba aquí...",
       type: "text",
     },
-    {
-      id: "{{weeklyFrequency}}",
-      label: "Frecuencia Semanal",
-      placeholder: "Escriba aquí...",
-      type: "text",
-    },
+
     {
       id: "{{career}}",
       label: "Carrera",

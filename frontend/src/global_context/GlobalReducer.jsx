@@ -2,6 +2,7 @@ import {
   AcademicCalendarObject,
   FormatSyllabusObject,
   CheckBoxesValue,
+  FirstApiResponse,
 } from "@json/GlobalReducerJson";
 
 const types = {
@@ -25,6 +26,7 @@ const initialState = {
   AcademicCalendarObject,
   FormatSyllabusObject,
   CheckBoxesValue,
+  FirstApiResponse,
 };
 
 const globalReducer = (state, action) => {
@@ -272,10 +274,54 @@ const globalReducer = (state, action) => {
       };
     }
 
+    //-------------------Firts Api Handle Response
+    case "UPDATE_ACADEMIC_CALENDAR_FROM_RESPONSE": {
+      const payload = action.payload; // Datos de la API
+      return {
+        ...state,
+        AcademicCalendarObject: {
+          ...state.AcademicCalendarObject,
+          academicCalendar: {
+            ...state.AcademicCalendarObject.academicCalendar,
+            modality: payload.generalInformation?.modality || "quarter",
+            firstExamDate: payload.generalInformation?.approvedDate || "",
+            cicleStartDate: payload.generalInformation?.deliveryDate || "",
+            cicleEndDate: payload.generalInformation?.updateDate || "",
+          },
+          coursePlan: payload.coursePlan.map((unit) => ({
+            unitName: unit.unitName || "",
+            startDate: "",
+            endDate: "",
+            topics: unit.topics || [],
+          })),
+        },
+      };
+    }
+    case "STORE_FIRST_API_RESPONSE":
+      return {
+        ...state,
+        FirstApiResponse: action.payload,
+      };
+
+    //Second API response-----------------------
+    case "UPDATE_FORMAT_SYLLABUS_FROM_API": {
+      return {
+        ...state,
+        FormatSyllabusObject: {
+          ...state.FormatSyllabusObject,
+          ...action.payload,
+        },
+      };
+    }
+
     //--------------Clearing state------------------------
     case "RESET_ENTIRE_GLOBAL_STATE": {
-      const { AcademicCalendarObject, FormatSyllabusObject, CheckBoxesValue } =
-        action.payload;
+      const {
+        AcademicCalendarObject,
+        FormatSyllabusObject,
+        CheckBoxesValue,
+        FirstApiResponse,
+      } = action.payload;
 
       // Solo actualiza claves específicas
       return {
@@ -291,6 +337,41 @@ const globalReducer = (state, action) => {
         CheckBoxesValue: {
           ...state.CheckBoxesValue,
           ...CheckBoxesValue,
+        },
+        FirstApiResponse: {
+          ...state.FirstApiResponse,
+          ...FirstApiResponse,
+        },
+      };
+    }
+
+    //Load CheckPoint
+    case "LOAD_CHECKPOINT_FILE": {
+      const {
+        AcademicCalendarObject,
+        FormatSyllabusObject,
+        CheckBoxesValue,
+        FirstApiResponse,
+      } = action.payload;
+
+      // Solo actualiza claves específicas
+      return {
+        ...state,
+        AcademicCalendarObject: {
+          ...state.AcademicCalendarObject,
+          ...AcademicCalendarObject,
+        },
+        FormatSyllabusObject: {
+          ...state.FormatSyllabusObject,
+          ...FormatSyllabusObject,
+        },
+        CheckBoxesValue: {
+          ...state.CheckBoxesValue,
+          ...CheckBoxesValue,
+        },
+        FirstApiResponse: {
+          ...state.FirstApiResponse,
+          ...FirstApiResponse,
         },
       };
     }

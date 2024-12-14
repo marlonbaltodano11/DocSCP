@@ -1,8 +1,6 @@
-import { useState, useEffect, useCallback } from 'react';
-import apiClient from '../Config/AxiosConfig';
-import { convertToFormData } from '../Utils/FormDataUtils';
-import { useAuth0 } from "@auth0/auth0-react";
-
+import { useState, useEffect, useCallback } from "react";
+import { convertToFormData } from "../Utils/FormDataUtils";
+import axios from "axios";
 /**
  * Custom hook to make API requests using Axios.
  *
@@ -24,87 +22,103 @@ import { useAuth0 } from "@auth0/auth0-react";
  * @returns {function} setQueryParams - Function to update the query parameters.
  * @returns {function} makeRequest - Function to manually trigger the API request.
  */
+
+// Centraliza la configuración de axios
+
 function useApi({
-    endpoint = '',
-    method = 'GET',
-    data = null,
-    params = null,
-    autoFetch = true
+  endpoint = "",
+  method = "GET",
+  data = null,
+  params = null,
+  autoFetch = true,
+  sendJson = false,
 } = {}) {
-    const [apiEndpoint, setApiEndpoint] = useState(endpoint);
-    const [httpMethod, setHttpMethod] = useState(method);
-    const [requestData, setRequestData] = useState(data);
-    const [queryParams, setQueryParams] = useState(params);
-    const [response, setResponse] = useState(null);
-    const [status, setStatus] = useState(null);
-    const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(false);
+  const [apiEndpoint, setApiEndpoint] = useState(endpoint);
+  const [httpMethod, setHttpMethod] = useState(method);
+  const [requestData, setRequestData] = useState(data);
+  const [queryParams, setQueryParams] = useState(params);
+  const [response, setResponse] = useState(null);
+  const [status, setStatus] = useState(null);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
-    const { getAccessTokenSilently } = useAuth0();
+  const ApiUrlSyllabus = axios.create({
+    baseURL: "https://syllabus.hqcoders.com",
+    headers: {
+      "Content-Type": sendJson ? "application/json" : "multipart/form-data",
+      Accept: "*/*",
+    },
+  });
 
-    const makeRequest = useCallback(async () => {
-        setLoading(true);
-        setError(null);
+  const makeRequest = useCallback(async () => {
+    setLoading(true);
+    setError(null);
 
-        try {
-            const token = await getAccessTokenSilently();
-            const authHeader = { Authorization: `Bearer ${token}` };
+    try {
+      let result;
+      let finalData = requestData;
 
-            let result;
-            let finalData = requestData;
+      if (["POST", "PUT"].includes(httpMethod.toUpperCase()) && !sendJson) {
+        finalData = convertToFormData(requestData);
+      }
 
-            if (['POST', 'PUT'].includes(httpMethod.toUpperCase())) {
-                finalData = convertToFormData(requestData);
-            }
+      console.log(finalData);
 
-            const config = {
-                headers: authHeader,
-                params: queryParams,
-            };
+      const config = {
+        params: queryParams,
+      };
 
-            switch (httpMethod.toUpperCase()) {
-                case 'GET':
-                    result = await apiClient.get(apiEndpoint, config);
-                    break;
-                case 'POST':
-                    result = await apiClient.post(apiEndpoint, finalData, config);
-                    break;
-                case 'PUT':
-                    result = await apiClient.put(apiEndpoint, finalData, config);
-                    break;
-                case 'DELETE':
-                    result = await apiClient.delete(apiEndpoint, config);
-                    break;
-                default:
-                    throw new Error(`Unsupported method: ${httpMethod}`);
-            }
+      switch (httpMethod.toUpperCase()) {
+        case "GET":
+          result = await ApiUrlSyllabus.get(apiEndpoint, config);
+          break;
+        case "POST":
+          result = await ApiUrlSyllabus.post(apiEndpoint, finalData, config);
+          break;
+        case "PUT":
+          result = await ApiUrlSyllabus.put(apiEndpoint, finalData, config);
+          break;
+        case "DELETE":
+          result = await ApiUrlSyllabus.delete(apiEndpoint, config);
+          break;
+        default:
+          throw new Error(`Unsupported method: ${httpMethod}`);
+      }
 
-            setResponse(result.data);
-            setStatus(result.status);
-        } catch (err) {
-            setError(err);
-        } finally {
-            setLoading(false);
-        }
-    }, [apiEndpoint, httpMethod, requestData, queryParams, getAccessTokenSilently]);
+      setResponse(result.data);
+      setStatus(result.status);
+    } catch (err) {
+      console.log(err);
+      setError(err);
+    } finally {
+      setLoading(false);
+    }
+  }, [apiEndpoint, httpMethod, requestData, queryParams]);
 
-    useEffect(() => {
-        if (autoFetch && apiEndpoint) {
-            makeRequest();
-        }
-    }, [apiEndpoint, httpMethod, requestData, queryParams, autoFetch, makeRequest]);
+  useEffect(() => {
+    if (autoFetch && apiEndpoint) {
+      makeRequest();
+    }
+  }, [
+    apiEndpoint,
+    httpMethod,
+    requestData,
+    queryParams,
+    autoFetch,
+    makeRequest,
+  ]);
 
-    return {
-        response,
-        status,
-        error,
-        loading,
-        setApiEndpoint,
-        setHttpMethod,
-        setRequestData,
-        setQueryParams,
-        makeRequest,
-    };
+  return {
+    response,
+    status,
+    error,
+    loading,
+    setApiEndpoint,
+    setHttpMethod,
+    setRequestData,
+    setQueryParams,
+    makeRequest,
+  };
 }
 
 export default useApi;

@@ -7,9 +7,67 @@ import RighDecoration from "@assets/initial_document_upload/right_decoration.svg
 import InformativeText from "@components/initial_document_upload/InformativeText";
 import "@styles/initial_document_upload/initial-document-upload.css";
 import UploadDocument from "@components/initial_document_upload/UploadDocument";
+import { useEffect } from "react";
+import DataLoadingAnimation from "../../components/animations/DataLoadingAnimation";
+import useApi from "../../hooks/UseApi";
+import { useGlobalDispatch } from "@global_context/GlobalProvider";
+import { useNavigate } from "react-router-dom";
+import { resetEntireGlobalState } from "@utils/ResetGlobalState";
 
 const InitialDocumentUpload = () => {
-  return (
+  const navigate = useNavigate();
+  const dispatch = useGlobalDispatch();
+  let CleanGlobalContextAux = true;
+  //Clean global context
+
+  useEffect(() => {
+    if (CleanGlobalContextAux) {
+      console.log("entra");
+      resetEntireGlobalState(dispatch);
+      CleanGlobalContextAux = false;
+    }
+  }, []);
+
+  //--------------------Peticion
+  const UploadDocumentApi = useApi({
+    endpoint: "/api/v1/lesson-plans/parse",
+    method: "POST",
+    autoFetch: false,
+  });
+
+  useEffect(() => {
+    if (UploadDocumentApi.error) {
+      alert(
+        "Hubo un error al subir el archivo. Intente nuevamente. \n" +
+          UploadDocumentApi.error
+      );
+
+      return;
+    }
+
+    if (UploadDocumentApi.response) {
+      console.log("Respuesta del servidor:", UploadDocumentApi.response);
+      handleApiResponse(UploadDocumentApi.response);
+      navigate("/academic-cycle");
+    }
+  }, [UploadDocumentApi.response, UploadDocumentApi.error]);
+
+  const handleApiResponse = (response) => {
+    if (response) {
+      dispatch({
+        type: "UPDATE_ACADEMIC_CALENDAR_FROM_RESPONSE",
+        payload: response,
+      });
+      dispatch({
+        type: "STORE_FIRST_API_RESPONSE",
+        payload: response,
+      });
+    }
+  };
+
+  return UploadDocumentApi.loading ? (
+    <DataLoadingAnimation></DataLoadingAnimation>
+  ) : (
     <MainComponent>
       <HeaderComponent></HeaderComponent>
       <main>
@@ -22,7 +80,7 @@ const InitialDocumentUpload = () => {
           />
           <div className="document-upload-container">
             <InformativeText></InformativeText>
-            <UploadDocument></UploadDocument>
+            <UploadDocument ApiReference={UploadDocumentApi}></UploadDocument>
           </div>
           <img
             className="side-decoration-upload-doc decoration-right"

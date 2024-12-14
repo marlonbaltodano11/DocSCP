@@ -14,6 +14,9 @@ import DocButtonIcon from "@assets/thematic_plan/doc_button_icon.svg";
 import StudyPlanRangeTable from "@components/thematic_plan/StudyPlanRangeTable";
 import StudyPlanRangeGantt from "@components/thematic_plan/StudyPlanRangeGantt";
 import { useNavigate } from "react-router-dom";
+import useApi from "../../hooks/UseApi";
+import DataLoadingAnimation from "../../components/animations/DataLoadingAnimation";
+import { transformApiResponseToFormatSyllabus } from "../../utils/TransformApiFormatSyllabus";
 
 export const ThematicPlan = () => {
   const TitleHead = "Plan Temático";
@@ -96,23 +99,64 @@ export const ThematicPlan = () => {
   }));
 
   const navigate = useNavigate();
-  const handleProcessDocument = () => {
-    const processedTasks = tasks.map(
-      ({ unitNameLocal, topicsLocal, encuentros, start, end }) => ({
-        unitNameLocal,
-        topicsLocal,
-        encuentros,
-        start,
-        end,
-      })
-    );
 
-    console.log("Tareas procesadas:", processedTasks);
-    alert("PROCESANDO");
-    navigate("/format-syllabus/step_1");
+  //MANEJO DE API-------------------------------------
+  const UploadAcademicCalendarApi = useApi({
+    endpoint: "/api/v1/lesson-plans/process",
+    method: "POST",
+    autoFetch: false,
+    sendJson: true,
+  });
+
+  useEffect(() => {
+    UploadAcademicCalendarApi.setRequestData({
+      academicCalendar: state.AcademicCalendarObject.academicCalendar,
+      timetable: state.AcademicCalendarObject.timetable,
+      coursePlan: state.AcademicCalendarObject.coursePlan,
+      bibliography: state.FirstApiResponse.bibliography,
+      evaluationMethod: state.FirstApiResponse.evaluationMethod,
+      subjectObjective: state.FirstApiResponse.subjectObjective,
+      generalInformation: state.FirstApiResponse.generalInformation,
+      methodologicalRecommendations:
+        state.FirstApiResponse.methodologicalRecommendations,
+    });
+  }, [
+    state.FirstApiResponse,
+    state.AcademicCalendarObject,
+    state.coursePlan,
+    state.timetable,
+  ]);
+
+  useEffect(() => {
+    if (UploadAcademicCalendarApi.error) {
+      alert(
+        "Hubo un error al subir el archivo. Intente nuevamente. \n" +
+          UploadAcademicCalendarApi.error
+      );
+
+      return;
+    }
+
+    if (UploadAcademicCalendarApi.response) {
+      const transformedData = transformApiResponseToFormatSyllabus(
+        UploadAcademicCalendarApi.response
+      );
+
+      dispatch({
+        type: "UPDATE_FORMAT_SYLLABUS_FROM_API",
+        payload: transformedData,
+      });
+      navigate("/format-syllabus/step_1");
+    }
+  }, [UploadAcademicCalendarApi.response, UploadAcademicCalendarApi.error]);
+
+  const handleProcessDocument = () => {
+    UploadAcademicCalendarApi.makeRequest();
   };
 
-  return (
+  return UploadAcademicCalendarApi.loading ? (
+    <DataLoadingAnimation />
+  ) : (
     <MainComponent>
       <HeaderComponent />
       <main>

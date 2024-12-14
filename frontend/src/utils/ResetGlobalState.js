@@ -1,6 +1,6 @@
 // @utils/ResetGlobalState.js
 
-import { AcademicCalendarObject, FormatSyllabusObject, CheckBoxesValue } from "@json/GlobalReducerJson";
+import { AcademicCalendarObject, FormatSyllabusObject, CheckBoxesValue, FirstApiResponse } from "@json/GlobalReducerJson";
 
 /**
  * Limpia todo el estado global y lo resetea a sus valores iniciales.
@@ -18,7 +18,8 @@ export const resetEntireGlobalState = (dispatch) => {
       payload: {
         AcademicCalendarObject,
         FormatSyllabusObject,
-        CheckBoxesValue
+        CheckBoxesValue,
+        FirstApiResponse
       },
     });
   };

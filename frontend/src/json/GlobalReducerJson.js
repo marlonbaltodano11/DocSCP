@@ -62,3 +62,5 @@ export const FormatSyllabusObject = {
       evaluation: [], // Globales para "Evaluación de Aprendizaje"
     },
   }
+
+  export const FirstApiResponse = {}

@@ -57,6 +57,7 @@ const FormatSyllabusModal = ({
 
   // Abre el modal
   const openDialog = () => {
+    handleAddCheckbox();
     setIsModalOpen(true);
     if (dialogRef.current) dialogRef.current.showModal();
   };

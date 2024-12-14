@@ -10,7 +10,12 @@ const HeaderComponent = () => {
     <header className="header-container shadow main-header">
       <img
         onClick={() => {
-          navigate("/");
+          const onConfirm = confirm("¿Seguro de volver?");
+          if (onConfirm) {
+            setTimeout(() => {
+              navigate("/");
+            }, 500); // 1 segundo de retraso
+          }
         }}
         className="imagotype-header"
         src={HeaderLeftSide}

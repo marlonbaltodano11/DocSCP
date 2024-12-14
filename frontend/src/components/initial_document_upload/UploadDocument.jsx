@@ -1,15 +1,17 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import DocumentIcon from "@assets/initial_document_upload/document_icon.svg";
 import DocumentExist from "@assets/initial_document_upload/document_exist.svg";
+import { useGlobalDispatch } from "@global_context/GlobalProvider";
+import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 
-const UploadDocument = () => {
-  const navigate = useNavigate();
+const UploadDocument = ({ ApiReference }) => {
   const inputUploadDocument = useRef(null);
   const [file, setFile] = useState(null); // Para almacenar el archivo
   const [fileName, setFileName] = useState("Esperando documento....."); // Para almacenar el nombre del archivo
   const [fileExtension, setFileExtension] = useState(""); // Para almacenar la extensión del archivo
-
+  const dispatch = useGlobalDispatch();
+  const navigate = useNavigate();
   // Función para manejar la selección del archivo a través del botón
   const handleFileSelection = (e) => {
     const selectedFile = e.target.files[0];
@@ -46,6 +48,7 @@ const UploadDocument = () => {
       alert(
         "Solo se permiten archivos de tipo JSON (archivo de guardado) o DOCX"
       );
+      setFileExtension("");
       setFile(null);
       setFileName("Esperando documento.....");
     }
@@ -55,9 +58,29 @@ const UploadDocument = () => {
   const triggerUpload = () => {
     inputUploadDocument.current.click();
   };
+  useEffect(() => {
+    if (file) {
+      ApiReference.setRequestData({ planFile: file });
+    }
+  }, [file, setFile]);
 
   const handleUploadFile = () => {
-    navigate("/academic-cycle");
+    if (fileExtension != "json") {
+      ApiReference.makeRequest();
+    }
+
+    const reader = new FileReader();
+    reader.readAsText(file);
+    reader.onload = (e) => {
+      const content = e.target.result;
+      const data = JSON.parse(content);
+      console.log(data);
+      dispatch({
+        type: "LOAD_CHECKPOINT_FILE",
+        payload: data.state,
+      });
+      navigate("/format-syllabus/step_1");
+    };
   };
 
   return (
@@ -139,3 +162,7 @@ const UploadDocument = () => {
 };
 
 export default UploadDocument;
+
+UploadDocument.propTypes = {
+  ApiReference: PropTypes.object,
+};
