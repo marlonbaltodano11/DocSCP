@@ -13,7 +13,7 @@ class SyllabusTemplateService(DocumentTemplateService):
         "{{semi-in-person}}": "Semipresencial",
         "{{quarter}}": "Cuatrimestre",
         "{{semester}}": "Semestre",
-        "{{trimestre}}": "Trimestre",
+        "{{trimester}}": "Trimestre",
         "{{2_1}}": "2",
         "{{3_1}}": "3",
         "{{4_1}}": "4",
