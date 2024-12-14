@@ -55,7 +55,7 @@ class SyllabusTemplateService(DocumentTemplateService):
         :param table: The table to fill with microplanning data.
         """
         microplanning_data = self._data.get(self.MICROPLANNING_TABLE_KEY, [])
-        self._fill_table_data(table, microplanning_data, self.TABLE_CONTENT_STYLE)
+        self._fill_table_data(table, microplanning_data, self.TABLE_CONTENT_STYLE, combine_missing_cells=True)
 
     def _fill_schedule_table(self, table: Table):
         """
