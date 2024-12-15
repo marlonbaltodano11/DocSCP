@@ -30,22 +30,26 @@
 
             h3{
                 color: #0F4E7B;
-                font-size: min(1.66vw, 32px);
+                font-size: min(1.35vw, 26px);
                 font-weight: 400;
                 line-height: normal;
             }
 
             input{
-                width: min(67.70vw, 1300px);
+                width: min(52.08vw, 1000px);
                 height: min(3.65vw, 70px);
                 padding: 10px 30px;
                 color: #18662A;
                 font-weight: 400;
-                font-size: min(1.66vw, 32px);
+                font-size: min(1.35vw, 26px);
                 border-radius: 10px;
                 border: 1px solid rgba(32, 134, 55, 0.10);
                 background: #FFF;
                 box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+            .input-hour{
+              width: min(5.98vw, 115px);
+              padding: 10px 5px;
             }
 
             textarea{

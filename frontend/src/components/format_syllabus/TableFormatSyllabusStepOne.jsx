@@ -1,25 +1,22 @@
 import { InputsTableStepOne } from "@json/FormatSyllabus";
 import "@styles/format_syllabus/general-information-table.css";
 import PropTypes from "prop-types";
-import { useEffect } from "react";
-import { resetEntireGlobalState } from "../../utils/ResetGlobalState";
-import { useGlobalDispatch } from "../../global_context/GlobalProvider";
 
 const TableFormatSyllabusStepOne = ({ formData, onFormDataChange }) => {
   const handleChange = (id, value) => {
     // Verificar si la clave pertenece a `checkboxes`
     if (id in formData.checkboxes) {
-      onFormDataChange("checkboxes", { ...formData.checkboxes, [id]: value });
+      onFormDataChange("checkboxes", {
+        ...formData.checkboxes,
+        [id]:
+          id === "{{credits}}" || id === "{{weeklyFrequency}}"
+            ? parseInt(value)
+            : value,
+      });
     } else {
       onFormDataChange(id, value);
     }
   };
-
-  const dispatch = useGlobalDispatch();
-  /*
-  useEffect(() => {
-    resetEntireGlobalState(dispatch);
-  }, []);*/
 
   return (
     <table className="general-information-table">

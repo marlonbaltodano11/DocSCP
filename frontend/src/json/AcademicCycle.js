@@ -64,14 +64,15 @@ export const ClassModality = {
 
 export const DateInputs = [
   
-  {
-    id: "firstExamDate",
-    label: "Fecha de Primer Examen",
-    multiple: false
-  },
+
   {
     id: "cicleStartDate",
     label: "Fecha de Inicio de Ciclo",
+    multiple: false
+  },
+  {
+    id: "firstExamDate",
+    label: "Fecha de Primer Examen",
     multiple: false
   },
   {

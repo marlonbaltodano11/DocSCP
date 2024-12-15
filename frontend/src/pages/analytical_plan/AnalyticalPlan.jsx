@@ -8,11 +8,16 @@ import NavigationButtons from "@components/common/navigation_buttons/NavigationB
 import "@styles/analytical_plan/analytical-plan.css";
 import CardsUnitsAndContents from "@components/analytical_plan/CardsUnitsAndContents";
 import AddNewUnitIcon from "@assets/analytical_plan/add_new_unit_icon.svg";
+import {
+  assignClassDatesToUnits,
+  getClassDates,
+} from "../../utils/codigomagico";
 
 import {
   useGlobalDispatch,
   useGlobalState,
 } from "@global_context/GlobalProvider";
+import { useEffect } from "react";
 
 const AnalyticalPlan = () => {
   const state = useGlobalState();
@@ -37,6 +42,32 @@ const AnalyticalPlan = () => {
       payload: { index, field, value },
     });
   };
+
+  //Actualizador de unidades --------------------------------
+  useEffect(() => {
+    if (
+      !state.AcademicCalendarObject.academicCalendar ||
+      !state.AcademicCalendarObject.timetable ||
+      !state.AcademicCalendarObject.coursePlan
+    ) {
+      return;
+    }
+
+    const validClasses = getClassDates(
+      state.AcademicCalendarObject.academicCalendar,
+      state.AcademicCalendarObject.timetable
+    );
+
+    const newCoursePlan = assignClassDatesToUnits(
+      state.AcademicCalendarObject.coursePlan,
+      validClasses
+    );
+
+    dispatch({
+      type: "SET_TASKS",
+      payload: newCoursePlan,
+    });
+  }, [state.AcademicCalendarObject]);
 
   return (
     <MainComponent>

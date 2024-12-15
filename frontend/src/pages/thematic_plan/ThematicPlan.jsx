@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
 import {
   useGlobalDispatch,
@@ -17,27 +18,39 @@ import { useNavigate } from "react-router-dom";
 import useApi from "../../hooks/UseApi";
 import DataLoadingAnimation from "../../components/animations/DataLoadingAnimation";
 import { transformApiResponseToFormatSyllabus } from "../../utils/TransformApiFormatSyllabus";
+import NotificationOverlay from "../../components/common/notification_overlay/NotificationOverlay";
 
 export const ThematicPlan = () => {
-  const TitleHead = "Plan Temático";
-  const NumberView = 3;
-  const PreviousPage = "/analytical-plan";
-  const today = new Date().toISOString().slice(0, 10);
-
   // Estado Global
   const state = useGlobalState();
   const dispatch = useGlobalDispatch();
 
+  //Variables locales
+  const TitleHead = "Plan Temático";
+  const NumberView = 3;
+  const PreviousPage = "/analytical-plan";
+  const StartDateCycleLocal =
+    state.AcademicCalendarObject.academicCalendar.cicleStartDate ||
+    new Date().toISOString().slice(0, 10);
+  const EndDateCycleLocal =
+    state.AcademicCalendarObject.academicCalendar.cicleEndDate ||
+    new Date().toISOString().slice(0, 10);
+
   const globalTasks = state.AcademicCalendarObject.coursePlan;
 
   const initializeTasks = (tasks) => {
+    console.log("HORAS", tasks);
     return tasks.map((task, index) => {
       const isValidDate = (date) => !isNaN(new Date(date).getTime());
       return {
         unitNameLocal: task.unitName || `Unidad ${index + 1}`,
         topicsLocal: task.topics.join(", ") || `Tarea ${index + 1}`,
-        start: isValidDate(task.startDate) ? task.startDate : today,
-        end: isValidDate(task.endDate) ? task.endDate : today,
+        hours: task.hours,
+        objectives: task.objectives,
+        start: isValidDate(task.startDate)
+          ? task.startDate
+          : StartDateCycleLocal,
+        end: isValidDate(task.endDate) ? task.endDate : EndDateCycleLocal,
         type: "task",
         encuentros: null,
         dependencies: index > 0 ? [index] : [],
@@ -58,6 +71,8 @@ export const ThematicPlan = () => {
         topics: task.topicsLocal.split(", ").map((topic) => topic.trim()),
         startDate: task.start,
         endDate: task.end,
+        hours: task.hours,
+        objectives: task.objectives,
       })),
     });
   }, [tasks, dispatch]);
@@ -129,11 +144,8 @@ export const ThematicPlan = () => {
 
   useEffect(() => {
     if (UploadAcademicCalendarApi.error) {
-      alert(
-        "Hubo un error al subir el archivo. Intente nuevamente. \n" +
-          UploadAcademicCalendarApi.error
-      );
-
+      setOverlayType(0);
+      setModalOpen(true);
       return;
     }
 
@@ -152,6 +164,15 @@ export const ThematicPlan = () => {
 
   const handleProcessDocument = () => {
     UploadAcademicCalendarApi.makeRequest();
+  };
+
+  //Overlay
+  const closeOverlay = () => setModalOpen(false);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [overlayType, setOverlayType] = useState(null);
+
+  const overlayActions = {
+    closeOverlay,
   };
 
   return UploadAcademicCalendarApi.loading ? (
@@ -175,8 +196,8 @@ export const ThematicPlan = () => {
                 <p className="title">Total de semanas:</p> <p>{"15 semanas"}</p>
               </div>
               <p className="tip-text">
-                Nota: Las fechas de las unidades incluyen todos los días del
-                rango, hasta el último.
+                Nota: La última fecha no se incluye y las fechas son solo
+                sugerencias.
               </p>
             </div>
           </section>
@@ -186,8 +207,7 @@ export const ThematicPlan = () => {
         <section className="container-gantt-in-view">
           <h2 className="subtitle-gantt">Cronograma del las Actividades</h2>
           <p className="tip-text-gantt">
-            Nota: De forma predeterminada se coloca la fecha actual, editable
-            mediante la tabla inicialmente.
+            Nota: Las fechas de un solo día se editan mediante la tabla.
           </p>
           <StudyPlanRangeGantt
             tasks={ganttTasks}
@@ -200,6 +220,13 @@ export const ThematicPlan = () => {
           IconButtonNextPage={DocButtonIcon}
           TitleNextPage="Procesar"
         />
+        {overlayType !== null && (
+          <NotificationOverlay
+            OverlayType={overlayType}
+            IsModalOpen={isModalOpen}
+            overlayActions={overlayActions}
+          />
+        )}
       </main>
       <FooterComponent />
     </MainComponent>

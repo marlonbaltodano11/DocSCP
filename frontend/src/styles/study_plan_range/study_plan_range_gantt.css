@@ -31,11 +31,12 @@
     height: 50px;
     padding: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.25);
-    font-size: min(0.9vw, 18px);
+    font-size: min(1.25vw, 24px);
     font-weight: 400;
+    text-align: center;
     
   }
 

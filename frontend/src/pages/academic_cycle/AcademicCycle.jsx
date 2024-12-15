@@ -6,12 +6,36 @@ import AcademicPreparationContainer from "@components/common/academic_preparatio
 import CalendarIcon from "@assets/academic_cycle/calendar_icon.svg";
 import NavigationButtons from "@components/common/navigation_buttons/NavigationButtons";
 import AcademicCycleForm from "@components/academic_cycle/AcademicCycleForm";
-
+import { useGlobalState } from "@global_context/GlobalProvider";
+import { useEffect, useState } from "react";
+import { ValidAcademicCycle } from "../../utils/ValidAcademicCycle";
 const AcademicCycle = () => {
   const TitleHead = "Datos Elementales del Ciclo Académico";
   const NumberView = 1;
-  const NextPage = "/analytical-plan";
+  const [NextPage, SetNewPage] = useState("/academic-cycle");
   const PreviousPage = "/";
+
+  const [showWarning, setshowWarning] = useState(false);
+
+  const state = useGlobalState();
+
+  useEffect(() => {
+    const isValid = ValidAcademicCycle(
+      state.AcademicCalendarObject.academicCalendar,
+      state.AcademicCalendarObject.timetable
+    );
+    console.log("Valido?", isValid);
+    if (isValid) {
+      setshowWarning(false);
+      SetNewPage("/analytical-plan");
+    } else {
+      setshowWarning(true);
+      SetNewPage("/academic-cycle");
+    }
+  }, [
+    state.AcademicCalendarObject.academicCalendar,
+    state.AcademicCalendarObject.timetable,
+  ]);
 
   return (
     <MainComponent>
@@ -25,6 +49,15 @@ const AcademicCycle = () => {
           NextPage={NextPage}
         >
           <AcademicCycleForm></AcademicCycleForm>
+          {showWarning ? (
+            <p className="warning-dates">
+              Colocar correctamente los campos: Fecha Inicio de Ciclo, Fecha
+              Primer Examen Parcial, Fecha Final de Ciclo y la Frecuencia
+              Semanal
+            </p>
+          ) : (
+            ""
+          )}
         </AcademicPreparationContainer>
         <NavigationButtons
           NextPage={NextPage}

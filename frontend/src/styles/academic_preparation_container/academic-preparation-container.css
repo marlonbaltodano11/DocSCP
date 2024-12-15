@@ -58,4 +58,10 @@
         gap: 0;
         min-height: auto;
     }
+
+    .warning-dates{
+        font-size: min(1.29vw, 30px);
+        margin-top: 10px;
+        color: rgba(166, 18, 18, 0.46);
+    }
 }

@@ -23,6 +23,17 @@ const CardsUnitsAndContents = ({ UnitsData, onDeleteUnit, onEditUnit }) => {
                 onEditUnit(index, "unitName", updatedValue);
               }}
             />
+            <h3>Carga horaria: </h3>
+            <input
+              className="input-hour"
+              value={unit.hours || 1}
+              placeholder="0"
+              type="number"
+              onChange={(e) => {
+                const updatedValue = e.target.value.replace(e, "");
+                onEditUnit(index, "hours", updatedValue);
+              }}
+            />
           </section>
           <section className="unit-input-container with-textarea">
             <h3>Temas en la Unidad:</h3>

@@ -31,11 +31,15 @@ const AcademicCycleForm = () => {
   // Manejar cambio en los checkboxes de días de la semana
   const handleDayChange = (e) => {
     const { id, checked } = e.target;
+    console.log(timetable[id]?.periods);
     dispatch({
       type: "SET_ACADEMIC_CALENDAR_TIMETABLE",
       payload: {
         day: id,
-        value: { classDay: checked, periods: timetable[id]?.periods || 0 },
+        value: {
+          classDay: checked,
+          periods: checked ? timetable[id]?.periods : 0,
+        },
       },
     });
   };

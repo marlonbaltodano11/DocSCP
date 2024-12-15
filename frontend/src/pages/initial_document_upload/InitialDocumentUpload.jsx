@@ -7,12 +7,13 @@ import RighDecoration from "@assets/initial_document_upload/right_decoration.svg
 import InformativeText from "@components/initial_document_upload/InformativeText";
 import "@styles/initial_document_upload/initial-document-upload.css";
 import UploadDocument from "@components/initial_document_upload/UploadDocument";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import DataLoadingAnimation from "../../components/animations/DataLoadingAnimation";
 import useApi from "../../hooks/UseApi";
 import { useGlobalDispatch } from "@global_context/GlobalProvider";
 import { useNavigate } from "react-router-dom";
 import { resetEntireGlobalState } from "@utils/ResetGlobalState";
+import NotificationOverlay from "../../components/common/notification_overlay/NotificationOverlay";
 
 const InitialDocumentUpload = () => {
   const navigate = useNavigate();
@@ -37,16 +38,12 @@ const InitialDocumentUpload = () => {
 
   useEffect(() => {
     if (UploadDocumentApi.error) {
-      alert(
-        "Hubo un error al subir el archivo. Intente nuevamente. \n" +
-          UploadDocumentApi.error
-      );
-
+      setOverlayType(0);
+      setModalOpen(true);
       return;
     }
 
     if (UploadDocumentApi.response) {
-      console.log("Respuesta del servidor:", UploadDocumentApi.response);
       handleApiResponse(UploadDocumentApi.response);
       navigate("/academic-cycle");
     }
@@ -63,6 +60,15 @@ const InitialDocumentUpload = () => {
         payload: response,
       });
     }
+  };
+
+  //Overlay
+  const closeOverlay = () => setModalOpen(false);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [overlayType, setOverlayType] = useState(null);
+
+  const overlayActions = {
+    closeOverlay,
   };
 
   return UploadDocumentApi.loading ? (
@@ -88,6 +94,13 @@ const InitialDocumentUpload = () => {
             alt=""
           />
         </section>
+        {overlayType !== null && (
+          <NotificationOverlay
+            OverlayType={overlayType}
+            IsModalOpen={isModalOpen}
+            overlayActions={overlayActions}
+          />
+        )}
       </main>
       <FooterComponent></FooterComponent>
     </MainComponent>

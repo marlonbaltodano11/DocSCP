@@ -129,7 +129,7 @@ const FormatSyllabusStepThree = () => {
                         <input
                           type="number"
                           className="schedule-input"
-                          value={cell || ""}
+                          value={cell || 0}
                           onChange={(e) =>
                             handleCellChange(
                               rowIndex,

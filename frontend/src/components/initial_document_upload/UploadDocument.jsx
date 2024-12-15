@@ -4,6 +4,7 @@ import DocumentExist from "@assets/initial_document_upload/document_exist.svg";
 import { useGlobalDispatch } from "@global_context/GlobalProvider";
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
+import NotificationOverlay from "../common/notification_overlay/NotificationOverlay";
 
 const UploadDocument = ({ ApiReference }) => {
   const inputUploadDocument = useRef(null);
@@ -75,12 +76,26 @@ const UploadDocument = ({ ApiReference }) => {
       const content = e.target.result;
       const data = JSON.parse(content);
       console.log(data);
+      if (!data.state) {
+        setOverlayType(0);
+        setModalOpen(true);
+        return;
+      }
       dispatch({
         type: "LOAD_CHECKPOINT_FILE",
         payload: data.state,
       });
       navigate("/format-syllabus/step_1");
     };
+  };
+
+  //Overlay
+  const closeOverlay = () => setModalOpen(false);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [overlayType, setOverlayType] = useState(null);
+
+  const overlayActions = {
+    closeOverlay,
   };
 
   return (
@@ -154,9 +169,16 @@ const UploadDocument = ({ ApiReference }) => {
         ref={inputUploadDocument}
         type="file"
         hidden
-        accept=".pdf,.docx,.json"
+        accept=".docx,.json"
         onChange={handleFileSelection}
       />
+      {overlayType !== null && (
+        <NotificationOverlay
+          OverlayType={overlayType}
+          IsModalOpen={isModalOpen}
+          overlayActions={overlayActions}
+        />
+      )}
     </>
   );
 };

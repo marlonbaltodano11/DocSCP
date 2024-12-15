@@ -293,6 +293,8 @@ const globalReducer = (state, action) => {
             startDate: "",
             endDate: "",
             topics: unit.topics || [],
+            hours: unit.hours || "",
+            objectives: unit.objectives || "",
           })),
         },
       };

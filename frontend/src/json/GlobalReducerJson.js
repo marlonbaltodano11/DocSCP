@@ -35,6 +35,7 @@ export const FormatSyllabusObject = {
       cicleStartDate: "",
       cicleEndDate: "",
       holydayDates: [],
+
     },
     timetable: {
       monday: { classDay: false, periods: 0 },
@@ -50,6 +51,8 @@ export const FormatSyllabusObject = {
         startDate: "",
         endDate: "",
         topics: [],
+        hours: "",
+        objectives: ""
       },
     ],
   }

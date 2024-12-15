@@ -31,20 +31,20 @@ const StudyPlanRangeGantt = ({ tasks = [], onTaskChange }) => {
             task?.start instanceof Date ? task.start : new Date(task.start),
           end: task?.end instanceof Date ? task.end : new Date(task.end),
         }))}
-        viewMode={ViewMode.Day}
+        viewMode={ViewMode.Week}
         barBackgroundColor={"#023568a5"}
         barBackgroundSelectedColor={"#023568a5"}
         onDateChange={handleChange}
         locale="es"
         TaskListHeader={() => (
-          <th className="gantt-table-header">Nombre de Unidad</th>
+          <th className="gantt-table-header">Número de Unidad</th>
         )}
         TaskListTable={() => (
           <>
             {safeTasks.map((task, index) => (
               <tr key={index}>
                 <td className="gantt-table-td">
-                  {romanNumber[index] + " - " + (task?.unitNameLocal ?? "")}
+                  {romanNumber[index] + " Unidad"}
                 </td>
               </tr>
             ))}
