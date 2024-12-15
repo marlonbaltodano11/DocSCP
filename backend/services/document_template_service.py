@@ -33,7 +33,7 @@ class DocumentTemplateService(DocumentService):
         if labels:
             self._replace_checkbox_labels(labels)
     
-    def _fill_table_data(self, table: Table, data: List[List[str]], style: str, create_first_row: Optional[bool] = False):
+    def _fill_table_data(self, table: Table, data: List[List[str]], style: str, create_first_row: Optional[bool] = False, combine_missing_cells = False):
         """
         Fills a table with data.
 
@@ -53,7 +53,7 @@ class DocumentTemplateService(DocumentService):
                 start_index += 1
             for item in data[start_index:]:
                 if isinstance(item, list):
-                    table.create_row(item, style)
+                    table.create_row(item, style, combine_missing_cells)
                 else:
                     print(f"Invalid data format for table: {item}")
 

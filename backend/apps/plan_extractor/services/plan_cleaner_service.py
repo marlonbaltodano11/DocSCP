@@ -66,13 +66,20 @@ class PlanCleanerService:
     def _get_subject_objective(self, objective_section: List[Table | Paragraph]) -> str:
         return process_section_content(objective_section)
     
+    def _get_objectives_per_unit(self, objective_per_unit_section: List[Table | Paragraph]) -> str:
+        objectives_per_unit_raw = process_section_content(objective_per_unit_section)
+        
+        objetives_per_unit = re.split(r'[Uu][Nn][Ii][Dd][Aa][Dd] [IVXivx]+\.*', objectives_per_unit_raw)[1:]
+        objetives_per_unit = [objetive.strip() for objetive in objetives_per_unit]
+        return objetives_per_unit
+    
     def _get_methodological_recommendations(self, recommendations_section: List[Table | Paragraph]) -> str:
         return process_section_content(recommendations_section)
     
     def _get_evaluation_method(self, evaluation_section: List[Table | Paragraph]) -> str:
         return process_section_content(evaluation_section)
     
-    def _get_course_plan(self, thematic_section: List[Table | Paragraph], analytic_section: List[Table | Paragraph]) -> str:
+    def _get_course_plan(self, thematic_section: List[Table | Paragraph], analytic_section: List[Table | Paragraph], objetives_per_unit: List[str]) -> str:
         unit_topics = self._analytic_section.extract_unit_topics(process_section_content(analytic_section))
         units = self._thematic_section.extract_information(thematic_section)
         
@@ -81,6 +88,10 @@ class PlanCleanerService:
                 break
             
             units[idx]['topics'] = topics
+            
+            if idx < len(objetives_per_unit):
+                units[idx]['objectives'] = objetives_per_unit[idx]
+                
 
         return units
         
@@ -90,9 +101,10 @@ class PlanCleanerService:
     def get_cleaned_plan(self, raw_sections: Dict[str, List]) -> List[Dict[str, any]]:
         general_information = self._get_general_information(raw_sections.get('General Information', None))
         subject_objective = self._get_subject_objective(raw_sections.get('Objectives', None))
+        objectives_per_unit = self._get_objectives_per_unit(raw_sections.get('Objectives Per Unit', None))
         methodological_recommendations = self._get_methodological_recommendations(raw_sections.get('Methodological Recommendations', None))
         evaluation_method = self._get_evaluation_method(raw_sections.get('Evaluation System', None))
-        course_plan = self._get_course_plan(raw_sections.get('Thematic Plan', None), raw_sections.get('Analytical Plan', None))
+        course_plan = self._get_course_plan(raw_sections.get('Thematic Plan', None), raw_sections.get('Analytical Plan', None), objectives_per_unit)
         bibliography = self._get_bibliography(raw_sections.get('Bibliography', None))
         
         cleaned_plan = {

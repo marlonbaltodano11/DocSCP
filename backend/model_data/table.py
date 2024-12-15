@@ -101,7 +101,7 @@ class Table:
                 if style and self._doc:
                     self._apply_style_to_cell(row.cells[i], style)
     
-    def create_row(self, data: Optional[List[str]] = None, style: Optional[str] = None) -> _Row:
+    def create_row(self, data: Optional[List[str]] = None, style: Optional[str] = None, combine_missing_cells = False) -> _Row:
         """
         Creates a new row at the end of the table and fills it with the provided data.
         Optionally applies a style to the paragraphs in the cells.
@@ -116,6 +116,7 @@ class Table:
         if data:
             # Limit the number of data items to the number of available cells
             num_cells = len(row.cells)
+            missing_cells = len(data) - 1 if num_cells > len(data) else 0
             for i, value in enumerate(data[:num_cells]):
                 default_paragraph = row.cells[i].paragraphs[0]
                 ParagraphService.write_formatted_text(default_paragraph, value)
@@ -123,6 +124,9 @@ class Table:
                 # Apply style if provided
                 if style and self._doc:
                     self._apply_style_to_cell(row.cells[i], style)
+            
+            if combine_missing_cells and missing_cells > 0:
+                self.merge_cells_in_row(row, missing_cells)
         
         return row
 

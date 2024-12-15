@@ -55,7 +55,7 @@ class SyllabusTemplateService(DocumentTemplateService):
         :param table: The table to fill with microplanning data.
         """
         microplanning_data = self._data.get(self.MICROPLANNING_TABLE_KEY, [])
-        self._fill_table_data(table, microplanning_data, self.TABLE_CONTENT_STYLE)
+        self._fill_table_data(table, microplanning_data, self.TABLE_CONTENT_STYLE, combine_missing_cells=True)
 
     def _fill_schedule_table(self, table: Table):
         """
@@ -66,12 +66,20 @@ class SyllabusTemplateService(DocumentTemplateService):
         schedule_data = self._data.get(self.SCHEDULE_TABLE_KEY, {})
 
         first_partial_data = schedule_data.get("first_partial", [])
+        first_partial_data = [
+            [column if idx != 4 else str(column) + ' puntos' for idx, column in enumerate(row)]
+            for row in first_partial_data
+        ]
         self._fill_table_data(table, first_partial_data, self.TABLE_CONTENT_STYLE)
 
         # Add subtitle for the second partial
         table.create_subtitle_row("Segundo Parcial (Plan diario):", self.TABLE_SUBTITLE_STYLE, 'D9D9D9')
 
         second_partial_data = schedule_data.get("second_partial", [])
+        second_partial_data = [
+            [column if idx != 4 else str(column) + ' puntos' for idx, column in enumerate(row)]
+            for row in second_partial_data
+        ]
         self._fill_table_data(table, second_partial_data, self.TABLE_CONTENT_STYLE, True)
 
     

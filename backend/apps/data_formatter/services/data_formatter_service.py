@@ -1,6 +1,8 @@
 from typing import Dict
 from utils.roman_number_utils import int_to_roman
 from datetime import datetime, timedelta
+from utils.date_utils import organize_dates_by_week, are_dates_in_same_week, are_dates_equal
+import math
 
 class DataFormatterService:
     
@@ -34,59 +36,118 @@ class DataFormatterService:
 
         return valid_class_dates
     
-    def _parse_microplanning_data(self, academic_calendar: Dict[str, any], timetable: Dict[str, any], first_exam_date: str, course_plan: Dict[str, any]):
-        # Obtener las fechas válidas de clases
-        class_dates = self._get_valid_class_dates(academic_calendar, timetable)
+    def _parse_microplanning_data(self, academic_calendar: Dict[str, any], timetable: Dict[str, any], course_plan: Dict[str, any]):
+        microplanning_data = []
+        
+        class_dates = self._get_valid_class_dates(academic_calendar, timetable) 
+        
+        if not class_dates:
+            return microplanning_data
+        
+        weeks = organize_dates_by_week(class_dates)
+        last_exam_week = weeks[-1]
 
+        first_exam_date = academic_calendar.get('first_exam_date', None)
         if first_exam_date is not None:
             first_exam_date = datetime.strptime(first_exam_date, '%Y-%m-%d')
+            
+        class_dates_without_exams = []
+        
+        for date in class_dates:
+            if not (first_exam_date is not None and are_dates_equal(date, first_exam_date) or are_dates_in_same_week(date, last_exam_week[0])):
+                class_dates_without_exams.append(date)
+        
+        for unit in course_plan:
+            if not unit['start_date'] or not unit['end_date']:
+                continue
+            
+            start_date = datetime.strptime(unit['start_date'], '%Y-%m-%d')
+            end_date = datetime.strptime(unit['end_date'], '%Y-%m-%d')
 
-        # La última semana se reserva para exámenes
-        last_exam_date = class_dates[-1]  # La última semana es para el examen
-        exam_week_start = last_exam_date - timedelta(days=last_exam_date.weekday())  # Inicio de la semana de exámenes
+            number_of_days_the_class_is_received = len([date for date in class_dates_without_exams if start_date <= date <= end_date])
+            number_of_topics = len(unit.get('topics', []))
 
-        microplanning_data = []
+            if number_of_topics < 1:
+                continue
+
+            # Inicializamos las listas para los días de clase
+            divided_topics = [[] for _ in range(number_of_days_the_class_is_received)]
+
+            # Calcular cuántos temas debe recibir cada día (como mínimo)
+            base_topics_per_day = number_of_topics // number_of_days_the_class_is_received
+            extra_topics = number_of_topics % number_of_days_the_class_is_received
+
+            current_topic = 0
+
+            # Asignar los temas de la lista a los días correspondientes
+            for day in range(number_of_days_the_class_is_received):
+                # Cada día recibe la cantidad base de temas
+                topics_for_day = base_topics_per_day
+
+                # Los primeros 'extra_topics' días reciben un tema adicional
+                if day < extra_topics:
+                    topics_for_day += 1
+
+                # Asignar los temas correspondientes al día actual
+                divided_topics[day] = unit['topics'][current_topic:current_topic + topics_for_day]
+                current_topic += topics_for_day
+
+            # Actualizar la lista de temas en la unidad
+            divided_topics = divided_topics[::-1]
+            unit['topics'] = divided_topics
+        
         week_number = 1  # Para llevar el control del número de semana
-
-        # Iterar sobre cada unidad del plan de curso
-        for idx, unit in enumerate(course_plan):
-            unit_name = f"{int_to_roman(idx + 1)}. {unit['unit_name']}"
-
-            # Calcular las semanas válidas para esta unidad
-            unit_start_date = datetime.strptime(unit['start_date'], '%Y-%m-%d')
-            unit_end_date = datetime.strptime(unit['end_date'], '%Y-%m-%d')
-            weeks_for_this_unit = [
-                [date for date in class_dates if unit_start_date <= date <= unit_end_date and date < exam_week_start]
-            ]
-
-            # Dividir equitativamente los temas entre las semanas de la unidad
-            topics = unit.get('topics', [])
-            topics_per_week = max(1, len(topics) // len(weeks_for_this_unit))
-
-            for week in weeks_for_this_unit:
-                week_start = week[0]
-                week_end = week[-1]
-
-                # Formato: "Semana X - Fecha Inicio - Fecha Fin" en formato dd/mm/yyyy
-                week_label = f"Semana {week_number} - {week_start.strftime('%d/%m/%Y')} - {week_end.strftime('%d/%m/%Y')}"
-                week_number += 1  # Incrementar el número de semana
-
-                # Si hay un examen en esta semana, agregar una fila para el examen
-                if first_exam_date is not None and first_exam_date in week:
-                    microplanning_data.append([week_label, "Examen primer parcial"])
+        for week in weeks[:-1]:
+            if not week:
+                continue
+            
+            week_start = week[0]
+            week_end = week[-1]
+            
+            week_cell = f"Semana {week_number} - {week_start.strftime('%d/%m/%Y')} - {week_end.strftime('%d/%m/%Y')}"
+            week_number += 1
+            unit_cell = []
+            objective_cell = []
+            topics_cell = []
+            
+            for class_date in week:       
+                if first_exam_date is not None and are_dates_in_same_week(first_exam_date, class_date):
+                    microplanning_data.append([week_cell, "Examen primer parcial"])
+                    first_exam_date = None
                 else:
-                    # Obtener los temas de esta semana
-                    week_topics = topics[:topics_per_week]
-                    topics = topics[topics_per_week:]  # Remover los temas asignados
-
-                    # Agregar los datos de la unidad y los temas
-                    microplanning_data.append([week_label, unit_name, unit.get('objectives', ''), '\n'.join(week_topics), "", "", "", "", ""])
-
-        # Agregar la semana de exámenes finales
-        final_exam_label = f"Semana {week_number} - {exam_week_start.strftime('%d/%m/%Y')} - {last_exam_date.strftime('%d/%m/%Y')}"
+                    
+                    for idx, unit in enumerate(course_plan, start=1):
+                        if not unit['start_date'] or not unit['end_date']:
+                            continue
+                        
+                        start_date = datetime.strptime(unit['start_date'], '%Y-%m-%d')
+                        end_date = datetime.strptime(unit['end_date'], '%Y-%m-%d')
+                        
+                        if start_date <= class_date <= end_date:
+                            unit_label = f"{int_to_roman(idx)}. {unit.get('unit_name', '')}"
+                            
+                            if not unit_label in unit_cell and len(unit.get('topics', [])) > 0:
+                                # Add line break to separate units
+                                unit_cell.append('\n\n')
+                                objective_cell.append('\n\n')
+                                topics_cell.append('\n\n')
+                                
+                                unit_cell.append(unit_label)
+                            
+                            objective = unit.get('objectives', '')
+                            
+                            if not objective in objective_cell and len(unit.get('topics', [])) > 0:
+                                objective_cell.append(objective)
+                            
+                            topics_cell.append('\n'.join(unit['topics'].pop()))
+            
+            microplanning_data.append([week_cell.strip(), '\n'.join(unit_cell).strip(), '\n'.join(objective_cell).strip(), '\n'.join(topics_cell).strip(), "", "", "", "", ""])
+                
+        final_exam_label = f"Semana {week_number} - {last_exam_week[0].strftime('%d/%m/%Y')} - {last_exam_week[-1].strftime('%d/%m/%Y')}"    
         microplanning_data.append([final_exam_label, "Examen final"])
 
         return microplanning_data
+            
     
     def format_data(self, data: Dict[str, any]):
         checkboxes = self.CHECKBOXES_TEMPLATE.copy()
@@ -100,7 +161,7 @@ class DataFormatterService:
             
         checkboxes["{{weekly_frequency}}"] = len([True for weekday in data['timetable'].keys() if data['timetable'][weekday]['class_day']])
         
-        microplanning_table = self._parse_microplanning_data(data['academic_calendar'], data['timetable'], data['academic_calendar'].get('first_exam_date', None), data['course_plan'])
+        microplanning_table = self._parse_microplanning_data(data['academic_calendar'], data['timetable'], data['course_plan'])
         
         schedule_table = {
             "first_partial": [
