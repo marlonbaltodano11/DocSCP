@@ -29,7 +29,7 @@ const NotificationOverlay = ({
     <dialog
       className={
         ClassNameList[OverlayType] +
-        " dialog-overlay " +
+        " dialog-overlay shadow " +
         (IsModalOpen ? "open" : "")
       }
       ref={dialogRef}

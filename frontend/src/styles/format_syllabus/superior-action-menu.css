@@ -10,6 +10,7 @@
     z-index: 10;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 
     button{
         width: min(22.65vw, 435px);
@@ -37,6 +38,9 @@
         margin-left: 2%;
         button{
             background: #343A40;
+            &:hover{
+                background: #575e64;
+            }
         }
     }
 
@@ -54,10 +58,16 @@
 
         button:first-child{
             background: #0F4E7B;
+            &:hover{
+                background: #0C3B5F;
+            }
         }
         button:last-child{
             margin-right: 2%;
             background: #18662A;
+            &:hover{
+                background: #155324;
+            }
         }
     }
 }

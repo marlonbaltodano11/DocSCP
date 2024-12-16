@@ -1,13 +1,14 @@
 import PropTypes from "prop-types";
 import { useGlobalState } from "@global_context/GlobalProvider";
+import { romanNumber } from "../../json/RomansNumbers";
 
 const InputSelectStepThree = ({ value, onChange }) => {
-  const { FormatSyllabusObject } = useGlobalState();
-  const microplanningTable = FormatSyllabusObject.microplanningTable || [];
+  const { AcademicCalendarObject } = useGlobalState();
+  const UnitsName = AcademicCalendarObject.coursePlan || [];
 
   // Extraer nombres únicos de unidades de la tabla
   const unitOptions = [
-    ...new Set(microplanningTable.map((row) => row[1]).filter(Boolean)),
+    ...new Set(UnitsName.map((unit) => unit.unitName).filter(Boolean)),
   ];
 
   const handleChange = (event) => {
@@ -27,7 +28,7 @@ const InputSelectStepThree = ({ value, onChange }) => {
           .filter((unit) => !unit.toLowerCase().includes("examen")) // Excluir "Examen"
           .map((unit, index) => (
             <option key={index} value={unit}>
-              {unit}
+              {romanNumber[index] + "-" + unit}
             </option>
           ))}
       </select>

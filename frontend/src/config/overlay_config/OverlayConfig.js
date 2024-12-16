@@ -31,7 +31,7 @@ const OverlayDataMap = {
     Subtitle: "Advertencia: Todos los datos se perderán.",
     ButtonsArray: [
       {
-        title: "Volver",
+        title: "Ir a Inicio",
         actionKey: "goHome",
         className: "go-home-btn",
       },

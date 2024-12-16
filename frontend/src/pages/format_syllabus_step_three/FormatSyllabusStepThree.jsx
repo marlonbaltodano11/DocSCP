@@ -8,6 +8,7 @@ import SectionFormaSyllabus from "@components/common/format_syllabus/SectionForm
 import CardTextIcon from "@assets/format_syllabus/card_text_icon.svg";
 import DateInput from "../../components/common/date_input/DateInput";
 import InputSelectStepThree from "../../components/format_syllabus/InputSelectStepThree";
+import ModalStepThree from "../../components/common/format_syllabus/ModalStepThree";
 import {
   useGlobalDispatch,
   useGlobalState,
@@ -15,19 +16,22 @@ import {
 import "@styles/format_syllabus/schedule-table.css";
 import DeleteScheduleRow from "@assets/format_syllabus/delete_schedule_row.svg";
 import AddScheduleRow from "@assets/format_syllabus/add_schedule_row.svg";
+import { useEffect } from "react";
+
+const adjustTextareaHeight = (textarea) => {
+  textarea.style.height = "auto"; // Restablecer altura para recalcular
+  textarea.style.height = `${textarea.scrollHeight}px`; // Ajustar según el contenido
+};
 
 const FormatSyllabusStepThree = () => {
-  // Acceso al estado global
   const { FormatSyllabusObject } = useGlobalState();
   const dispatch = useGlobalDispatch();
   const scheduleTable = FormatSyllabusObject.scheduleTable;
 
-  // Función para manejar cambios en las celdas de la tabla
   const handleCellChange = (rowIndex, colIndex, value, partialType) => {
     const updatedTable = [...scheduleTable[partialType]];
     updatedTable[rowIndex][colIndex] = value;
 
-    // Actualizar el estado global
     dispatch({
       type: "UPDATE_SCHEDULE_TABLE",
       payload: {
@@ -37,13 +41,17 @@ const FormatSyllabusStepThree = () => {
     });
   };
 
-  // Función para calcular el puntaje total
   const calculateTotal = (partialType) => {
     return scheduleTable[partialType]?.reduce(
       (sum, row) => sum + (parseFloat(row[4]) || 0),
       0
     );
   };
+
+  useEffect(() => {
+    const textareas = document.querySelectorAll(".schedule-textarea");
+    textareas.forEach((textarea) => adjustTextareaHeight(textarea));
+  }, [scheduleTable]);
 
   return (
     <MainComponent>
@@ -89,233 +97,157 @@ const FormatSyllabusStepThree = () => {
               </tr>
             </thead>
             <tbody>
-              {/* Primer parcial */}
-              <tr className="number-partial-tr">
-                <td colSpan="7">Primer parcial</td>
-              </tr>
-              {scheduleTable.firstPartial.map((row, rowIndex) => (
-                <tr key={`first-${rowIndex}`}>
-                  {row.map((cell, colIndex) => (
-                    <td key={`${rowIndex}-${colIndex}`}>
-                      {colIndex === 0 ? (
-                        <DateInput
-                          value={cell || ""} // Aseguramos que `cell` sea una cadena válida o vacía
-                          onChange={(newValue) => {
-                            const formattedValue = new Date(newValue)
-                              .toISOString()
-                              .split("T")[0]; // Convertimos el valor a formato ISO (YYYY-MM-DD)
-                            handleCellChange(
-                              rowIndex,
-                              colIndex,
-                              formattedValue,
-                              "firstPartial"
-                            ); // Actualizamos el estado global
-                          }}
-                          IsTable={true} // Indicamos que el DateInput está en modo tabla
-                        />
-                      ) : colIndex === 1 ? (
-                        <InputSelectStepThree
-                          value={cell || ""}
-                          onChange={(newValue) =>
-                            handleCellChange(
-                              rowIndex,
-                              colIndex,
-                              newValue,
-                              "firstPartial"
-                            )
-                          }
-                        />
-                      ) : colIndex === 4 ? (
-                        <input
-                          type="number"
-                          className="schedule-input"
-                          value={cell || 0}
-                          onChange={(e) =>
-                            handleCellChange(
-                              rowIndex,
-                              colIndex,
-                              e.target.value,
-                              "firstPartial"
-                            )
-                          }
-                        />
-                      ) : (
-                        <textarea
-                          className="schedule-textarea"
-                          value={cell || ""}
-                          onChange={(e) =>
-                            handleCellChange(
-                              rowIndex,
-                              colIndex,
-                              e.target.value,
-                              "firstPartial"
-                            )
-                          }
-                        />
-                      )}
+              {["firstPartial", "secondPartial"].map((partialType, idx) => (
+                <>
+                  <tr
+                    className="number-partial-tr"
+                    key={`${partialType}-header`}
+                  >
+                    <td colSpan="7">
+                      {idx === 0 ? "Primer parcial" : "Segundo parcial"}
                     </td>
+                  </tr>
+                  {scheduleTable[partialType].map((row, rowIndex) => (
+                    <tr key={`${partialType}-${rowIndex}`}>
+                      {row.map((cell, colIndex) => (
+                        <td key={`${rowIndex}-${colIndex}`}>
+                          {colIndex === 0 ? (
+                            <DateInput
+                              value={cell || ""}
+                              onChange={(newValue) => {
+                                const formattedValue = new Date(newValue)
+                                  .toISOString()
+                                  .split("T")[0];
+                                handleCellChange(
+                                  rowIndex,
+                                  colIndex,
+                                  formattedValue,
+                                  partialType
+                                );
+                              }}
+                              IsTable={true}
+                            />
+                          ) : colIndex === 1 ? (
+                            <InputSelectStepThree
+                              value={cell || ""}
+                              onChange={(newValue) =>
+                                handleCellChange(
+                                  rowIndex,
+                                  colIndex,
+                                  newValue,
+                                  partialType
+                                )
+                              }
+                            />
+                          ) : colIndex === 3 ? (
+                            <div>
+                              <textarea
+                                className="schedule-textarea"
+                                value={cell || ""}
+                                readOnly
+                              />
+                              <ModalStepThree
+                                title="Seleccionar Contenidos"
+                                typeTitle="(Unidad Temática)"
+                                icon={AddScheduleRow}
+                                buttonClass="modal-button"
+                                onSave={(selectedTopics) =>
+                                  handleCellChange(
+                                    rowIndex,
+                                    colIndex,
+                                    selectedTopics.join(", "),
+                                    partialType
+                                  )
+                                }
+                                unitName={row[1]} // Unidad seleccionada
+                                initialSelectedTopics={
+                                  cell?.split(", ").filter(Boolean) || []
+                                } // Inicializar con valores guardados
+                              />
+                            </div>
+                          ) : colIndex === 4 ? (
+                            <input
+                              type="number"
+                              className="schedule-input"
+                              value={cell || ""}
+                              onChange={(e) =>
+                                handleCellChange(
+                                  rowIndex,
+                                  colIndex,
+                                  e.target.value,
+                                  partialType
+                                )
+                              }
+                            />
+                          ) : (
+                            <textarea
+                              className="schedule-textarea"
+                              value={cell || ""}
+                              onChange={(e) => {
+                                handleCellChange(
+                                  rowIndex,
+                                  colIndex,
+                                  e.target.value,
+                                  partialType
+                                );
+                                adjustTextareaHeight(e.target);
+                              }}
+                            />
+                          )}
+                        </td>
+                      ))}
+                      <td className="action-button-td">
+                        <div>
+                          <button
+                            title="Agregar Fila"
+                            className="action-button"
+                            onClick={() => {
+                              dispatch({
+                                type: "ADD_ROW_TO_SCHEDULE_TABLE",
+                                payload: {
+                                  partialType,
+                                  rowIndex,
+                                },
+                              });
+                            }}
+                          >
+                            <img src={AddScheduleRow} alt="" />
+                          </button>
+                          <button
+                            title="Borrar Fila"
+                            className="action-button"
+                            onClick={() => {
+                              if (scheduleTable[partialType].length === 1) {
+                                return;
+                              }
+                              const updatedTable = [
+                                ...scheduleTable[partialType],
+                              ];
+                              updatedTable.splice(rowIndex, 1);
+                              dispatch({
+                                type: "UPDATE_SCHEDULE_TABLE",
+                                payload: {
+                                  partialType,
+                                  value: updatedTable,
+                                },
+                              });
+                            }}
+                          >
+                            <img src={DeleteScheduleRow} alt="" />
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
                   ))}
-                  <td className="action-button-td">
-                    <div>
-                      <button
-                        title="Agregar Fila"
-                        className="action-button"
-                        onClick={() => {
-                          dispatch({
-                            type: "ADD_ROW_TO_SCHEDULE_TABLE",
-                            payload: {
-                              partialType: "firstPartial", // Cambiar por el tipo de parcial correcto
-                              rowIndex, // Índice de la fila donde se da clic
-                            },
-                          });
-                        }}
-                      >
-                        <img src={AddScheduleRow} alt="" />
-                      </button>
-                      <button
-                        title="Borrar Fila"
-                        className="action-button"
-                        onClick={() => {
-                          if (scheduleTable.firstPartial.length == 1) {
-                            return;
-                          }
-                          const updatedTable = [...scheduleTable.firstPartial];
-                          updatedTable.splice(rowIndex, 1);
-                          dispatch({
-                            type: "UPDATE_SCHEDULE_TABLE",
-                            payload: {
-                              partialType: "firstPartial",
-                              value: updatedTable,
-                            },
-                          });
-                        }}
-                      >
-                        <img src={DeleteScheduleRow} alt="" />
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-              <tr className="punctuation-tr">
-                <td colSpan="7">
-                  Puntuación Total Primer Parcial:{" "}
-                  <span>{calculateTotal("firstPartial")}</span>
-                </td>
-              </tr>
-
-              {/* Segundo parcial */}
-              <tr className="number-partial-tr">
-                <td colSpan="7">Segundo parcial</td>
-              </tr>
-              {scheduleTable.secondPartial.map((row, rowIndex) => (
-                <tr key={`second-${rowIndex}`}>
-                  {row.map((cell, colIndex) => (
-                    <td key={`${rowIndex}-${colIndex}`}>
-                      {colIndex === 0 ? (
-                        <DateInput
-                          value={cell || ""} // Aseguramos que `cell` sea una cadena válida o vacía
-                          onChange={(newValue) => {
-                            const formattedValue = new Date(newValue)
-                              .toISOString()
-                              .split("T")[0]; // Convertimos el valor a formato ISO (YYYY-MM-DD)
-                            handleCellChange(
-                              rowIndex,
-                              colIndex,
-                              formattedValue,
-                              "secondPartial"
-                            ); // Actualizamos el estado global
-                          }}
-                          IsTable={true} // Indicamos que el DateInput está en modo tabla
-                        />
-                      ) : colIndex === 1 ? (
-                        <InputSelectStepThree
-                          value={cell || ""}
-                          onChange={(newValue) =>
-                            handleCellChange(
-                              rowIndex,
-                              colIndex,
-                              newValue,
-                              "secondPartial"
-                            )
-                          }
-                        />
-                      ) : colIndex === 4 ? (
-                        <input
-                          type="number"
-                          className="schedule-input"
-                          value={cell || ""}
-                          onChange={(e) =>
-                            handleCellChange(
-                              rowIndex,
-                              colIndex,
-                              e.target.value,
-                              "secondPartial"
-                            )
-                          }
-                        />
-                      ) : (
-                        <textarea
-                          className="schedule-textarea"
-                          value={cell || ""}
-                          onChange={(e) =>
-                            handleCellChange(
-                              rowIndex,
-                              colIndex,
-                              e.target.value,
-                              "secondPartial"
-                            )
-                          }
-                        />
-                      )}
+                  <tr className="punctuation-tr" key={`${partialType}-total`}>
+                    <td colSpan="7">
+                      Puntuación Total{" "}
+                      {idx === 0 ? "Primer Parcial" : "Segundo Parcial"}:{" "}
+                      <span>{calculateTotal(partialType)}</span>
                     </td>
-                  ))}
-                  <td className="action-button-td">
-                    <div>
-                      <button
-                        className="action-button"
-                        title="Agregar Fila"
-                        onClick={() => {
-                          dispatch({
-                            type: "ADD_ROW_TO_SCHEDULE_TABLE",
-                            payload: {
-                              partialType: "secondPartial", // Cambiar por el tipo de parcial correcto
-                              rowIndex, // Índice de la fila donde se da clic
-                            },
-                          });
-                        }}
-                      >
-                        <img src={AddScheduleRow} alt="" />
-                      </button>
-                      <button
-                        className="action-button"
-                        title="Borrar Fila"
-                        onClick={() => {
-                          if (scheduleTable.secondPartial.length == 1) {
-                            return;
-                          }
-                          const updatedTable = [...scheduleTable.secondPartial];
-                          updatedTable.splice(rowIndex, 1);
-                          dispatch({
-                            type: "UPDATE_SCHEDULE_TABLE",
-                            payload: {
-                              partialType: "secondPartial",
-                              value: updatedTable,
-                            },
-                          });
-                        }}
-                      >
-                        <img src={DeleteScheduleRow} alt="" />
-                      </button>
-                    </div>
-                  </td>
-                </tr>
+                  </tr>
+                </>
               ))}
-              <tr className="punctuation-tr">
-                <td colSpan="7">
-                  Puntuación Total Segundo Parcial:{" "}
-                  <span>{calculateTotal("secondPartial")}</span>
-                </td>
-              </tr>
             </tbody>
           </table>
         </section>

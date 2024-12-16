@@ -22,6 +22,11 @@
         }
 }
 
+.modal-btn-step-3{
+    border-radius: 5px;
+    border: 1px solid #0F4E7B;
+}
+
 .small-global-button-modal{
     position: relative;
 }
@@ -183,5 +188,13 @@
         &:hover{
             color: darkred;
         }
+    }
+}
+
+.step-three{
+    height: min(20.83vw, 400px);
+
+    .modal-footer{
+        margin-top: min(3.64vw, 70px);
     }
 }
