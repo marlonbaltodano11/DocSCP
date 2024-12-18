@@ -84,6 +84,42 @@ const FormatSyllabusStepTwo = () => {
     );
   }, [FormatSyllabusObject, CheckBoxesValue, dispatch]);
 
+  console.log(microplanningTable);
+
+  const renderTableRow = (row, rowIndex) => {
+    // Detectar si es una fila de examen
+    const isExamRow =
+      row.length === 2 && row[1].toLowerCase().includes("examen");
+    const totalColumns = 9; // Número total de columnas en la tabla (ajusta según tu diseño)
+
+    if (isExamRow) {
+      return (
+        <tr key={`row-${rowIndex}`}>
+          <td colSpan={totalColumns} className="exam-row">
+            {row[1]} {/* Nombre del examen */}
+          </td>
+        </tr>
+      );
+    }
+
+    // Renderizado de filas normales
+    return (
+      <tr key={`row-${rowIndex}`}>
+        {row.map((cell, colIndex) => (
+          <td key={`cell-${rowIndex}-${colIndex}`}>
+            <textarea
+              className="microplanning-textarea"
+              value={cell}
+              onChange={(e) =>
+                handleCellChange(rowIndex, colIndex, e.target.value)
+              }
+            />
+          </td>
+        ))}
+      </tr>
+    );
+  };
+
   return (
     <MainComponent>
       <HeaderComponent />
@@ -112,74 +148,100 @@ const FormatSyllabusStepTwo = () => {
               </tr>
             </thead>
             <tbody>
-              {microplanningTable.map((row, rowIndex) => (
-                <tr key={rowIndex}>
-                  {row.slice(0, row.length - 2).map((cell, colIndex) => {
-                    // Truncamos los últimos dos elementos
-                    const isLastFourColumns = colIndex >= row.length - 6; // Ajustamos para las últimas cuatro columnas visibles
-                    return (
-                      <td
-                        key={colIndex}
-                        colSpan={colIndex === row.length - 3 ? 6 : 1} // Ajustamos colSpan para excluir las últimas columnas truncadas
-                      >
+              {microplanningTable.map((row, rowIndex) => {
+                // Detectar si es una fila de examen
+                const isExamRow =
+                  row.length === 2 && row[1].toLowerCase().includes("examen");
+                const totalColumns = 9; // Número total de columnas visibles en tu tabla
+
+                if (isExamRow) {
+                  // Renderizar la fila de examen con colspan
+                  return (
+                    <tr key={`row-${rowIndex}`}>
+                      <td>
                         <textarea
                           className="microplanning-textarea"
-                          value={microplanningTable[rowIndex][colIndex] || ""}
-                          readOnly={colIndex > 2 || colIndex === row.length - 3}
-                          placeholder={
-                            isLastFourColumns && row.length > 6
-                              ? "Click en el boton de esquina superior derecha para agregar elementos deseados"
-                              : "Click para escribir"
-                          }
+                          value={row[0] || ""}
                           onChange={(e) => {
-                            handleCellChange(
-                              rowIndex,
-                              colIndex,
-                              e.target.value
-                            ),
-                              adjustTextareaHeight(e.target);
+                            handleCellChange(rowIndex, 0, e.target.value);
+                            adjustTextareaHeight(e.target);
                           }}
                         />
-                        {isLastFourColumns && row.length > 6 ? ( // Ajustamos la condición para verificar las últimas columnas visibles
-                          <FormatSyllabusModal
-                            icon={BtnSingleModal}
-                            title="Editar Elemento"
-                            typeTitle="(unitario)"
-                            mode="individual"
-                            columnKey={ColumnCheckboxListKeys[colIndex - 3]}
-                            rowIndex={rowIndex}
-                            colIndex={colIndex}
-                            onConfirm={(selectedCheckboxes) => {
-                              const updatedTable = [...microplanningTable];
-                              selectedCheckboxes.forEach((checkbox) => {
-                                if (
-                                  !updatedTable[rowIndex][colIndex].includes(
-                                    checkbox
-                                  )
-                                ) {
-                                  updatedTable[rowIndex][colIndex] +=
-                                    updatedTable[rowIndex][colIndex]
-                                      ? `, ${checkbox}`
-                                      : checkbox;
-                                }
-                              });
-                              dispatch({
-                                type: "UPDATE_FORMAT_SYLLABUS",
-                                payload: {
-                                  key: "microplanningTable",
-                                  value: updatedTable,
-                                },
-                              });
+                      </td>
+                      <td colSpan={totalColumns - 1} className="exam-row">
+                        {row[1]}
+                      </td>
+                    </tr>
+                  );
+                }
+
+                // Renderizado de filas normales (truncando las últimas dos columnas)
+                return (
+                  <tr key={`row-${rowIndex}`}>
+                    {row.slice(0, row.length - 2).map((cell, colIndex) => {
+                      // Ajustar la lógica de las últimas columnas y el modal.
+                      const isLastFourColumns =
+                        colIndex >= row.slice(0, row.length - 2).length - 4;
+
+                      return (
+                        <td key={colIndex}>
+                          <textarea
+                            className="microplanning-textarea"
+                            value={cell || ""}
+                            readOnly={colIndex > 2}
+                            placeholder={
+                              isLastFourColumns && row.length > 6
+                                ? "Click en el boton de esquina superior derecha para agregar elementos deseados"
+                                : "Click para escribir"
+                            }
+                            onChange={(e) => {
+                              handleCellChange(
+                                rowIndex,
+                                colIndex,
+                                e.target.value
+                              );
+                              adjustTextareaHeight(e.target);
                             }}
                           />
-                        ) : (
-                          ""
-                        )}
-                      </td>
-                    );
-                  })}
-                </tr>
-              ))}
+                          {isLastFourColumns && row.length > 6 ? (
+                            <FormatSyllabusModal
+                              icon={BtnSingleModal}
+                              title="Editar Elemento"
+                              typeTitle="(unitario)"
+                              mode="individual"
+                              columnKey={ColumnCheckboxListKeys[colIndex - 3]}
+                              rowIndex={rowIndex}
+                              colIndex={colIndex}
+                              onConfirm={(selectedCheckboxes) => {
+                                const updatedTable = [...microplanningTable];
+                                selectedCheckboxes.forEach((checkbox) => {
+                                  if (
+                                    !updatedTable[rowIndex][colIndex].includes(
+                                      checkbox
+                                    )
+                                  ) {
+                                    updatedTable[rowIndex][colIndex] +=
+                                      updatedTable[rowIndex][colIndex]
+                                        ? `, ${checkbox}`
+                                        : checkbox;
+                                  }
+                                });
+                                dispatch({
+                                  type: "UPDATE_FORMAT_SYLLABUS",
+                                  payload: {
+                                    key: "microplanningTable",
+                                    value: updatedTable,
+                                  },
+                                });
+                              }}
+                            />
+                          ) : null}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </SectionFormaSyllabus>

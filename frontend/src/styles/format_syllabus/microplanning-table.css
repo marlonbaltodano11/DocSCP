@@ -30,6 +30,9 @@
     tbody {
   
         tr {
+          .exam-row{
+            text-align: center;
+          }
   
           td {
                 height: min(7.81vw, 150px);

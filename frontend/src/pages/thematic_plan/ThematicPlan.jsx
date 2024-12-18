@@ -204,8 +204,8 @@ export const ThematicPlan = () => {
                 <p className="title">Total de semanas:</p> <p>{"15 semanas"}</p>
               </div>
               <p className="tip-text">
-                Nota: La última fecha no se incluye y las fechas son solo
-                sugerencias.
+                Nota: Se incluye fecha de inicio hasta la fecha de fin de
+                unidad. Las fechas son solo sugerencias.
               </p>
             </div>
           </section>
