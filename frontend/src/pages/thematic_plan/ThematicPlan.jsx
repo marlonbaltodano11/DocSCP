@@ -39,7 +39,6 @@ export const ThematicPlan = () => {
   const globalTasks = state.AcademicCalendarObject.coursePlan;
 
   const initializeTasks = (tasks) => {
-    console.log("HORAS", tasks);
     return tasks.map((task, index) => {
       const isValidDate = (date) => !isNaN(new Date(date).getTime());
       return {
@@ -92,6 +91,15 @@ export const ThematicPlan = () => {
           ? new Date(updatedTask.end)
           : new Date(taskToUpdate.end);
 
+      // Validación: No actualizar si la fecha de inicio es mayor que la final
+      if (newStart > newEnd) {
+        console.log(
+          "La fecha de inicio no puede ser mayor que la fecha final."
+        );
+        return prevTasks; // Retornar el estado anterior
+      }
+
+      // Actualizar la tarea
       updatedTasks[index] = {
         ...taskToUpdate,
         ...updatedTask,

@@ -23,7 +23,6 @@ const InitialDocumentUpload = () => {
 
   useEffect(() => {
     if (CleanGlobalContextAux) {
-      console.log("entra");
       resetEntireGlobalState(dispatch);
       CleanGlobalContextAux = false;
     }

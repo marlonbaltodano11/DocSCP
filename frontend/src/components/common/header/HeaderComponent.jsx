@@ -11,7 +11,7 @@ const HeaderComponent = () => {
   const [overlayType, setOverlayType] = useState(null);
 
   const goHome = () => {
-    navigate("/");
+    navigate("/upload-document");
     setModalOpen(false);
   };
   const closeOverlay = () => setModalOpen(false);

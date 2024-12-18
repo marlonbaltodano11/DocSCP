@@ -31,7 +31,6 @@ const AcademicCycleForm = () => {
   // Manejar cambio en los checkboxes de días de la semana
   const handleDayChange = (e) => {
     const { id, checked } = e.target;
-    console.log(timetable[id]?.periods);
     dispatch({
       type: "SET_ACADEMIC_CALENDAR_TIMETABLE",
       payload: {
@@ -62,6 +61,13 @@ const AcademicCycleForm = () => {
   // Manejar cambio en la modalidad de clase
   const handleClassModalityChange = (e) => {
     const { value } = e.target;
+
+    if (value === "trimester") {
+      dispatch({
+        type: "SET_ACADEMIC_CALENDAR_DATE",
+        payload: { id: "firstExamDate", value: "" },
+      });
+    }
 
     const defaultConfig = ClassModality.dayConfig[value];
     if (!defaultConfig) return;
@@ -114,8 +120,18 @@ const AcademicCycleForm = () => {
             {DateInputs.map((dateInput, index) => (
               <DateInput
                 key={index}
+                isDisabled={
+                  dateInput.id === "firstExamDate" &&
+                  academicCalendar?.modality === "trimester"
+                }
                 InputLabel={dateInput.label}
                 Multiple={dateInput.multiple}
+                IsStartEndDate={
+                  dateInput.id === "cicleStartDate" ||
+                  dateInput.id === "cicleEndDate"
+                    ? true
+                    : false
+                }
                 onChange={(value) => {
                   const formattedValue = Array.isArray(value)
                     ? value.map(

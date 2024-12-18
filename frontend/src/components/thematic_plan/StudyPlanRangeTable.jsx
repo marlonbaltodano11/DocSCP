@@ -13,6 +13,12 @@ const StudyPlanRangeTable = ({ tasks = [], onTaskChange, today }) => {
     state.AcademicCalendarObject.timetable
   );
 
+  const addDaysToDate = (date, days) => {
+    const result = new Date(date);
+    result.setDate(result.getDate() + days);
+    return result;
+  };
+
   return (
     <table className="study-plan-range-table">
       <thead>
@@ -29,7 +35,11 @@ const StudyPlanRangeTable = ({ tasks = [], onTaskChange, today }) => {
           const startDate = task?.start || today;
           const endDate = task?.end || today;
 
-          const meetings = countDatesInRange(validClasses, startDate, endDate);
+          const meetings = countDatesInRange(
+            validClasses,
+            startDate,
+            addDaysToDate(endDate, 1)
+          );
 
           return (
             <tr key={index}>

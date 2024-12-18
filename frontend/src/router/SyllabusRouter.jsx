@@ -18,7 +18,10 @@ const SyllabusRouter = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/upload-document" />}></Route>
+        <Route
+          path="/"
+          element={<InitialLoadingAnimation></InitialLoadingAnimation>}
+        ></Route>
         <Route path="/upload-document" element={<InitialDocumentUpload />} />
         <Route path="/academic-cycle" element={<AcademicCycle />} />
         <Route path="/analytical-plan" element={<AnalyticalPlan />} />
@@ -43,6 +46,7 @@ const SyllabusRouter = () => {
           path="/anim2"
           element={<InitialLoadingAnimation></InitialLoadingAnimation>}
         ></Route>
+        <Route path="*" element={<Navigate to="/upload-document" replace />} />
       </Routes>
     </Router>
   );

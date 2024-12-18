@@ -13,7 +13,7 @@ const AcademicCycle = () => {
   const TitleHead = "Datos Elementales del Ciclo Académico";
   const NumberView = 1;
   const [NextPage, SetNewPage] = useState("/academic-cycle");
-  const PreviousPage = "/";
+  const PreviousPage = "/upload-document";
 
   const [showWarning, setshowWarning] = useState(false);
 
@@ -24,7 +24,7 @@ const AcademicCycle = () => {
       state.AcademicCalendarObject.academicCalendar,
       state.AcademicCalendarObject.timetable
     );
-    console.log("Valido?", isValid);
+
     if (isValid) {
       setshowWarning(false);
       SetNewPage("/analytical-plan");
@@ -53,7 +53,8 @@ const AcademicCycle = () => {
             <p className="warning-dates">
               Colocar correctamente los campos: Fecha Inicio de Ciclo, Fecha
               Primer Examen Parcial, Fecha Final de Ciclo y la Frecuencia
-              Semanal
+              Semanal. <br></br> En Trimestre no se toma en cuenta la Fecha de
+              Primer Examen Parcial.
             </p>
           ) : (
             ""

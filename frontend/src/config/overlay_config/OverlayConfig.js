@@ -3,6 +3,8 @@ import SaveInstanceBtnIcon from "@assets/notification_overlay/save_instance_icon
 import DownloadFormatBtnIcon from "@assets/notification_overlay/download_format_icon.svg";
 import FailApiIcon from "@assets/notification_overlay/fail_api_icon.svg";
 import ReturnHomeIcon from "@assets/notification_overlay/return_home_icon.svg";
+import WarningIcon from "@assets/notification_overlay/warning_icon.svg";
+
 
 const ClassNameList = [
   "fail-api-overlay",
@@ -10,6 +12,7 @@ const ClassNameList = [
   "reprocess-overlay",
   "save-overlay-1",
   "save-overlay-2",
+  "fail-api-overlay"
 ];
 
 const OverlayDataMap = {
@@ -68,6 +71,44 @@ const OverlayDataMap = {
     Icon: DownloadFormatBtnIcon,
     Title: "Formato Guardado En Su Ordenador",
     Subtitle: "",
+
+  },
+  5: {
+    Icon: FailApiIcon,
+    Title: "Error Al Generar Syllabus",
+    Subtitle: "Verificar que el puntaje total en ambos parciales sea menor a 100 puntos.",
+    ButtonsArray: [
+      {
+        title: "Aceptar",
+        actionKey: "closeOverlay",
+        className: "close-overlay-btn",
+      },
+    ],
+
+  },
+  6: {
+    Icon: FailApiIcon,
+    Title: "Error Al Subir Documento",
+    Subtitle: "Solo se permiten archivos de tipo JSON (archivo de guardado) o DOCX. Verificar archivo subido.",
+    ButtonsArray: [
+      {
+        title: "Aceptar",
+        actionKey: "closeOverlay",
+        className: "close-overlay-btn",
+      },
+    ],
+
+  },
+  7: {
+    Icon: WarningIcon,
+    Title: "Advertencia: Fecha Inicio mayor que la Fecha Final.",
+    ButtonsArray: [
+      {
+        title: "Aceptar",
+        actionKey: "closeOverlay",
+        className: "close-overlay-btn",
+      },
+    ],
 
   },
 };

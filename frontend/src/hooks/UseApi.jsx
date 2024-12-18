@@ -62,8 +62,6 @@ function useApi({
         finalData = convertToFormData(requestData);
       }
 
-      console.log(finalData);
-
       const config = {
         params: queryParams,
       };
@@ -88,7 +86,6 @@ function useApi({
       setResponse(result.data);
       setStatus(result.status);
     } catch (err) {
-      console.log(err);
       setError(err);
     } finally {
       setLoading(false);

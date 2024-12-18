@@ -26,8 +26,8 @@ const CardsUnitsAndContents = ({ UnitsData, onDeleteUnit, onEditUnit }) => {
             <h3>Carga horaria: </h3>
             <input
               className="input-hour"
-              value={unit.hours || 1}
-              placeholder="0"
+              value={unit.hours || ""}
+              placeholder="1"
               type="number"
               onChange={(e) => {
                 const updatedValue = e.target.value.replace(e, "");

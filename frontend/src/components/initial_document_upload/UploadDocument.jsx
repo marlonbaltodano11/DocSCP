@@ -46,9 +46,8 @@ const UploadDocument = ({ ApiReference }) => {
 
   const validateFile = (extension) => {
     if (extension != "json" && extension != "docx") {
-      alert(
-        "Solo se permiten archivos de tipo JSON (archivo de guardado) o DOCX"
-      );
+      setOverlayType(6);
+      setModalOpen(true);
       setFileExtension("");
       setFile(null);
       setFileName("Esperando documento.....");
@@ -75,7 +74,7 @@ const UploadDocument = ({ ApiReference }) => {
     reader.onload = (e) => {
       const content = e.target.result;
       const data = JSON.parse(content);
-      console.log(data);
+
       if (!data.state) {
         setOverlayType(0);
         setModalOpen(true);

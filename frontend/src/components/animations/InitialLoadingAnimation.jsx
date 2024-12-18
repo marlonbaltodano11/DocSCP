@@ -1,14 +1,16 @@
 import { useEffect } from "react";
 import anime from "animejs/lib/anime.es.js";
+import { useNavigate } from "react-router-dom";
 
 const InitialLoadingAnimation = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     anime
       .timeline({
         loop: false,
         complete: () => {
           // Aquí va la función que quieres ejecutar al finalizar la animación
-          alert("Animación completada");
+          navigate("/upload-document");
         },
       })
 

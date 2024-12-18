@@ -37,6 +37,10 @@ const AnalyticalPlan = () => {
   };
 
   const handleEditUnit = (index, field, value) => {
+    if (field === "hours" && value < 0) {
+      return;
+    }
+
     dispatch({
       type: "EDIT_UNIT",
       payload: { index, field, value },

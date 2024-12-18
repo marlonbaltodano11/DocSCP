@@ -143,7 +143,6 @@ const globalReducer = (state, action) => {
     }
 
     case types.processTasks:
-      console.log("Processing tasks:", state.AcademicCalendarObject.tasks);
       // Aquí puedes realizar acciones adicionales, como enviar los datos al servidor.
       return state;
 

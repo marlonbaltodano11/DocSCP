@@ -72,7 +72,8 @@
                   font-size: min(0.83vw, 16px);
                 }
               }
-            
+              
+      
               .table-wrapper{
                 
                 .calendar-icon{
@@ -162,3 +163,9 @@
   
       }
 }
+
+.calendar-disabled{
+  cursor: not-allowed !important;
+  opacity: 0.5;
+  
+  }

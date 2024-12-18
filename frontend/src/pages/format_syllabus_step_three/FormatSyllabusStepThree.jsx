@@ -14,9 +14,9 @@ import {
   useGlobalState,
 } from "@global_context/GlobalProvider";
 import "@styles/format_syllabus/schedule-table.css";
-import DeleteScheduleRow from "@assets/format_syllabus/delete_schedule_row.svg";
-import AddScheduleRow from "@assets/format_syllabus/add_schedule_row.svg";
-import { useEffect } from "react";
+import DeleteScheduleRowIcon from "@assets/format_syllabus/delete_schedule_row.svg";
+import AddScheduleRowIcon from "@assets/format_syllabus/add_schedule_row.svg";
+import { useEffect, useState } from "react";
 
 const adjustTextareaHeight = (textarea) => {
   textarea.style.height = "auto"; // Restablecer altura para recalcular
@@ -26,38 +26,50 @@ const adjustTextareaHeight = (textarea) => {
 const FormatSyllabusStepThree = () => {
   const { FormatSyllabusObject } = useGlobalState();
   const dispatch = useGlobalDispatch();
-  const scheduleTable = FormatSyllabusObject.scheduleTable;
+  const scheduleTableData = FormatSyllabusObject.scheduleTable;
 
-  const handleCellChange = (rowIndex, colIndex, value, partialType) => {
-    const updatedTable = [...scheduleTable[partialType]];
-    updatedTable[rowIndex][colIndex] = value;
+  const [totalScores, setTotalScores] = useState({
+    firstPartial: 0,
+    secondPartial: 0,
+  });
+
+  const handleCellUpdate = (rowIndex, colIndex, value, partialType) => {
+    const updatedRows = [...scheduleTableData[partialType]];
+    updatedRows[rowIndex][colIndex] = value;
 
     dispatch({
       type: "UPDATE_SCHEDULE_TABLE",
       payload: {
         partialType,
-        value: updatedTable,
+        value: updatedRows,
       },
     });
   };
 
-  const calculateTotal = (partialType) => {
-    return scheduleTable[partialType]?.reduce(
+  const calculateTotalScore = (partialType) => {
+    return scheduleTableData[partialType]?.reduce(
       (sum, row) => sum + (parseFloat(row[4]) || 0),
       0
     );
   };
 
   useEffect(() => {
+    setTotalScores({
+      firstPartial: calculateTotalScore("firstPartial"),
+      secondPartial: calculateTotalScore("secondPartial"),
+    });
+  }, [scheduleTableData]);
+
+  useEffect(() => {
     const textareas = document.querySelectorAll(".schedule-textarea");
     textareas.forEach((textarea) => adjustTextareaHeight(textarea));
-  }, [scheduleTable]);
+  }, [scheduleTableData]);
 
   return (
     <MainComponent>
       <HeaderComponent />
       <main>
-        <SuperiorActionMenu />
+        <SuperiorActionMenu totalScores={totalScores} />
         <NavigationHead
           TitleHead="Previsualización del formato Syllabus"
           NumberView={3}
@@ -70,12 +82,12 @@ const FormatSyllabusStepThree = () => {
           <textarea
             className="shadow"
             name="scheduleDescription"
-            value={FormatSyllabusObject["{{scheduleDescription}}"]}
+            value={FormatSyllabusObject.scheduleDescription}
             onChange={(e) =>
               dispatch({
                 type: "UPDATE_FORMAT_SYLLABUS",
                 payload: {
-                  key: "{{scheduleDescription}}",
+                  key: "scheduleDescription",
                   value: e.target.value,
                 },
               })
@@ -99,15 +111,12 @@ const FormatSyllabusStepThree = () => {
             <tbody>
               {["firstPartial", "secondPartial"].map((partialType, idx) => (
                 <>
-                  <tr
-                    className="number-partial-tr"
-                    key={`${partialType}-header`}
-                  >
+                  <tr className="partial-header" key={`${partialType}-header`}>
                     <td colSpan="7">
                       {idx === 0 ? "Primer parcial" : "Segundo parcial"}
                     </td>
                   </tr>
-                  {scheduleTable[partialType].map((row, rowIndex) => (
+                  {scheduleTableData[partialType].map((row, rowIndex) => (
                     <tr key={`${partialType}-${rowIndex}`}>
                       {row.map((cell, colIndex) => (
                         <td key={`${rowIndex}-${colIndex}`}>
@@ -115,13 +124,13 @@ const FormatSyllabusStepThree = () => {
                             <DateInput
                               value={cell || ""}
                               onChange={(newValue) => {
-                                const formattedValue = new Date(newValue)
+                                const formattedDate = new Date(newValue)
                                   .toISOString()
                                   .split("T")[0];
-                                handleCellChange(
+                                handleCellUpdate(
                                   rowIndex,
                                   colIndex,
-                                  formattedValue,
+                                  formattedDate,
                                   partialType
                                 );
                               }}
@@ -131,7 +140,7 @@ const FormatSyllabusStepThree = () => {
                             <InputSelectStepThree
                               value={cell || ""}
                               onChange={(newValue) =>
-                                handleCellChange(
+                                handleCellUpdate(
                                   rowIndex,
                                   colIndex,
                                   newValue,
@@ -149,10 +158,10 @@ const FormatSyllabusStepThree = () => {
                               <ModalStepThree
                                 title="Seleccionar Contenidos"
                                 typeTitle="(Unidad Temática)"
-                                icon={AddScheduleRow}
+                                icon={AddScheduleRowIcon}
                                 buttonClass="modal-button"
                                 onSave={(selectedTopics) =>
-                                  handleCellChange(
+                                  handleCellUpdate(
                                     rowIndex,
                                     colIndex,
                                     selectedTopics.join(", "),
@@ -171,7 +180,7 @@ const FormatSyllabusStepThree = () => {
                               className="schedule-input"
                               value={cell || ""}
                               onChange={(e) =>
-                                handleCellChange(
+                                handleCellUpdate(
                                   rowIndex,
                                   colIndex,
                                   e.target.value,
@@ -184,7 +193,7 @@ const FormatSyllabusStepThree = () => {
                               className="schedule-textarea"
                               value={cell || ""}
                               onChange={(e) => {
-                                handleCellChange(
+                                handleCellUpdate(
                                   rowIndex,
                                   colIndex,
                                   e.target.value,
@@ -211,39 +220,45 @@ const FormatSyllabusStepThree = () => {
                               });
                             }}
                           >
-                            <img src={AddScheduleRow} alt="" />
+                            <img src={AddScheduleRowIcon} alt="Agregar Fila" />
                           </button>
                           <button
                             title="Borrar Fila"
                             className="action-button"
                             onClick={() => {
-                              if (scheduleTable[partialType].length === 1) {
+                              if (scheduleTableData[partialType].length === 1) {
                                 return;
                               }
-                              const updatedTable = [
-                                ...scheduleTable[partialType],
+                              const updatedRows = [
+                                ...scheduleTableData[partialType],
                               ];
-                              updatedTable.splice(rowIndex, 1);
+                              updatedRows.splice(rowIndex, 1);
                               dispatch({
                                 type: "UPDATE_SCHEDULE_TABLE",
                                 payload: {
                                   partialType,
-                                  value: updatedTable,
+                                  value: updatedRows,
                                 },
                               });
                             }}
                           >
-                            <img src={DeleteScheduleRow} alt="" />
+                            <img
+                              src={DeleteScheduleRowIcon}
+                              alt="Borrar Fila"
+                            />
                           </button>
                         </div>
                       </td>
                     </tr>
                   ))}
-                  <tr className="punctuation-tr" key={`${partialType}-total`}>
+                  <tr
+                    className="total-score-row punctuation-tr"
+                    key={`${partialType}-total`}
+                  >
                     <td colSpan="7">
                       Puntuación Total{" "}
                       {idx === 0 ? "Primer Parcial" : "Segundo Parcial"}:{" "}
-                      <span>{calculateTotal(partialType)}</span>
+                      <span>{totalScores[partialType]}</span>
                     </td>
                   </tr>
                 </>

@@ -26,7 +26,7 @@ const downloadSyllabus = async (data, filename) => {
     window.URL.revokeObjectURL(url);
     document.body.removeChild(link);
 
-    console.log("Archivo descargado exitosamente");
+
   } catch (error) {
     console.error("Error al descargar el archivo:", error);
     throw error;

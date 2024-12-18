@@ -7,8 +7,9 @@ import { useNavigate } from "react-router-dom";
 import { useGlobalState } from "@global_context/GlobalProvider";
 import downloadSyllabus from "../../../utils/downloadSyllabus";
 import NotificationOverlay from "../notification_overlay/NotificationOverlay";
+import PropTypes from "prop-types";
 
-const SuperiorActionMenu = () => {
+const SuperiorActionMenu = ({ totalScores }) => {
   const navigate = useNavigate();
   const state = useGlobalState();
   const [overlayType, setOverlayType] = useState(null);
@@ -51,6 +52,11 @@ const SuperiorActionMenu = () => {
   };
 
   const handleDownloadFormat = async () => {
+    if (totalScores.firstPartial > 100 || totalScores.secondPartial > 100) {
+      setOverlayType(5);
+      setModalOpen(true);
+      return;
+    }
     try {
       await downloadSyllabus(
         state.FormatSyllabusObject,
@@ -110,3 +116,7 @@ const SuperiorActionMenu = () => {
 };
 
 export default SuperiorActionMenu;
+
+SuperiorActionMenu.propTypes = {
+  totalScores: PropTypes.object,
+};
