@@ -141,7 +141,8 @@ class DataFormatterService:
                             
                             topics_cell.append('\n'.join(unit['topics'].pop()))
             
-            microplanning_data.append([week_cell.strip(), '\n'.join(unit_cell).strip(), '\n'.join(objective_cell).strip(), '\n'.join(topics_cell).strip(), "", "", "", "", ""])
+            if unit_cell:
+                microplanning_data.append([week_cell.strip(), '\n'.join(unit_cell).strip(), '\n'.join(objective_cell).strip(), '\n'.join(topics_cell).strip(), "", "", "", "", ""])
                 
         final_exam_label = f"Semana {week_number} - {last_exam_week[0].strftime('%d/%m/%Y')} - {last_exam_week[-1].strftime('%d/%m/%Y')}"    
         microplanning_data.append([final_exam_label, "Examen final"])
