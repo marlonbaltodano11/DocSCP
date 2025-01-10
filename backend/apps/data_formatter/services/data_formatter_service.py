@@ -23,7 +23,16 @@ class DataFormatterService:
         holyday_dates = [datetime.strptime(date, '%Y-%m-%d') for date in academic_calendar['holyday_dates']]
         
         # Días de clase de la semana (lunes=0, domingo=6)
-        class_days = [i for i, day_info in enumerate(timetable.values()) if day_info['class_day']]
+        weekdays_map = {
+            "monday": 0,
+            "tuesday": 1,
+            "wednesday": 2,
+            "thursday": 3,
+            "friday": 4,
+            "saturday": 5,
+            "sunday": 6
+        }
+        class_days = [weekdays_map[day] for day, day_info in timetable.items() if day_info.get('class_day', False)]
 
         # Generar todas las fechas válidas entre el rango, excluyendo festivos y días sin clase
         valid_class_dates = []
@@ -48,8 +57,10 @@ class DataFormatterService:
         last_exam_week = weeks[-1]
 
         first_exam_date = academic_calendar.get('first_exam_date', None)
-        if first_exam_date is not None:
+        if first_exam_date is not None and first_exam_date:
             first_exam_date = datetime.strptime(first_exam_date, '%Y-%m-%d')
+        else:
+            first_exam_date = None
             
         class_dates_without_exams = []
         
@@ -63,7 +74,7 @@ class DataFormatterService:
             
             start_date = datetime.strptime(unit['start_date'], '%Y-%m-%d')
             end_date = datetime.strptime(unit['end_date'], '%Y-%m-%d')
-
+            
             number_of_days_the_class_is_received = len([date for date in class_dates_without_exams if start_date <= date <= end_date])
             number_of_topics = len(unit.get('topics', []))
 
