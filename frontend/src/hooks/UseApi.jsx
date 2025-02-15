@@ -2,25 +2,26 @@ import { useState, useEffect, useCallback } from "react";
 import { convertToFormData } from "@utils/FormDataUtils";
 import axios from "axios";
 /**
- * Custom hook to make API requests using Axios.
+ * Hook personalizado para realizar solicitudes a una API utilizando Axios.
  *
- * @param {Object} options - Options to configure the API request.
- * @param {string} options.endpoint - The API endpoint to be requested.
- * @param {string} [options.method='GET'] - HTTP method to use for the request. Defaults to 'GET'.
- * @param {Object|null} [options.data=null] - Data to be sent in the request body for POST/PUT requests.
- * @param {Object|null} [options.params=null] - Query parameters to be sent with the request.
- * @param {boolean} [options.autoFetch=true] - Whether to automatically fetch the data when the component mounts. Defaults to true.
+ * @param {Object} opciones - Configuración de la solicitud API.
+ * @param {string} opciones.endpoint - El endpoint de la API a solicitar.
+ * @param {string} [opciones.method='GET'] - Método HTTP a utilizar en la solicitud. Por defecto es 'GET'.
+ * @param {Object|null} [opciones.data=null] - Datos que se enviarán en el cuerpo de la solicitud para métodos POST/PUT.
+ * @param {Object|null} [opciones.params=null] - Parámetros de consulta (query params) que se enviarán con la solicitud.
+ * @param {boolean} [opciones.autoFetch=true] - Indica si la solicitud debe ejecutarse automáticamente al montar el componente. Por defecto es true.
+ * @param {boolean} [opciones.sendJson=false] - Define si los datos se enviarán en formato JSON o como FormData.
  *
- * @returns {Object} An object containing the API response, loading state, error, and setters to update the request.
- * @returns {any} response - The API response data.
- * @returns {number} status - The API response status.
- * @returns {Error|null} error - Any error that occurred during the request.
- * @returns {boolean} loading - A boolean indicating whether the request is in progress.
- * @returns {function} setApiEndpoint - Function to update the API endpoint.
- * @returns {function} setHttpMethod - Function to update the HTTP method.
- * @returns {function} setRequestData - Function to update the data for the request.
- * @returns {function} setQueryParams - Function to update the query parameters.
- * @returns {function} makeRequest - Function to manually trigger the API request.
+ * @returns {Object} Un objeto con la respuesta de la API, estado de carga, error y funciones para actualizar la solicitud.
+ * @returns {any} response - Datos obtenidos de la API tras la solicitud.
+ * @returns {number} status - Código de estado HTTP de la respuesta.
+ * @returns {Error|null} error - Error capturado durante la solicitud, si ocurre alguno.
+ * @returns {boolean} loading - Indica si la solicitud está en curso.
+ * @returns {function} setApiEndpoint - Función para actualizar el endpoint de la API.
+ * @returns {function} setHttpMethod - Función para actualizar el método HTTP de la solicitud.
+ * @returns {function} setRequestData - Función para actualizar los datos de la solicitud.
+ * @returns {function} setQueryParams - Función para actualizar los parámetros de consulta.
+ * @returns {function} makeRequest - Función para ejecutar manualmente la solicitud API.
  */
 
 // Centraliza la configuración de axios
